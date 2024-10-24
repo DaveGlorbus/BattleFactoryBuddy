@@ -8,7 +8,7 @@ import random
 # Spin through all combinations of 3 mons. For each combination see if they're a valid team. If they are, work out which phrase they go with.
 # Once we've done that then write them into csvs using their uids for brevity.
 def generateTeamList():    
-    masterSetList = StaticDataHandler.StaticDataHandler.getSetList()
+    masterSetListLen = len(StaticDataHandler.StaticDataHandler.getSetList())
 
     # Initialise looking at sets 1, 2 and 3 and work from there.
     q = 0
@@ -18,16 +18,14 @@ def generateTeamList():
     laprasightings = [0,0,0]
     zardIds = StaticDataHandler.StaticDataHandler.getSpeciesFromName("Charizard").filter()
     zardsightings = [0,0,0]
-    while q < 1000000:
-        setList = masterSetList.copy()        
-        random.shuffle(setList)       
-        setA = setList.pop()
-        setB = setList.pop()
+    while q < 20000000:        
+        setA = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
+        setB = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         while not setA.compatibilitycheck(setB):
-            setB = setList.pop()
-        setC = setList.pop()
+            setB = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
+        setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         while not setA.compatibilitycheck(setC) and setB.compatibilitycheck(setC):
-            setC = setList.pop()
+            setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         if setA.uid in wakIds:
             waksightings[0] += 1
         elif setB.uid in wakIds:
