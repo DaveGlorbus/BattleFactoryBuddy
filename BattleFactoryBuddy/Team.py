@@ -70,31 +70,33 @@ class Team:
                     self.type = "None"
 
     # Work out which "round" this team can appear in. This isn't 1-1 with rounds in the game but more like buckets.
-    # 1 = l50 round 4 / OL round 1
-    # 2 = l50 round 5 / OL round 2
-    # 3 = l50 round 6 / OL round 3
-    # 4 = l50 round 7 / OL round 4
-    # 5 = l50 round 8+
-    # 6 = OL round 5+
+    # 1 = round 1
+    # 2 = round 2
+    # 3 = round 3
+    # 4 = round 1 or 2    
     # ALTSETS - Edits required if your sets maps to rounds in different ways.
     def initCalculateRound(self):
         roundmarkers = []
         for monset in self.sets:
-            roundmarkers.append(monset.roundInfo)        
-        
-        # If we have an OL r5+ mon (e.g. Dragonite-1) then we know the whole team can only appear in bucket 6.
-        if "6" in roundmarkers:
-            self.round = "6"
-        # Similarly, if there's another legendary then we're in bucket 5.
-        elif "5" in roundmarkers:
-            self.round = "5"
-        # Otherwise, if all the round markers match (e.g. Zam-3, Lanturn-3, Gengar-3) then we put it in the bucket matching their round markers.
-        elif len(set(roundmarkers)) == 1:
-            self.round = roundmarkers[0]
-        # Otherwise it's a mix of sets (e.g Whiscash-1, Armaldo-2, Manectric-3) and we're in bucket 5 again.
-        else:
-            self.round = "5"
+            roundmarkers.append(int(monset.roundInfo))        
+        roundmarkers.sort()
+        roundmarkers = set(roundmarkers)        
 
+        # At least one 1, and any number of other 1s, 2s.  - Round 1        
+        if roundmarkers in ({1}, {1,2}):
+            self.round = "1"
+        # At least one 3, and any number of other 2s, 3s - Round 2
+        elif roundmarkers in ({3}, {2,3}):
+            self.round = "2"
+        # Only 4s - Round 3
+        elif roundmarkers == {4}:
+            self.round = "3"
+        # 2s only - Round 1 or 2
+        elif roundmarkers == {2}:
+            self.round = "4"
+        else:
+            self.round = "0"  
+        
     # Return a human readable list of the sets in the team.
     def readableStr(self):
         return (

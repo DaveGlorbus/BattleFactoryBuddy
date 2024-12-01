@@ -59,19 +59,12 @@ class SetCalcHandler:
         round = inputdict["Round"]
 
         # ALTSETS - if you have different rules on which teams are in which rounds then change it here.
-        if (level == "50" and round == "8") or (level == "100" and int(round) > 4):
-            teamSetList += ["5"]
-            if level == "100":
-                teamSetList += ["6"]
-            teamSetList += ["4", "3", "2", "1"]
-        elif (level == "50" and round == "7") or (level == "100" and round == "4"):
-            teamSetList += ["4"]
-        elif (level == "50" and round == "6") or (level == "100" and round == "3"):
-            teamSetList += ["3"]
-        elif (level == "50" and round == "5") or (level == "100" and round == "2"):
-            teamSetList += ["2"]
-        elif (level == "50" and round == "4") or (level == "100" and round == "1"):
-            teamSetList += ["1"]
+        if (round == "1"):
+            teamSetList += ["1","4"]           
+        elif (round == "2"):
+            teamSetList += ["2","4"]           
+        elif (round == "3"):
+            teamSetList += ["3"]       
 
         # Calculate any required info up front about which calcs we need to do, so
         # we've got a simple bool to check in the big loop.

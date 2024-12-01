@@ -28,7 +28,11 @@ def generateTeamList():
                     if((setA.compatibilitycheck(setC))):
                         if((setB.compatibilitycheck(setC))):                                
                             validcombocount +=1
-                            team = Team.Team(setA,setB,setC)                            
+                            team = Team.Team(setA,setB,setC)              
+                            if team.round == "0":
+                                setC=None
+                                c+=1
+                                continue
                             type = team.type                                
                             style = team.style                            
                             if type in combodictcount:
@@ -91,7 +95,7 @@ def validateSetInfo():
 # Create inidividual matchup files out of the massive json checked-in.
 def generateH2Hfiles():
     print("Generating H2H files for the team builder.")
-    with open("./BattleFactoryBuddy/InputData/combined_data_lv_100_20_battles.json") as input:
+    with open("./BattleFactoryBuddy/InputData/combined_data_lv_50_20_battles.json") as input:
         for line in input:
             h2hDict = json.loads(line)
             break    
@@ -102,8 +106,7 @@ def generateH2Hfiles():
             for key2 in h2hDict[key]:                
                 if key == key2:
                     continue
-                newdict[key2] = h2hDict[key][key2]   
-                newdict[key2].pop("3s3n",None)
+                newdict[key2] = h2hDict[key][key2]                   
             writestr = json.dumps(newdict)
             output.write(writestr)
             print("Written teambuilder info for " + key)            

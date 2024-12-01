@@ -1,510 +1,261 @@
-Flying Rock,0 0 0 0,Aerodactyl,1,Adamant,King's Rock,AncientPower,DragonBreath,Aerial Ace,Roar,1,Rock Head / Pressure,170/170/ 0 / 0 / 0 /170,130,1
-Flying Rock,4 0 0 0,Aerodactyl,2,Adamant,Choice Band,Hyper Beam,Earthquake,Aerial Ace,AncientPower,2,Rock Head / Pressure,170/170/ 0 / 0 / 0 /170,130,2
-Flying Rock,4 0 0 0,Aerodactyl,3,Hardy,King's Rock,Double-Edge,Rock Slide,Fire Blast,Dragon Claw,3,Rock Head / Pressure, 0 /255/ 0 /255/ 0 / 0 ,130,3
-Rock Flying,4 0 0 0 ,Aerodactyl,4,Hardy,King's Rock,Double-Edge,Earthquake,Fire Blast,Bite,4,Rock Head / Pressure, 0 /255/ 0 /255/ 0 / 0 ,130,4
-Rock Steel,0 0 0 0,Aggron,1,Adamant,Quick Claw,Iron Tail,Earthquake,Aerial Ace,Roar,1,Sturdy / Rock Head,255/255/ 0 / 0 / 0 / 0 ,50,5
-Rock Steel,4 0 0 2,Aggron,2,Adamant,Scope Lens,Focus Punch,Earthquake,Rock Slide,Thunder Wave,2,Sturdy / Rock Head,255/255/ 0 / 0 / 0 / 0 ,50,6
-Rock Steel,0 0 0 0,Aggron,3,Modest,BrightPowder,Surf,Thunder,Fire Blast,Blizzard,3,Sturdy / Rock Head,255/ 0 / 0 /255/ 0 / 0 ,50,7
-Rock Steel,4 0 0 0,Aggron,4,Adamant,Quick Claw,Double-Edge,Earthquake,Rock Slide,Aerial Ace,4,Sturdy / Rock Head,255/255/ 0 / 0 / 0 / 0 ,50,8
-Psychic,0 0 0 2,Alakazam,1,Modest,Focus Band,ThunderPunch,Fire Punch,Ice Punch,Thunder Wave,1,Synchronize / Inner Focus, 0 / 0 /255/255/ 0 / 0 ,120,9
-Psychic,0 1 2 3,Alakazam,2,Modest,Lum Berry,Psychic,Calm Mind,Thunder Wave,Recover,2,Synchronize / Inner Focus, 0 / 0 /255/255/ 0 / 0 ,120,10
-Psychic,6 2 0 6,Alakazam,3,Modest,Choice Band,Trick,Disable,Psychic,Skill Swap,3,Synchronize / Inner Focus, 0 / 0 /255/255/ 0 / 0 ,120,11
-Psychic,0 0 0 0,Alakazam,4,Modest,BrightPowder,Psychic,ThunderPunch,Fire Punch,Ice Punch,4,Synchronize / Inner Focus, 0 / 0 /255/255/ 0 / 0 ,120,12
-Dragon Flying,0 0 3 0,Altaria,1,Docile,Cheri Berry,Dragon Claw,Aerial Ace,Refresh,Body Slam,1,Natural Cure,255/255/ 0 / 0 / 0 / 0 ,80,13
-Dragon Flying,4 0 0 2,Altaria,2,Bold,Leftovers,Perish Song,DragonBreath,Pursuit,Attract,2,Natural Cure,170/ 0 /170/ 0 /170/ 0 ,80,14
-Dragon Flying,2 1 0 0,Altaria,3,Adamant,Lum Berry,Sing,Dragon Dance,Earthquake,Aerial Ace,3,Natural Cure,255/255/ 0 / 0 / 0 / 0 ,80,15
-Dragon Flying,0 0 0 0,Altaria,4,Docile,Shell Bell,Dragon Claw,Earthquake,Flamethrower,Ice Beam,4,Natural Cure, 0 /255/ 0 /255/ 0 / 0 ,80,16
-Electric,0 7 2 2,Ampharos,1,Relaxed,Magnet,Thunder,Rain Dance,Thunder Wave,Attract,1,Static,255/ 0 / 0 /255/ 0 / 0 ,55,17
-Electric,0 0 4 2,Ampharos,2,Hardy,BrightPowder,ThunderPunch,Fire Punch,Focus Punch,Thunder Wave,2,Static, 0 /255/ 0 /255/ 0 / 0 ,55,18
-Electric,0 0 0 0,Ampharos,3,Hardy,Focus Band,Thunderbolt,Mega Kick,Iron Tail,Brick Break,3,Static, 0 /255/ 0 /255/ 0 / 0 ,55,19
-Electric,0 0 2 3,Ampharos,4,Modest,Lum Berry,Thunderbolt,Fire Punch,Thunder Wave,Reflect,4,Static, 0 / 0 /255/255/ 0 / 0 ,55,20
-Fire,0 0 0 0,Arcanine,1,Adamant,King's Rock,Flamethrower,ExtremeSpeed,Crunch,Body Slam,1,Intimidate / Flash Fire, 0 /255/ 0 / 0 / 0 /255,95,21
-Fire,0 7 0 0,Arcanine,2,Docile,Lum Berry,Fire Blast,Sunny Day,Crunch,Roar,2,Intimidate / Flash Fire, 0 / 0 / 0 /255/ 0 /255,95,22
-Fire ,4 0 0 0,Arcanine,3,Modest,White Herb,Overheat,ExtremeSpeed,Crunch,Aerial Ace,3,Intimidate / Flash Fire, 0 / 0 / 0 /255/ 0 /255,95,23
-Fire,4 0 0 4,Arcanine,4,Docile,White Herb,Overheat,ExtremeSpeed,Crunch,Double-Edge,4,Intimidate / Flash Fire, 0 / 0 / 0 /255/ 0 /255,95,24
-Bug Rock,0 0 0 3,Armaldo,1,Adamant,Scope Lens,Slash,Aerial Ace,AncientPower,Protect,1,Battle Armor,255/255/ 0 / 0 / 0 / 0 ,45,25
-Bug Rock,0 0 0 5,Armaldo,2,Adamant,Quick Claw,Iron Tail,AncientPower,Brick Break,Knock Off,2,Battle Armor,255/255/ 0 / 0 / 0 / 0 ,45,26
-Bug Rock,0 0 0 1,Armaldo,3,Adamant,Quick Claw,Earthquake,Rock Slide,Brick Break,Swords Dance,3,Battle Armor,255/255/ 0 / 0 / 0 / 0 ,45,27
-Bug Rock,4 0 0 0,Armaldo,4,Adamant,Choice Band,Double-Edge,Earthquake,Aerial Ace,Rock Slide,4,Battle Armor,255/255/ 0 / 0 / 0 / 0 ,45,28
-Ice Flying,0 0 0 0,Articuno,1,Modest,Lum Berry,Ice Beam,Water Pulse,Icy Wind,Roar,5,Pressure, 0 / 0 / 0 /255/ 0 /255,85,29
-Ice Flying,6 2 0 1,Articuno,2,Impish,Leftovers,Substitute,Toxic,Blizzard,Double Team,5,Pressure,170/ 0 /170/ 0 /170/ 0 ,85,30
-Ice Flying,0 4 0 3,Articuno,3,Docile,BrightPowder,Ice Beam,Facade,Aerial Ace,Protect,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,85,31
-Ice Flying,0 4 3 3,Articuno,4,Docile,Chesto Berry,Blizzard,Double-Edge,Rest,Reflect,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,85,32
-Ice Flying,0 4 1 2,Articuno,5,Docile,Focus Band,Blizzard,Double-Edge,Agility,Swagger,6,Pressure, 0 /255/ 0 /255/ 0 / 0 ,85,33
-Ice Flying,0 0 3 3 ,Articuno,6,Docile,Chesto Berry,Ice Beam,Aerial Ace,Reflect,Rest,6,Pressure, 0 /255/ 0 /255/ 0 / 0 ,85,34
-Water,0 7 0 0,Blastoise,1,Modest,Shell Bell,Hydro Pump,Rain Dance,Bite,Seismic Toss,1,Torrent,255/ 0 / 0 /255/ 0 / 0 ,78,35
-Water,0 0 0 4,Blastoise,2,Brave,Shell Bell,Hydro Pump,Mega Kick,Brick Break,Mirror Coat,2,Torrent,170/170/ 0 /170/ 0 / 0 ,78,36
-Water,0 0 0 4,Blastoise,3,Docile,Focus Band,Surf,Earthquake,Ice Beam,Counter,3,Torrent,170/170/ 0 /170/ 0 / 0 ,78,37
-Water,0 0 0 4,Blastoise,4,Docile,Focus Band,Surf,Earthquake,Ice Beam,Mirror Coat,4,Torrent,170/170/ 0 /170/ 0 / 0 ,78,38
-Fire Fighting,0 7 0 0,Blaziken,1,Docile,Quick Claw,Flamethrower,Sunny Day,Double Kick,Roar,1,Blaze, 0 /255/ 0 /255/ 0 / 0 ,80,39
-Fire Fighting,0 0 0 0,Blaziken,2,Docile,Scope Lens,Blaze Kick,Mega Kick,ThunderPunch,Brick Break,2,Blaze, 0 /255/ 0 /255/ 0 / 0 ,80,40
-Fire Fighting,4 0 3 4,Blaziken,3,Hardy,Salac Berry,Overheat,Earthquake,Endure,Reversal,3,Blaze, 0 /255/ 0 / 0 / 0 /255,80,41
-Fire Fighting,4 0 0 0,Blaziken,4,Hardy,White Herb,Overheat,Earthquake,ThunderPunch,Rock Slide,4,Blaze, 0 /255/ 0 /255/ 0 / 0 ,80,42
-Normal,2 1 2 3,Blissey,1,Bold,BrightPowder,Toxic,Double Team,Sing,Softboiled,1,Natural Cure / Serene Grace, 0 / 0 /255/ 0 /255/ 0 ,55,43
-Normal,0 2 2 6,Blissey,2,Bold,Leftovers,Seismic Toss,Sing,Attract,Substitute,2,Natural Cure / Serene Grace, 0 / 0 /255/ 0 /255/ 0 ,55,44
-Normal,0 0 1 3,Blissey,3,Bold,Focus Band,Fire Blast,Blizzard,Calm Mind,Softboiled,3,Natural Cure / Serene Grace, 0 / 0 /255/ 0 /255/ 0 ,55,45
-Normal,0 1 4 3,Blissey,4,Bold,Focus Band,Ice Beam,Calm Mind,Counter,Softboiled,4,Natural Cure / Serene Grace, 0 / 0 /255/ 0 /255/ 0 ,55,46
-Grass Fighting,0 0 0 4,Breloom,1,Jolly,King's Rock,Sky Uppercut,Mach Punch,Headbutt,Counter,1,Effect Spore, 0 /255/ 0 / 0 / 0 /255,70,47
-Grass Fighting,0 2 4 2,Breloom,2,Docile,BrightPowder,Giga Drain,Leech Seed,Focus Punch,Spore,2,Effect Spore, 0 / 0 / 0 /255/ 0 /255,70,48
-Grass Fighting,0 4 2 2,Breloom,3,Adamant,Leftovers,Iron Tail,Focus Punch,Attract,Spore,3,Effect Spore, 0 /255/ 0 / 0 / 0 /255,70,49
-Grass Fighting,4 0 2 1,Breloom,4,Adamant,Quick Claw,Focus Punch,Sludge Bomb,Spore,Double Team,4,Effect Spore, 0 /255/ 0 / 0 / 0 /255,70,50
-Fire Flying,0 7 0 5,Charizard,1,Modest,Focus Band,Fire Blast,Sunny Day,Roar,Scary Face,1,Blaze, 0 / 0 / 0 /255/ 0 /255,100,51
-Fire Flying,0 0 1 5,Charizard,2,Adamant,BrightPowder,Earthquake,Aerial Ace,Dragon Dance,SmokeScreen,2,Blaze, 0 /255/ 0 / 0 / 0 /255,100,52
-Fire Flying,0 0 0 0,Charizard,3,Modest,Lum Berry,Flamethrower,Dragon Claw,Bite,Brick Break,3,Blaze, 0 / 0 / 0 /255/ 0 /255,100,53
-Fire Flying,4 0 0 0,Charizard,4,Hardy,White Herb,Overheat,Earthquake,Aerial Ace,Rock Slide,4,Blaze, 0 /170/ 0 /170/ 0 /170,100,54
-Ground Psychic,0 0 2 1,Claydol,1,Adamant,Lum Berry,Earthquake,Rock Slide,Swagger,Psych Up,1,Levitate,255/255/ 0 / 0 / 0 / 0 ,75,55
-Ground Psychic,0 0 1 1,Claydol,2,Calm,Leftovers,Psychic,Earthquake,Double Team,Cosmic Power,2,Levitate,170/ 0 /170/ 0 /170/ 0 ,75,56
-Ground Psychic,0 0 0 7,Claydol,3,Modest,Shell Bell,Psychic,Ice Beam,SolarBeam,Sunny Day,3,Levitate,255/ 0 / 0 /255/ 0 / 0 ,75,57
-Ground Psychic,0 0 0 4,Claydol,4,Adamant,Focus Band,Psychic,Earthquake,Shadow Ball,Explosion,4,Levitate,255/255/ 0 / 0 / 0 / 0 ,75,58
-Normal,6 1 3 6,Clefable,1,Brave,Leftovers,Metronome,Double Team,Reflect,Follow Me,1,Cute Charm, 0 / 0 /255/ 0 /255/ 0 ,60,59
-Normal,0 1 1 6,Clefable,2,Adamant,Focus Band,Meteor Mash,Cosmic Power,Double Team,Follow Me,2,Cute Charm, 0 /255/255/ 0 / 0 / 0 ,60,60
-Normal,0 0 0 0,Clefable,3,Modest,Lum Berry,Thunderbolt,Ice Beam,Flamethrower,Magical Leaf,3,Cute Charm, 0 / 0 /255/255/ 0 / 0 ,60,61
-Normal,0 0 0 3,Clefable,4,Docile,Focus Band,Mega Kick,Psychic,Shadow Ball,Softboiled,4,Cute Charm, 0 /255/255/ 0 / 0 / 0 ,60,62
-Grass Rock,0 0 1 2,Cradily,1,Relaxed,Leftovers,Giga Drain,Rock Slide,Barrier,Confuse Ray,1,Suction Cups,170/ 0 /170/ 0 /170/ 0 ,43,63
-Grass Rock,0 0 2 1,Cradily,2,Adamant,Sitrus Berry,Earthquake,AncientPower,Swagger,Psych Up,2,Suction Cups,255/255/ 0 / 0 / 0 / 0 ,43,64
-Grass Rock,6 0 7 3,Cradily,3,Modest,Leftovers,Substitute,SolarBeam,Sunny Day,Recover,3,Suction Cups, 0 / 0 /170/170/170/ 0 ,43,65
-Grass Rock,2 3 4 0,Cradily,4,Bold,Leftovers,Toxic,Ingrain,Mirror Coat,Giga Drain,4,Suction Cups,170/ 0 /170/ 0 /170/ 0 ,43,66
-Flying Poison,0 0 0 5,Crobat,1,Quirky,King's Rock,Sludge Bomb,Bite,Astonish,Screech,1,Inner Focus,170/170/ 0 /170/ 0 / 0 ,130,67
-Flying Poison,2 0 2 1,Crobat,2,Calm,Leftovers,Toxic,Giga Drain,Confuse Ray,Double Team,2,Inner Focus,170/ 0 /170/ 0 /170/ 0 ,130,68
-Flying Poison,0 4 0 5,Crobat,3,Adamant,Scope Lens,Air Cutter,Double-Edge,Shadow Ball,Screech,3,Inner Focus, 0 /255/ 0 / 0 / 0 /255,130,69
-Flying Poison,0 0 0 2,Crobat,4,Adamant,BrightPowder,Sludge Bomb,Aerial Ace,Shadow Ball,Confuse Ray,4,Inner Focus, 0 /255/ 0 / 0 / 0 /255,130,70
-Ice Water,0 0 0 0,Dewgong,1,Quiet,NeverMeltIce,Ice Beam,Icy Wind,Headbutt,Fake Out,1,Thick Fat,255/ 0 / 0 /255/ 0 / 0 ,70,71
-Ice Water,0 4 2 2,Dewgong,2,Docile,Shell Bell,Blizzard,Double-Edge,Encore,Disable,2,Thick Fat, 0 /255/ 0 /255/ 0 / 0 ,70,72
-Ice Water,4 0 0 3,Dewgong,3,Bold,Chesto Berry,Horn Drill,Sheer Cold,Sleep Talk,Rest,3,Thick Fat,255/ 0 /255/ 0 / 0 / 0 ,70,73
-Ice Water,0 0 0 0,Dewgong,4,Docile,Lum Berry,Sheer Cold,Ice Beam,Surf,Signal Beam,4,Thick Fat, 0 /255/ 0 /255/ 0 / 0 ,70,74
-Normal Flying,0 0 0 3,Dodrio,1,Adamant,Chesto Berry,Drill Peck,Tri Attack,Sleep Talk,Rest,1,Run Away / Early Bird, 0 /255/ 0 / 0 / 0 /255,100,75
-Normal Flying,0 4 0 3,Dodrio,2,Adamant,King's Rock,Drill Peck,Double-Edge,Faint Attack,Protect,2,Run Away / Early Bird, 0 /255/ 0 / 0 / 0 /255,100,76
-Normal Flying,4 0 0 0,Dodrio,3,Adamant,Lum Berry,Double-Edge,Drill Peck,Steel Wing,Faint Attack,3,Run Away / Early Bird, 0 /255/ 0 / 0 / 0 /255,100,77
-Normal Flying,4 3 0 4,Dodrio,4,Adamant,Salac Berry,Flail,Endure,Drill Peck,Facade,4,Run Away / Early Bird, 0 /255/ 0 / 0 / 0 /255,100,78
-Ground,0 0 2 3,Donphan,1,Adamant,Chesto Berry,Earthquake,AncientPower,Swagger,Rest,1,Sturdy,255/255/ 0 / 0 / 0 / 0 ,50,79
-Ground,4 3 0 0,Donphan,2,Jolly,Quick Claw,Flail,Endure,Earthquake,Rock Tomb,2,Sturdy, 0 /255/ 0 / 0 / 0 /255,50,80
-Ground,4 0 0 0,Donphan,3,Adamant,Quick Claw,Fissure,Earthquake,Rock Slide,Secret Power,3,Sturdy,255/255/ 0 / 0 / 0 / 0 ,50,81
-Ground,4 0 0 0,Donphan,4,Adamant,Quick Claw,Fissure,Earthquake,Rock Slide,Iron Tail,4,Sturdy,255/255/ 0 / 0 / 0 / 0 ,50,82
-Dragon Flying,0 0 0 1,Dragonite,1,Adamant,BrightPowder,Earthquake,Aerial Ace,Brick Break,Dragon Dance,6,Inner Focus,170/ 0 /170/ 0 /170/ 0 ,80,83
-Dragon Flying,0 4 0 1,Dragonite,2,Adamant,BrightPowder,Earthquake,Double-Edge,Aerial Ace,Dragon Dance,6,Inner Focus,170/ 0 /170/ 0 /170/ 0 ,80,84
-Dragon Flying,4 2 1 2,Dragonite,3,Adamant,Leftovers,Hyper Beam,Attract,Double Team,Thunder Wave,6,Inner Focus, 0 /170/170/ 0 /170/ 0 ,80,85
-Dragon Flying,4 2 1 3,Dragonite,4,Adamant,Chesto Berry,Hyper Beam,Thunder Wave,Dragon Dance,Rest,6,Inner Focus,170/ 0 /170/ 0 /170/ 0 ,80,86
-Dragon Flying,0 4 2 0,Dragonite,5,Docile,Lum Berry,Outrage,Double-Edge,Thunder Wave,Roar,6,Inner Focus, 0 /255/ 0 /255/ 0 / 0 ,80,87
-Dragon Flying,0 0 0 0,Dragonite,6,Modest,Shell Bell,Dragon Claw,Thunderbolt,Surf,Flamethrower,6,Inner Focus, 0 / 0 / 0 /255/ 0 /255,80,88
-Dragon Flying,0 0 0 0,Dragonite,7,Modest,Shell Bell,Dragon Claw,Thunderbolt,Surf,Ice Beam,6,Inner Focus, 0 / 0 / 0 /255/ 0 /255,80,89
-Dragon Flying,0 0 0 0,Dragonite,8,Modest,Shell Bell,Dragon Claw,Flamethrower,Ice Beam,Brick Break,6,Inner Focus, 0 / 0 / 0 /255/ 0 /255,80,90
-Dragon Flying,0 0 7 0,Dragonite,9,Docile,Quick Claw,Thunder,Surf,Rain Dance,Earthquake,6,Inner Focus,255/ 0 / 0 /255/ 0 / 0 ,80,91
-Dragon Flying,0 0 7 0,Dragonite,X,Docile,Quick Claw,Fire Blast,Blizzard,Sunny Day,Earthquake,6,Inner Focus,255/ 0 / 0 /255/ 0 / 0 ,80,92
-Ground,0 0 0 0,Dugtrio,1,Adamant,Soft Sand,Earthquake,Tri Attack,Slash,Sand Tomb,1,Sand Veil / Arena Trap, 0 /255/ 0 / 0 / 0 /255,120,93
-Ground,0 0 0 0,Dugtrio,2,Adamant,King's Rock,Earthquake,AncientPower,Aerial Ace,Tri Attack,2,Sand Veil / Arena Trap, 0 /255/ 0 / 0 / 0 /255,120,94
-Ground,0 4 0 4,Dugtrio,3,Adamant,King's Rock,Earthquake,Double-Edge,Sludge Bomb,Fissure,3,Sand Veil / Arena Trap, 0 /255/ 0 / 0 / 0 /255,120,95
-Ground ,0 4 0 4,Dugtrio,4,Adamant,King's Rock,Earthquake,Double-Edge,Rock Slide,Fissure,4,Sand Veil / Arena Trap, 0 /255/ 0 / 0 / 0 /255,120,96
-Ghost,2 0 4 2,Dusclops,1,Impish,Leftovers,Will-O-Wisp,Seismic Toss,Pain Split,Confuse Ray,1,Pressure,170/ 0 /170/ 0 /170/ 0 ,25,97
-Ghost,2 2 1 3,Dusclops,2,Impish,Leftovers,Toxic,Confuse Ray,Double Team,Protect,2,Pressure,170/ 0 /170/ 0 /170/ 0 ,25,98
-Ghost,1 2 0 0,Dusclops,3,Adamant,Leftovers,Psych Up,Swagger,Shadow Ball,Earthquake,3,Pressure,170/ 0 /170/ 0 /170/ 0 ,25,99
-Ghost,4 0 6 3,Dusclops,4,Adamant,Chesto Berry,Double-Edge,Shadow Ball,Curse,Rest,4,Pressure,255/255/ 0 / 0 / 0 / 0 ,25,100
-Electric,0 2 0 3,Electabuzz,1,Relaxed,Cheri Berry,Thunderbolt,Thunder Wave,Brick Break,Light Screen,1,Static,170/ 0 /170/170/ 0 / 0 ,105,101
-Electric,0 7 2 4,Electabuzz,2,Quirky,Leftovers,Thunder,Rain Dance,Attract,Focus Punch,2,Static, 0 /170/ 0 /170/ 0 /170,105,102
-Electric,0 0 0 0,Electabuzz,3,Quirky,Lum Berry,Fire Punch,Ice Punch,Thunderbolt,Cross Chop,3,Static, 0 / 0 / 0 /255/ 0 /255,105,103
-Electric,0 0 0 0,Electabuzz,4,Docile,Scope Lens,Thunderbolt,Psychic,Mega Kick,Cross Chop,4,Static, 0 /255/ 0 /255/ 0 / 0 ,105,104
-Electric,0 0 3 3,Electrode,1,Quiet,Focus Band,Thunderbolt,Swift,Light Screen,Protect,1,Soundproof / Static,255/ 0 / 0 /255/ 0 / 0 ,140,105
-Electric,0 7 1 2,Electrode,2,Modest,BrightPowder,Thunder,Rain Dance,Double Team,Swagger,2,Soundproof / Static,170/ 0 /170/ 0 /170/ 0 ,140,106
-Electric,4 0 2 3,Electrode,3,Naughty,Liechi Berry,Explosion,Thunderbolt,Thunder Wave,Endure,3,Soundproof / Static, 0 /255/ 0 /255/ 0 / 0 ,140,107
-Electric,4 0 2 4,Electrode,4,Naughty,Lum Berry,Explosion,Thunderbolt,Thunder Wave,Mirror Coat,4,Soundproof / Static, 0 /255/ 0 /255/ 0 / 0 ,140,108
-Fire,0 1 1 3,Entei,1,Modest,Chesto Berry,Flamethrower,Double Team,Calm Mind,Rest,5,Pressure, 0 / 0 / 0 /255/ 0 /255,100,109
-Fire,0 7 0 3,Entei,2,Modest,BrightPowder,Fire Blast,Sunny Day,SolarBeam,Reflect,5,Pressure, 0 / 0 / 0 /255/ 0 /255,100,110
-Fire,0 4 2 1,Entei,3,Docile,Lum Berry,Flamethrower,Double-Edge,Swagger,Psych Up,5,Pressure, 0 /255/ 0 / 0 / 0 /255,100,111
-Fire,0 0 1 3,Entei,4,Modest,King's Rock,Flamethrower,Bite,Double Team,Reflect,5,Pressure, 0 / 0 / 0 /255/ 0 /255,100,112
-Fire,0 4 3 3,Entei,5,Docile,Salac Berry,Fire Blast,Double-Edge,Endure,Reflect,6,Pressure, 0 / 0 /255/ 0 /255/ 0 ,100,113
-Fire,0 1 0 3,Entei,6,Modest,Chesto Berry,Flamethrower,Calm Mind,Roar,Rest,6,Pressure, 0 / 0 /255/ 0 /255/ 0 ,100,114
-Psychic,0 5 1 3,Espeon,1,Modest,Lum Berry,Psychic,Charm,Calm Mind,Baton Pass,1,Synchronize, 0 / 0 /170/ 0 /170/170,110,115
-Psychic,0 0 1 3,Espeon,2,Docile,Chesto Berry,Psychic,Shadow Ball,Calm Mind,Rest,2,Synchronize, 0 /255/ 0 / 0 / 0 /255,110,116
-Psychic,0 0 3 3,Espeon,3,Modest,Lum Berry,Psychic,Bite,Wish,Reflect,3,Synchronize, 0 / 0 / 0 /255/ 0 /255,110,117
-Psychic,0 0 2 1,Espeon,4,Modest,BrightPowder,Psychic,Bite,Attract,Calm Mind,4,Synchronize, 0 / 0 / 0 /255/ 0 /255,110,118
-Grass Psychic,0 7 3 3,Exeggutor,1,Quiet,Quick Claw,SolarBeam,Sunny Day,Synthesis,Light Screen,1,Chlorophyll, 0 / 0 /255/ 0 /255/ 0 ,55,119
-Grass Psychic,0 6 2 3,Exeggutor,2,Hardy,Chesto Berry,Return,Curse,Sleep Powder,Rest,2,Chlorophyll, 0 /255/ 0 / 0 /255/ 0 ,55,120
-Grass Psychic,2 0 2 4,Exeggutor,3,Hardy,Leftovers,Leech Seed,Giga Drain,Toxic,Explosion,3,Chlorophyll,170/ 0 /170/ 0 /170/ 0 ,55,121
-Grass Psychic,0 0 0 4,Exeggutor,4,Hardy,BrightPowder,Psychic,Giga Drain,Sludge Bomb,Explosion,4,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,55,122
-Normal,0 0 0 3,Exploud,1,Impish,Chesto Berry,Hyper Voice,Shadow Ball,Sleep Talk,Rest,1,Soundproof,255/255/ 0 / 0 / 0 / 0 ,68,123
-Normal,0 7 0 4,Exploud,2,Quirky,Focus Band,SolarBeam,Sunny Day,Earthquake,Counter,2,Soundproof, 0 /255/ 0 /255/ 0 / 0 ,68,124
-Normal,4 0 0 0,Exploud,3,Modest,White Herb,Overheat,Ice Beam,ThunderPunch,Extrasensory,3,Soundproof, 0 / 0 / 0 /255/ 0 /255,68,125
-Normal,0 0 0 4,Exploud,4,Hardy,White Herb,Mega Kick,Earthquake,Shadow Ball,Overheat,4,Soundproof, 0 /255/ 0 /255/ 0 / 0 ,68,126
-Normal Flying,0 0 4 0,Fearow,1,Adamant,Sharp Beak,Drill Peck,Tri Attack,Facade,Mud-Slap,1,Keen Eye, 0 /255/ 0 / 0 / 0 /255,100,127
-Normal Flying,0 0 2 0,Fearow,2,Adamant,Focus Band,Drill Peck,Tri Attack,Attract,Pursuit,2,Keen Eye, 0 /255/ 0 / 0 / 0 /255,100,128
-Normal Flying,0 0 0 0,Fearow,3,Hardy,Scope Lens,Drill Peck,Return,Steel Wing,Faint Attack,3,Keen Eye, 0 /255/ 0 / 0 / 0 /255,100,129
-Normal Flying,0 4 0 4,Fearow,4,Hardy,Lum Berry,Drill Peck,Double-Edge,Steel Wing,Sky Attack,4,Keen Eye, 0 /255/ 0 /255/ 0 / 0 ,100,130
-Water,0 7 0 0,Feraligatr,1,Quiet,Lum Berry,Surf,Rain Dance,Aerial Ace,Roar,1,Torrent,170/ 0 / 0 /170/170/ 0 ,78,131
-Water,0 0 0 5,Feraligatr,2,Sassy,Quick Claw,Surf,Dragon Claw,Brick Break,Scary Face,2,Torrent,170/ 0 / 0 /170/170/ 0 ,78,132
-Water,0 0 0 0,Feraligatr,3,Hardy,Scope Lens,Hydro Pump,Crunch,Earthquake,Rock Slide,3,Torrent,170/170/ 0 /170/ 0 / 0 ,78,133
-Water,0 0 0 0,Feraligatr,4,Hardy,Scope Lens,Hydro Pump,Ice Beam,Earthquake,Aerial Ace,4,Torrent,170/170/ 0 /170/ 0 / 0 ,78,134
-Fire,0 0 0 5,Flareon,1,Modest,Sitrus Berry,Flamethrower,Roar,Bite,Sand-Attack,1,Flash Fire, 0 / 0 /255/255/ 0 / 0 ,65,135
-Fire,6 2 4 0,Flareon,2,Relaxed,Quick Claw,Curse,Attract,Double-Edge,Shadow Ball,2,Flash Fire,170/ 0 /170/ 0 /170/ 0 ,65,136
-Fire,0 4 3 4,Flareon,3,Jolly,Quick Claw,Shadow Ball,Flail,Endure,Overheat,3,Flash Fire, 0 /255/ 0 / 0 / 0 /255,65,137
-Fire,4 7 4 0,Flareon,4,Quiet,Quick Claw,Overheat,Sunny Day,Double-Edge,Shadow Ball,4,Flash Fire, 0 /255/ 0 /255/ 0 / 0 ,65,138
-Dragon Ground,0 0 0 4,Flygon,1,Adamant,BrightPowder,Earthquake,Steel Wing,Faint Attack,Facade,1,Levitate, 0 /255/ 0 / 0 / 0 /255,100,139
-Dragon Ground,0 0 0 7,Flygon,2,Modest,BrightPowder,SolarBeam,Fire Blast,Crunch,Sunny Day,2,Levitate, 0 / 0 / 0 /255/ 0 /255,100,140
-Dragon Ground,0 0 0 0,Flygon,3,Hardy,Scope Lens,Earthquake,Dragon Claw,Flamethrower,Giga Drain,3,Levitate, 0 /170/ 0 /170/ 0 /170,100,141
-Dragon Ground,0 0 4 0,Flygon,4,Hardy,Scope Lens,Earthquake,Dragon Claw,Double-Edge,Crunch,4,Levitate, 0 /170/ 0 /170/ 0 /170,100,142
-Bug Steel,4 0 3 2,Forretress,1,Adamant,Focus Band,Double-Edge,Rock Slide,Light Screen,Spikes,1,Sturdy, 0 /255/ 0 / 0 /255/ 0 ,40,143
-Bug Steel,0 4 4 3,Forretress,2,Adamant,Lum Berry,Earthquake,Double-Edge,Counter,Protect,2,Sturdy, 0 /255/ 0 / 0 /255/ 0 ,40,144
-Bug Steel,4 0 0 0,Forretress,3,Quiet,Focus Band,Explosion,Earthquake,Giga Drain,Zap Cannon,3,Sturdy, 0 /170/ 0 /170/170/ 0 ,40,145
-Bug Steel,4 0 0 4,Forretress,4,Adamant,Quick Claw,Explosion,Earthquake,Rock Slide,Double-Edge,4,Sturdy, 0 /255/ 0 / 0 /255/ 0 ,40,146
-Psychic,0 2 0 3,Gardevoir,1,Timid,Leftovers,Dream Eater,Hypnosis,Magical Leaf,Reflect,1,Synchronize / Trace,170/ 0 /170/ 0 / 0 /170,80,147
-Psychic,0 1 1 3,Gardevoir,2,Modest,Chesto Berry,Psychic,Calm Mind,Double Team,Rest,2,Synchronize / Trace,255/ 0 /255/ 0 / 0 / 0 ,80,148
-Psychic,0 0 0 0,Gardevoir,3,Modest,Lum Berry,Psychic,Ice Punch,Fire Punch,Magical Leaf,3,Synchronize / Trace, 0 / 0 / 0 /255/ 0 /255,80,149
-Psychic,0 0 0 0,Gardevoir,4,Modest,BrightPowder,Psychic,Thunderbolt,Ice Punch,Fire Punch,4,Synchronize / Trace, 0 / 0 / 0 /255/ 0 /255,80,150
-Psychic,0 0 3 4,Gardevoir,5,Docile,Salac Berry,Psychic,Shadow Ball,Endure,Destiny Bond,5,Synchronize / Trace,170/ 0 /170/ 0 / 0 /170,80,151
-Psychic,0 0 2 4,Gardevoir,6,Timid,Lum Berry,Psychic,Thunderbolt,Will-O-Wisp,Destiny Bond,5,Synchronize / Trace,255/ 0 / 0 / 0 / 0 /255,80,152
-Psychic,0 1 2 4,Gardevoir,7,Bold,Quick Claw,Psychic,Calm Mind,Will-O-Wisp,Destiny Bond,5,Synchronize / Trace,170/ 0 /170/ 0 /170/ 0 ,80,153
-Psychic,0 0 2 1,Gardevoir,8,Modest,BrightPowder,Psychic,Magical Leaf,Attract,Double Team,5,Synchronize / Trace, 0 / 0 / 0 /255/ 0 /255,80,154
-Ghost Poison,0 2 2 2,Gengar,1,Timid,Leftovers,Dream Eater,Hypnosis,Confuse Ray,Attract,1,Levitate,170/ 0 / 0 /170/ 0 /170,110,155
-Ghost Poison,0 0 2 2,Gengar,2,Adamant,Leftovers,Sludge Bomb,Shadow Ball,Confuse Ray,Will-O-Wisp,2,Levitate, 0 /255/ 0 / 0 / 0 /255,110,156
-Ghost Poison,0 0 0 6,Gengar,3,Modest,Quick Claw,Psychic,Thunderbolt,Giga Drain,Skill Swap,3,Levitate, 0 / 0 / 0 /255/ 0 /255,110,157
-Ghost Poison,0 0 0 4,Gengar,4,Modest,Lum Berry,Psychic,Fire Punch,Ice Punch,Destiny Bond,4,Levitate, 0 / 0 / 0 /255/ 0 /255,110,158
-Ghost Poison,0 0 0 0,Gengar,5,Modest,BrightPowder,Psychic,Shadow Ball,Thunderbolt,Fire Punch,5,Levitate, 0 / 0 / 0 /255/ 0 /255,110,159
-Ghost Poison,0 0 0 0,Gengar,6,Modest,BrightPowder,Psychic,Shadow Ball,Thunderbolt,Ice Punch,5,Levitate, 0 / 0 / 0 /255/ 0 /255,110,160
-Ghost Poison,0 0 0 4,Gengar,7,Modest,Lum Berry,Psychic,Thunderbolt,Fire Punch,Destiny Bond,5,Levitate, 0 / 0 / 0 /255/ 0 /255,110,161
-Ghost Poison,0 0 0 4,Gengar,8,Modest,Lum Berry,Psychic,Thunderbolt,Ice Punch,Destiny Bond,5,Levitate, 0 / 0 / 0 /255/ 0 /255,110,162
-Ice,0 0 7 3,Glalie,1,Modest,Petaya Berry,Ice Beam,Crunch,Hail,Protect,1,Inner Focus,255/ 0 / 0 /255/ 0 / 0 ,80,163
-Ice,4 3 0 0,Glalie,2,Quirky,Salac Berry,Explosion,Endure,Body Slam,Icy Wind,2,Inner Focus, 0 /255/ 0 / 0 / 0 /255,80,164
-Ice,0 0 4 0,Glalie,3,Hardy,Shell Bell,Blizzard,Earthquake,Double-Edge,Shadow Ball,3,Inner Focus, 0 /170/ 0 /170/ 0 /170,80,165
-Ice,0 0 0 0,Glalie,4,Hardy,Leftovers,Ice Beam,Earthquake,Crunch,Shadow Ball,4,Inner Focus,170/170/ 0 /170/ 0 / 0 ,80,166
-Water,0 0 0 3,Golduck,1,Quiet,Shell Bell,Hydro Pump,Dig,Brick Break,Light Screen,1,Damp / Cloud Nine, 0 /255/ 0 /255/ 0 / 0 ,85,167
-Water,0 0 2 1,Golduck,2,Quirky,Lum Berry,Cross Chop,Surf,Swagger,Psych Up,2,Damp / Cloud Nine, 0 /170/ 0 /170/ 0 /170,85,168
-Water,0 0 0 3,Golduck,3,Docile,Shell Bell,Hydro Pump,Cross Chop,Blizzard,Protect,3,Damp / Cloud Nine, 0 /255/ 0 /255/ 0 / 0 ,85,169
-Water,0 0 0 0,Golduck,4,Docile,Scope Lens,Surf,Cross Chop,Ice Beam,Aerial Ace,4,Damp / Cloud Nine, 0 /255/ 0 / 0 / 0 /255,85,170
-Ground Rock,0 0 4 0,Golem,1,Adamant,Quick Claw,Earthquake,Body Slam,Counter,Rock Tomb,1,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,45,171
-Ground Rock,4 6 1 3,Golem,2,Adamant,Chesto Berry,Focus Punch,Substitute,Double Team,Rest,2,Rock Head / Sturdy,255/255/ 0 / 0 / 0 / 0 ,45,172
-Ground Rock,4 0 0 0,Golem,3,Adamant,Quick Claw,Explosion,Earthquake,Flamethrower,Brick Break,3,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,45,173
-Ground Rock,4 0 0 4,Golem,4,Adamant,Quick Claw,Explosion,Earthquake,Rock Slide,Double-Edge,4,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,45,174
-Normal,0 0 2 0,Granbull,1,Adamant,Cheri Berry,Mega Kick,SmellingSalt,Thunder Wave,Roar,1,Intimidate,255/255/ 0 / 0 / 0 / 0 ,45,175
-Normal,4 0 0 4,Granbull,2,Quiet,White Herb,Overheat,Thunderbolt,Ice Punch,Facade,2,Intimidate, 0 / 0 / 0 /255/255/ 0 ,45,176
-Normal,4 0 0 0,Granbull,3,Adamant,Quick Claw,Double-Edge,Earthquake,Sludge Bomb,Rock Slide,3,Intimidate,255/255/ 0 / 0 / 0 / 0 ,45,177
-Normal,0 0 0 0 ,Granbull,4,Brave,Choice Band,Mega Kick,Earthquake,Crunch,Shadow Ball,4,Intimidate, 0 /255/ 0 /255/ 0 / 0 ,45,178
-Flying Water,0 0 2 1,Gyarados,1,Careful,Lum Berry,Return,Bite,Thunder Wave,Dragon Dance,1,Intimidate,255/ 0 / 0 / 0 /255/ 0 ,81,179
-Flying Water,0 0 0 0,Gyarados,2,Modest,Shell Bell,Hydro Pump,Thunderbolt,Fire Blast,Blizzard,2,Intimidate, 0 / 0 / 0 /255/ 0 /255,81,180
-Flying Water,0 0 7 0,Gyarados,3,Quirky,Quick Claw,Surf,Thunder,Rain Dance,Earthquake,3,Intimidate, 0 /255/ 0 /255/ 0 / 0 ,81,181
-Flying Water,0 0 1 3,Gyarados,4,Adamant,Chesto Berry,Return,Earthquake,Dragon Dance,Rest,4,Intimidate,170/ 0 /170/ 0 /170/ 0 ,81,182
-Fighting,0 0 4 0,Hariyama,1,Adamant,Focus Band,Cross Chop,Rock Slide,Counter,Fake Out,1,Thick Fat / Guts,170/ 0 /170/ 0 /170/ 0 ,50,183
-Fighting,0 0 0 0,Hariyama,2,Quiet,Quick Claw,Cross Chop,Fire Punch,Ice Punch,ThunderPunch,2,Thick Fat / Guts, 0 /255/ 0 /255/ 0 / 0 ,50,184
-Fighting,0 0 0 4,Hariyama,3,Adamant,Quick Claw,Cross Chop,Earthquake,Rock Slide,Facade,3,Thick Fat / Guts,255/255/ 0 / 0 / 0 / 0 ,50,185
-Fighting,0 0 0 0,Hariyama,4,Adamant,Scope Lens,Cross Chop,Earthquake,Rock Slide,Fake Out,4,Thick Fat / Guts,255/255/ 0 / 0 / 0 / 0 ,50,186
-Bug Fighting,0 0 0 4,Heracross,1,Adamant,Focus Band,Megahorn,Brick Break,Rock Tomb,Counter,1,Swarm / Guts, 0 /255/255/ 0 / 0 / 0 ,85,187
-Bug Fighting,0 0 2 1,Heracross,2,Jolly,Lum Berry,Megahorn,Earthquake,Attract,Bulk Up,2,Swarm / Guts,255/ 0 / 0 / 0 / 0 /255,85,188
-Bug Fighting,0 0 0 0,Heracross,3,Adamant,BrightPowder,Megahorn,Earthquake,Rock Slide,Brick Break,3,Swarm / Guts, 0 /255/ 0 / 0 / 0 /255,85,189
-Bug Fighting,0 0 4 3,Heracross,4,Adamant,Salac Berry,Megahorn,Earthquake,Reversal,Endure,4,Swarm / Guts, 0 /255/ 0 / 0 / 0 /255,85,190
-Dark Fire,0 0 4 2,Houndoom,1,Quirky,Focus Band,Flamethrower,Shadow Ball,Counter,Will-O-Wisp,1,Early Bird / Flash Fire, 0 /170/ 0 /170/ 0 /170,95,191
-Dark Fire,0 0 0 3,Houndoom,2,Modest,Lum Berry,Fire Blast,Crunch,Roar,Rest,2,Early Bird / Flash Fire, 0 / 0 / 0 /255/ 0 /255,95,192
-Dark Fire,4 0 0 4,Houndoom,3,Quirky,White Herb,Overheat,Shadow Ball,Sludge Bomb,Double-Edge,3,Early Bird / Flash Fire, 0 /255/ 0 / 0 / 0 /255,95,193
-Dark Fire,4 0 0 7,Houndoom,4,Modest,White Herb,Overheat,SolarBeam,Crunch,Sunny Day,4,Early Bird / Flash Fire, 0 / 0 / 0 /255/ 0 /255,95,194
-Psychic,0 0 0 2,Hypno,1,Quiet,TwistedSpoon,ThunderPunch,Fire Punch,Ice Punch,Hypnosis,1,Insomnia, 0 / 0 /255/255/ 0 / 0 ,67,195
-Psychic,2 0 0 0,Hypno,2,Modest,TwistedSpoon,Hypnosis,Nightmare,Dream Eater,Psychic,2,Insomnia, 0 / 0 /255/ 0 /255/ 0 ,67,196
-Psychic,1 2 0 0,Hypno,3,Adamant,Lum Berry,Psych Up,Swagger,Mega Kick,Shadow Ball,3,Insomnia,255/255/ 0 / 0 / 0 / 0 ,67,197
-Psychic,0 0 0 0,Hypno,4,Modest,Lum Berry,Psychic,ThunderPunch,Fire Punch,Ice Punch,4,Insomnia,255/ 0 / 0 /255/ 0 / 0 ,67,198
-Electric,0 2 2 3,Jolteon,1,Modest,Cheri Berry,Thunderbolt,Thunder Wave,Attract,Protect,1,Volt Absorb, 0 / 0 / 0 /255/ 0 /255,130,199
-Electric,0 0 0 0,Jolteon,2,Hardy,Scope Lens,Thunderbolt,Dig,Double Kick,Roar,2,Volt Absorb, 0 /255/ 0 /255/ 0 / 0 ,130,200
-Electric,0 2 1 3,Jolteon,3,Bold,BrightPowder,Thunderbolt,Thunder Wave,Agility,Baton Pass,3,Volt Absorb,170/ 0 /170/ 0 /170/ 0 ,130,201
-Electric,0 2 0 0,Jolteon,4,Timid,King's Rock,Thunderbolt,Thunder Wave,Bite,Shadow Ball,4,Volt Absorb, 0 / 0 / 0 /255/ 0 /255,130,202
-Ice Psychic,0 0 2 2,Jynx,1,Modest,Shell Bell,Ice Beam,Fake Out,Lovely Kiss,Attract,1,Oblivious,255/ 0 / 0 /255/ 0 / 0 ,95,203
-Ice Psychic,4 2 2 3,Jynx,2,Impish,BrightPowder,Perish Song,Mean Look,Lovely Kiss,Protect,2,Oblivious,255/ 0 /255/ 0 / 0 / 0 ,95,204
-Ice Psychic,0 2 2 6,Jynx,3,Hardy,Quick Claw,Dream Eater,Lovely Kiss,Attract,Substitute,3,Oblivious,255/ 0 /255/ 0 / 0 / 0 ,95,205
-Ice Psychic,0 0 2 5,Jynx,4,Modest,Lum Berry,Psychic,Ice Beam,Lovely Kiss,Fake Tears,4,Oblivious,255/ 0 / 0 /255/ 0 / 0 ,95,206
-Normal,0 0 4 0,Kangaskhan,1,Adamant,Focus Band,Dizzy Punch,Brick Break,Counter,Fake Out,1,Early Bird,255/255/ 0 / 0 / 0 / 0 ,90,207
-Normal,0 0 2 3,Kangaskhan,2,Adamant,Lum Berry,Crush Claw,Shadow Ball,Attract,Rest,2,Early Bird,255/255/ 0 / 0 / 0 / 0 ,90,208
-Normal,4 3 0 0,Kangaskhan,3,Jolly,Salac Berry,Reversal,Endure,Thunderbolt,Earthquake,3,Early Bird, 0 /255/ 0 / 0 / 0 /255,90,209
-Normal,0 0 0 0,Kangaskhan,4,Adamant,BrightPowder,Mega Kick,Earthquake,Aerial Ace,Shadow Ball,4,Early Bird, 0 /255/ 0 / 0 / 0 /255,90,210
-Dragon Water,0 0 0 2,Kingdra,1,Modest,Lum Berry,Hydro Pump,DragonBreath,Icy Wind,Attract,1,Swift Swim,255/ 0 / 0 /255/ 0 / 0 ,85,211
-Dragon Water,0 0 0 3,Kingdra,2,Modest,Chesto Berry,Surf,Ice Beam,DragonBreath,Rest,2,Swift Swim,170/ 0 /170/ 0 /170/ 0 ,85,212
-Dragon Water,4 0 1 3,Kingdra,3,Adamant,Salac Berry,Flail,Hydro Pump,Dragon Dance,Endure,3,Swift Swim,170/ 0 /170/ 0 /170/ 0 ,85,213
-Dragon Water,4 0 1 3,Kingdra,4,Hardy,Chesto Berry,Double-Edge,Ice Beam,Dragon Dance,Rest,4,Swift Swim,170/ 0 /170/ 0 /170/ 0 ,85,214
-Electric Water,0 2 2 2,Lanturn,1,Quiet,Cheri Berry,Surf,Confuse Ray,Attract,Thunder Wave,1,Volt Absorb / Illuminate, 0 / 0 /255/255/ 0 / 0 ,67,215
-Electric Water,4 3 0 0,Lanturn,2,Docile,Salac Berry,Flail,Endure,Thunderbolt,Surf,2,Volt Absorb / Illuminate, 0 /255/ 0 /255/ 0 / 0 ,67,216
-Electric Water,0 0 2 7,Lanturn,3,Modest,BrightPowder,Hydro Pump,Thunder,Confuse Ray,Rain Dance,3,Volt Absorb / Illuminate, 0 / 0 / 0 /255/ 0 /255,67,217
-Electric Water,0 0 0 2,Lanturn,4,Modest,Lum Berry,Surf,Thunderbolt,Ice Beam,Confuse Ray,4,Volt Absorb / Illuminate, 0 / 0 / 0 /255/ 0 /255,67,218
-Ice Water,0 2 2 2,Lapras,1,Bold,Leftovers,Surf,Attract,Confuse Ray,Sing,1,Water Absorb / Shell Armor, 0 / 0 /255/ 0 /255/ 0 ,60,219
-Ice Water,0 0 0 0,Lapras,2,Timid,Quick Claw,Surf,Ice Beam,Body Slam,Roar,2,Water Absorb / Shell Armor, 0 / 0 / 0 /255/ 0 /255,60,220
-Ice Water,4 0 2 1,Lapras,3,Docile,BrightPowder,Double-Edge,Psychic,Confuse Ray,Dragon Dance,3,Water Absorb / Shell Armor,170/ 0 /170/ 0 /170/ 0 ,60,221
-Ice Water,0 0 0 0,Lapras,4,Modest,Lum Berry,Surf,Ice Beam,Thunderbolt,Psychic,4,Water Absorb / Shell Armor,255/ 0 / 0 /255/ 0 / 0 ,60,222
-Ice Water,0 0 0 4,Lapras,5,Docile,Shell Bell,Psychic,Thunderbolt,Iron Tail,Double-Edge,5,Water Absorb / Shell Armor, 0 /255/ 0 /255/ 0 / 0 ,60,223
-Ice Water,0 0 7 0,Lapras,6,Modest,BrightPowder,Hydro Pump,Thunder,Rain Dance,Blizzard,5,Water Absorb / Shell Armor,255/ 0 / 0 /255/ 0 / 0 ,60,224
-Ice Water,0 4 3 0,Lapras,7,Calm,Leppa Berry,Sheer Cold,Horn Drill,Rest,Sleep Talk,5,Water Absorb / Shell Armor,170/ 0 /170/ 0 /170/ 0 ,60,225
-Ice Water,0 4 2 2,Lapras,8,Calm,Quick Claw,Sheer Cold,Horn Drill,Sing,Attract,5,Water Absorb / Shell Armor,170/ 0 /170/ 0 /170/ 0 ,60,226
-Dragon Psychic,0 0 0 0,Latias,1,Modest,Lum Berry,Psychic,Thunderbolt,Ice Beam,Dragon Claw,5,Levitate,255/ 0 / 0 /255/ 0 / 0 ,110,227
-Dragon Psychic,0 0 0 0,Latias,2,Docile,Quick Claw,Psychic,Thunderbolt,Ice Beam,Earthquake,5,Levitate, 0 /255/ 0 /255/ 0 / 0 ,110,228
-Dragon Psychic,0 0 0 0,Latias,3,Docile,Focus Band,Dragon Claw,Thunderbolt,Ice Beam,Earthquake,5,Levitate, 0 /255/ 0 /255/ 0 / 0 ,110,229
-Dragon Psychic,0 0 5 3,Latias,4,Docile,Leftovers,Mist Ball,Shadow Ball,Charm,Reflect,5,Levitate,170/170/ 0 /170/ 0 / 0 ,110,230
-Dragon Psychic,0 2 1 3,Latias,5,Modest,BrightPowder,Dragon Claw,Thunder Wave,Calm Mind,Recover,5,Levitate,170/ 0 /170/ 0 /170/ 0 ,110,231
-Dragon Psychic,0 0 2 2,Latias,6,Modest,Shell Bell,Mist Ball,Dragon Claw,Attract,Thunder Wave,5,Levitate,255/ 0 / 0 /255/ 0 / 0 ,110,232
-Dragon Psychic,0 0 2 1,Latias,7,Adamant,Leftovers,Earthquake,Shadow Ball,Swagger,Psych Up,5,Levitate,255/ 0 /255/ 0 / 0 / 0 ,110,233
-Dragon Psychic,0 0 0 0,Latias,8,Docile,King's Rock,Psychic,Shadow Ball,Earthquake,Aerial Ace,5,Levitate, 0 /170/ 0 /170/ 0 /170,110,234
-Dragon Psychic,0 0 0 0,Latios,1,Modest,Lum Berry,Psychic,Thunderbolt,Ice Beam,Dragon Claw,5,Levitate,255/ 0 / 0 /255/ 0 / 0 ,110,235
-Dragon Psychic,0 0 0 0,Latios,2,Docile,Quick Claw,Psychic,Thunderbolt,Ice Beam,Earthquake,5,Levitate, 0 /255/ 0 /255/ 0 / 0 ,110,236
-Dragon Psychic,0 0 0 0,Latios,3,Docile,Focus Band,Dragon Claw,Thunderbolt,Ice Beam,Earthquake,5,Levitate, 0 /255/ 0 /255/ 0 / 0 ,110,237
-Dragon Psychic,0 0 0 0,Latios,4,Modest,Lum Berry,Luster Purge,Thunderbolt,Ice Beam,Dragon Claw,5,Levitate,255/ 0 / 0 /255/ 0 / 0 ,110,238
-Dragon Psychic,0 2 1 3,Latios,5,Modest,BrightPowder,Dragon Claw,Thunder Wave,Calm Mind,Recover,5,Levitate,170/ 0 /170/ 0 /170/ 0 ,110,239
-Dragon Psychic,0 0 0 2,Latios,6,Docile,Shell Bell,Luster Purge,Shadow Ball,Dragon Claw,Thunder Wave,5,Levitate, 0 /255/ 0 /255/ 0 / 0 ,110,240
-Dragon Psychic,0 0 1 3,Latios,7,Adamant,BrightPowder,Earthquake,Shadow Ball,Dragon Dance,Recover,5,Levitate,255/ 0 /255/ 0 / 0 / 0 ,110,241
-Dragon Psychic,0 0 0 0,Latios,8,Docile,King's Rock,Psychic,Shadow Ball,Earthquake,Aerial Ace,5,Levitate, 0 /170/ 0 /170/ 0 /170,110,242
-Grass Water,0 7 0 0 ,Ludicolo,1,Quiet,Shell Bell,Surf,Rain Dance,ThunderPunch,Fire Punch,1,Swift Swim / Rain Dish,170/ 0 /170/170/ 0 / 0 ,70,243
-Grass Water,0 0 0 0,Ludicolo,2,Modest,Shell Bell,Surf,Ice Beam,ThunderPunch,Fire Punch,2,Swift Swim / Rain Dish,255/ 0 / 0 /255/ 0 / 0 ,70,244
-Grass Water,2 7 1 0,Ludicolo,3,Bold,Leftovers,Leech Seed,Rain Dance,Double Team,Giga Drain,3,Swift Swim / Rain Dish,170/ 0 /170/ 0 /170/ 0 ,70,245
-Grass Water,2 7 1 2,Ludicolo,4,Bold,Leftovers,Leech Seed,Rain Dance,Double Team,Toxic,4,Swift Swim / Rain Dish,170/ 0 /170/ 0 /170/ 0 ,70,246
-Fighting,0 0 4 5,Machamp,1,Adamant,Scope Lens,Cross Chop,Rock Slide,Counter,Scary Face,1,Guts,255/255/ 0 / 0 / 0 / 0 ,55,247
-Fighting,0 0 1 3,Machamp,2,Adamant,Chesto Berry,Cross Chop,Earthquake,Bulk Up,Rest,2,Guts,170/ 0 /170/ 0 /170/ 0 ,55,248
-Fighting,0 0 0 0,Machamp,3,Hardy,Quick Claw,Cross Chop,Fire Blast,ThunderPunch,Ice Punch,3,Guts, 0 /255/ 0 /255/ 0 / 0 ,55,249
-Fighting ,0 0 0 0,Machamp,4,Hardy,Scope Lens,Cross Chop,Earthquake,Flamethrower,Rock Slide,4,Guts, 0 /255/ 0 /255/ 0 / 0 ,55,250
-Fighting,0 4 0 0,Machamp,5,Adamant,Scope Lens,Cross Chop,Double-Edge,Earthquake,Rock Slide,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,251
-Fighting,0 0 4 0,Machamp,6,Adamant,Focus Band,Cross Chop,Earthquake,Counter,Rock Tomb,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,252
-Fighting,4 6 2 1,Machamp,7,Adamant,BrightPowder,Focus Punch,Substitute,Attract,Double Team,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,253
-Fighting,4 0 4 4,Machamp,8,Adamant,Focus Band,Revenge,Rock Slide,Facade,Counter,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,254
-Fire,0 5 0 1,Magmar,1,Relaxed,Rawst Berry,Flamethrower,SmokeScreen,Brick Break,Barrier,1,Flame Body,170/ 0 /170/170/ 0 / 0 ,93,255
-Fire,0 5 0 2,Magmar,2,Modest,Quick Claw,Fire Blast,SmokeScreen,ThunderPunch,Confuse Ray,2,Flame Body, 0 / 0 / 0 /255/ 0 /255,93,256
-Fire,0 0 0 4,Magmar,3,Impish,Scope Lens,Mega Kick,Cross Chop,Iron Tail,Counter,3,Flame Body, 0 /255/255/ 0 / 0 / 0 ,93,257
-Fire,0 0 0 2,Magmar,4,Docile,Scope Lens,Flamethrower,Psychic,Cross Chop,Confuse Ray,4,Flame Body,255/ 0 /255/ 0 / 0 / 0 ,93,258
-Electric,0 5 0 0,Manectric,1,Modest,Magnet,Thunderbolt,Flash,Quick Attack,Roar,1,Static / Lightningrod, 0 / 0 / 0 /255/ 0 /255,105,259
-Electric,0 7 0 0,Manectric,2,Modest,Petaya Berry,Thunder,Rain Dance,Crunch,Roar,2,Static / Lightningrod, 0 / 0 / 0 /255/ 0 /255,105,260
-Electric,0 0 2 0,Manectric,3,Quirky,Lum Berry,Thunderbolt,Iron Tail,Thunder Wave,Roar,3,Static / Lightningrod, 0 / 0 / 0 /255/ 0 /255,105,261
-Electric,0 0 2 0,Manectric,4,Modest,Lum Berry,Thunderbolt,Crunch,Thunder Wave,Roar,4,Static / Lightningrod, 0 / 0 / 0 /255/ 0 /255,105,262
-Ground,0 0 0 0,Marowak,1,Adamant,Thick Club,Bonemerang,Rock Slide,Icy Wind,Headbutt,1,Rock Head / Lightningrod,255/255/ 0 / 0 / 0 / 0 ,45,263
-Ground,0 0 1 0,Marowak,2,Adamant,Thick Club,Earthquake,Rock Slide,Swords Dance,Icy Wind,2,Rock Head / Lightningrod, 0 /255/ 0 / 0 / 0 /255,45,264
-Ground,0 0 1 0,Marowak,3,Adamant,Thick Club,Earthquake,Rock Slide,Swords Dance,Brick Break,3,Rock Head / Lightningrod, 0 /255/ 0 / 0 / 0 /255,45,265
-Ground,0 0 1 0,Marowak,4,Adamant,Thick Club,Earthquake,Rock Slide,Swords Dance,Mega Kick,4,Rock Head / Lightningrod, 0 /255/ 0 / 0 / 0 /255,45,266
-Fighting Psychic,0 0 1 3,Medicham,1,Docile,Focus Band,Psychic,Hi Jump Kick,Calm Mind,Baton Pass,1,Pure Power, 0 /255/ 0 / 0 / 0 /255,80,267
-Fighting Psychic,4 3 0 0,Medicham,2,Hardy,Salac Berry,Reversal,Endure,Psychic,Fake Out,2,Pure Power, 0 /255/ 0 / 0 / 0 /255,80,268
-Fighting Psychic,0 0 0 0,Medicham,3,Hardy,Scope Lens,DynamicPunch,ThunderPunch,Ice Punch,Fire Punch,3,Pure Power, 0 / 0 / 0 /255/ 0 /255,80,269
-Fighting Psychic,0 0 0 0,Medicham,4,Hardy,Lum Berry,Mega Kick,Psychic,Shadow Ball,Rock Slide,4,Pure Power, 0 /255/ 0 /255/ 0 / 0 ,80,270
-Grass,0 7 3 3,Meganium,1,Modest,BrightPowder,SolarBeam,Sunny Day,Light Screen,Synthesis,1,Overgrow,255/ 0 / 0 /255/ 0 / 0 ,80,271
-Grass,2 6 1 2,Meganium,2,Calm,Leftovers,Leech Seed,Substitute,Double Team,GrassWhistle,2,Overgrow,170/ 0 /170/ 0 /170/ 0 ,80,272
-Grass,0 4 3 0,Meganium,3,Jolly,Salac Berry,Earthquake,Flail,Endure,Giga Drain,3,Overgrow, 0 /255/ 0 / 0 / 0 /255,80,273
-Grass,0 0 0 0,Meganium,4,Hardy,BrightPowder,Giga Drain,Earthquake,AncientPower,Body Slam,4,Overgrow,170/170/ 0 /170/ 0 / 0 ,80,274
-Psychic Steel,0 0 4 3,Metagross,1,Adamant,Leftovers,Meteor Mash,Aerial Ace,Facade,Light Screen,1,Clear Body, 0 /170/ 0 / 0 /170/170,70,275
-Psychic Steel,0 0 1 2,Metagross,2,Adamant,Lum Berry,Earthquake,Meteor Mash,Psych Up,Swagger,2,Clear Body,170/ 0 / 0 / 0 /170/170,70,276
-Psychic Steel,0 0 1 3,Metagross,3,Adamant,Chesto Berry,Earthquake,Meteor Mash,Double Team,Rest,3,Clear Body,170/170/ 0 / 0 / 0 /170,70,277
-Psychic Steel,0 0 0 0,Metagross,4,Hardy,Quick Claw,Meteor Mash,Psychic,Earthquake,Shadow Ball,4,Clear Body, 0 /255/ 0 /255/ 0 / 0 ,70,278
-Psychic Steel,4 0 0 0,Metagross,5,Jolly,Quick Claw,Explosion,Earthquake,Rock Slide,Brick Break,5,Clear Body,170/170/ 0 / 0 / 0 /170,70,279
-Psychic Steel,0 0 0 0,Metagross,6,Hardy,BrightPowder,Meteor Mash,Psychic,Ice Punch,ThunderPunch,5,Clear Body, 0 /255/ 0 /255/ 0 / 0 ,70,280
-Psychic Steel,0 0 0 0,Metagross,7,Hardy,Shell Bell,Earthquake,Shadow Ball,Ice Punch,ThunderPunch,5,Clear Body, 0 /255/ 0 /255/ 0 / 0 ,70,281
-Psychic Steel,0 0 0 4,Metagross,8,Adamant,Quick Claw,Meteor Mash,Earthquake,Brick Break,Explosion,5,Clear Body,170/170/ 0 / 0 / 0 /170,70,282
-Water,0 0 3 4,Milotic,1,Modest,Lum Berry,Hydro Pump,Icy Wind,Recover,Mirror Coat,1,Marvel Scale,170/ 0 /170/170/ 0 / 0 ,81,283
-Water,0 0 3 4,Milotic,2,Modest,Focus Band,Surf,Ice Beam,Safeguard,Mirror Coat,2,Marvel Scale,255/ 0 / 0 /255/ 0 / 0 ,81,284
-Water,0 0 2 3,Milotic,3,Bold,Leftovers,Surf,Blizzard,Attract,Recover,3,Marvel Scale,170/ 0 /170/ 0 /170/ 0 ,81,285
-Water,0 0 3 4,Milotic,4,Modest,Leftovers,Surf,Ice Beam,Recover,Mirror Coat,4,Marvel Scale, 0 / 0 /170/170/170/ 0 ,81,286
-Normal,4 0 4 3,Miltank,1,Careful,Focus Band,Facade,Shadow Ball,Counter,Milk Drink,1,Thick Fat,170/ 0 /170/ 0 /170/ 0 ,100,287
-Normal,4 0 2 2,Miltank,2,Careful,Leftovers,Focus Punch,Shadow Ball,Attract,Thunder Wave,2,Thick Fat,170/170/ 0 / 0 /170/ 0 ,100,288
-Normal,4 3 0 0,Miltank,3,Adamant,Salac Berry,Reversal,Endure,Earthquake,Shadow Ball,3,Thick Fat, 0 /255/ 0 / 0 /255/ 0 ,100,289
-Normal,4 6 1 3,Miltank,4,Adamant,Lum Berry,Double-Edge,Curse,Double Team,Milk Drink,4,Thick Fat, 0 /255/ 0 / 0 /255/ 0 ,100,290
-Ghost,4 0 2 2,Misdreavus,1,Impish,Focus Band,Pain Split,Shadow Ball,Confuse Ray,Thunder Wave,1,Levitate,255/ 0 /255/ 0 / 0 / 0 ,85,291
-Ghost,0 2 2 2,Misdreavus,2,Bold,Leftovers,Psychic,Attract,Thunder Wave,Confuse Ray,2,Levitate, 0 / 0 /255/255/ 0 / 0 ,85,292
-Ghost,4 2 2 2,Misdreavus,3,Bold,BrightPowder,Perish Song,Mean Look,Thunder Wave,Confuse Ray,3,Levitate,255/ 0 /255/ 0 / 0 / 0 ,85,293
-Ghost,4 0 0 0,Misdreavus,4,Timid,Lum Berry,Destiny Bond,Psychic,Shadow Ball,Thunderbolt,4,Levitate, 0 / 0 / 0 /255/ 0 /255,85,294
-Fire Flying,0 0 0 0,Moltres,1,Docile,Lum Berry,Flamethrower,Aerial Ace,Mud-Slap,Roar,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,90,295
-Fire Flying,4 0 1 3,Moltres,2,Hardy,White Herb,Overheat,Aerial Ace,Double Team,Protect,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,90,296
-Fire Flying,0 7 1 3,Moltres,3,Modest,Chesto Berry,Fire Blast,Sunny Day,Double Team,Rest,5,Pressure, 0 / 0 / 0 /255/ 0 /255,90,297
-Fire Flying,4 4 0 3,Moltres,4,Quiet,White Herb,Overheat,Double-Edge,Steel Wing,Safeguard,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,90,298
-Fire Flying,4 7 2 4,Moltres,5,Docile,White Herb,Overheat,Sunny Day,Swagger,Facade,6,Pressure, 0 / 0 / 0 /255/ 0 /255,90,299
-Fire Flying,4 4 0 0,Moltres,6,Docile,White Herb,Overheat,Double-Edge,Aerial Ace,Steel Wing,6,Pressure, 0 /255/ 0 /255/ 0 / 0 ,90,300
-Psychic,0 0 0 3,Mr. Mime,1,Relaxed,Leftovers,Psychic,Magical Leaf,Fake Out,Reflect,1,Soundproof,255/ 0 /255/ 0 / 0 / 0 ,90,301
-Psychic,3 2 1 0,Mr. Mime,2,Adamant,Liechi Berry,Baton Pass,Swagger,Psych Up,Psychic,2,Soundproof,170/ 0 /170/ 0 /170/ 0 ,90,302
-Psychic,6 2 0 0,Mr. Mime,3,Modest,Choice Band,Trick,Torment,Psychic,Thunderbolt,3,Soundproof,255/ 0 / 0 /255/ 0 / 0 ,90,303
-Psychic,0 0 0 0,Mr. Mime,4,Modest,BrightPowder,Psychic,Thunderbolt,Ice Punch,Fire Punch,4,Soundproof,255/ 0 / 0 /255/ 0 / 0 ,90,304
-Poison,0 0 5 1,Muk,1,Adamant,Poison Barb,Sludge Bomb,Body Slam,Screech,Minimize,1,Stench / Sticky Hold,255/255/ 0 / 0 / 0 / 0 ,50,305
-Poison,6 3 0 0,Muk,2,Hardy,Chesto Berry,Curse,Rest,Sludge Bomb,DynamicPunch,2,Stench / Sticky Hold, 0 /255/255/ 0 / 0 / 0 ,50,306
-Poison,0 0 0 0,Muk,3,Quiet,Lum Berry,Sludge Bomb,Thunderbolt,Flamethrower,Ice Punch,3,Stench / Sticky Hold, 0 / 0 /255/255/ 0 / 0 ,50,307
-Poison,0 0 0 4,Muk,4,Brave,Quick Claw,Sludge Bomb,Brick Break,Giga Drain,Explosion,4,Stench / Sticky Hold, 0 /255/255/ 0 / 0 / 0 ,50,308
-Ground Poison,4 0 0 4,Nidoking,1,Adamant,Quick Claw,Horn Drill,Double Kick,Body Slam,Counter,1,Poison Point,255/255/ 0 / 0 / 0 / 0 ,85,309
-Ground Poison,0 0 0 0,Nidoking,2,Adamant,Shell Bell,Mega Kick,Earthquake,Shadow Ball,Brick Break,2,Poison Point,255/255/ 0 / 0 / 0 / 0 ,85,310
-Ground Poison,4 0 0 0,Nidoking,3,Modest,Leppa Berry,Horn Drill,Fire Blast,Blizzard,Surf,3,Poison Point,255/ 0 / 0 /255/ 0 / 0 ,85,311
-Ground Poison,0 0 0 0,Nidoking,4,Docile,Lum Berry,Megahorn,Sludge Bomb,Earthquake,Thunder,4,Poison Point, 0 /255/ 0 /255/ 0 / 0 ,85,312
-Ground Poison,0 0 0 4,Nidoqueen,1,Adamant,Focus Band,Sludge Bomb,Double Kick,Body Slam,Counter,1,Poison Point,255/255/ 0 / 0 / 0 / 0 ,76,313
-Ground Poison ,4 0 0 0,Nidoqueen,2,Adamant,Shell Bell,Double-Edge,Earthquake,Aerial Ace,Rock Slide,2,Poison Point,255/255/ 0 / 0 / 0 / 0 ,76,314
-Ground Poison,0 0 0 0,Nidoqueen,3,Modest,Lum Berry,Thunderbolt,Flamethrower,Ice Beam,Crunch,3,Poison Point,255/ 0 / 0 /255/ 0 / 0 ,76,315
-Ground Poison,0 0 0 0,Nidoqueen,4,Adamant,White Herb,Superpower,Sludge Bomb,Earthquake,Shadow Ball,4,Poison Point,255/255/ 0 / 0 / 0 / 0 ,76,316
-Fire,0 0 2 2,Ninetales,1,Modest,Rawst Berry,Flamethrower,Roar,Confuse Ray,Will-O-Wisp,1,Flash Fire, 0 / 0 / 0 /255/ 0 /255,100,317
-Fire,0 0 4 7,Ninetales,2,Quirky,Lum Berry,Heat Wave,Body Slam,Grudge,Sunny Day,2,Flash Fire, 0 / 0 / 0 /255/ 0 /255,100,318
-Fire,0 0 2 2,Ninetales,3,Quirky,BrightPowder,Fire Blast,Iron Tail,Confuse Ray,Attract,3,Flash Fire, 0 / 0 / 0 /255/ 0 /255,100,319
-Fire,4 4 2 2,Ninetales,4,Quirky,White Herb,Overheat,Double-Edge,Confuse Ray,Will-O-Wisp,4,Flash Fire, 0 / 0 / 0 /255/ 0 /255,100,320
-Normal,0 0 0 3,Porygon2,1,Adamant,Leftovers,Tri Attack,Aerial Ace,Shadow Ball,Recover,1,Trace,255/255/ 0 / 0 / 0 / 0 ,60,321
-Normal,0 7 2 3,Porygon2,2,Modest,Lum Berry,SolarBeam,Sunny Day,Thunder Wave,Recover,2,Trace,255/ 0 / 0 /255/ 0 / 0 ,60,322
-Normal,0 0 2 3,Porygon2,3,Modest,Lum Berry,Psychic,Tri Attack,Thunder Wave,Recover,3,Trace,255/ 0 / 0 /255/ 0 / 0 ,60,323
-Normal,0 0 0 3,Porygon2,4,Modest,BrightPowder,Psychic,Thunderbolt,Ice Beam,Recover,4,Trace,255/ 0 / 0 /255/ 0 / 0 ,60,324
-Ground Water,0 0 4 0,Quagsire,1,Adamant,Focus Band,Earthquake,Brick Break,Counter,Mud-Slap,1,Damp / Water Absorb, 0 /255/ 0 / 0 /255/ 0 ,35,325
-Ground Water,6 2 2 0,Quagsire,2,Sassy,Leftovers,Curse,Attract,Yawn,AncientPower,2,Damp / Water Absorb, 0 / 0 /255/ 0 /255/ 0 ,35,326
-Ground Water,0 0 4 6,Quagsire,3,Adamant,Quick Claw,Earthquake,Sludge Bomb,Double-Edge,Curse,3,Damp / Water Absorb, 0 /255/ 0 / 0 /255/ 0 ,35,327
-Ground Water,0 0 0 1,Quagsire,4,Sassy,Leftovers,Surf,Earthquake,Ice Beam,Amnesia,4,Damp / Water Absorb, 0 /170/ 0 /170/170/ 0 ,35,328
-Electric,0 0 3 1,Raichu,1,Modest,BrightPowder,Thunderbolt,Quick Attack,Light Screen,Double Team,1,Static, 0 / 0 /170/170/ 0 /170,100,329
-Electric,0 4 3 1,Raichu,2,Adamant,Lum Berry,Thunderbolt,Reversal,Endure,Agility,2,Static, 0 /255/ 0 / 0 / 0 /255,100,330
-Electric,0 7 0 2,Raichu,3,Docile,Cheri Berry,Thunder,Rain Dance,Iron Tail,Attract,3,Static, 0 / 0 / 0 /255/ 0 /255,100,331
-Electric,0 2 3 0,Raichu,4,Docile,BrightPowder,Thunderbolt,Thunder Wave,Protect,Mega Kick,4,Static, 0 /255/ 0 /255/ 0 / 0 ,100,332
-Electric,0 2 1 3,Raikou,1,Modest,Chesto Berry,Thunderbolt,Thunder Wave,Calm Mind,Rest,5,Pressure, 0 / 0 / 0 /255/ 0 /255,115,333
-Electric,0 7 1 3,Raikou,2,Modest,BrightPowder,Thunder,Rain Dance,Double Team,Reflect,5,Pressure, 0 / 0 / 0 /255/ 0 /255,115,334
-Electric,0 2 0 0 ,Raikou,3,Modest,King's Rock,Thunderbolt,Thunder Wave,Quick Attack,Roar,5,Pressure, 0 / 0 / 0 /255/ 0 /255,115,335
-Electric,0 0 2 3,Raikou,4,Modest,Lum Berry,Thunderbolt,Bite,Thunder Wave,Reflect,5,Pressure, 0 / 0 / 0 /255/ 0 /255,115,336
-Electric,0 4 0 3,Raikou,5,Modest,BrightPowder,Thunderbolt,Double-Edge,Roar,Reflect,6,Pressure, 0 / 0 / 0 /255/ 0 /255,115,337
-Electric,0 1 6 3,Raikou,6,Modest,Chesto Berry,Thunderbolt,Calm Mind,Substitute,Rest,6,Pressure,255/ 0 /255/ 0 / 0 / 0 ,115,338
-Fire,0 0 0 3,Rapidash,1,Quiet,Charcoal,Flamethrower,Double Kick,Quick Attack,Protect,1,Run Away / Flash Fire, 0 / 0 / 0 /255/ 0 /255,105,339
-Fire,0 0 1 2,Rapidash,2,Docile,Leftovers,Fire Blast,Bounce,Double Team,Attract,2,Run Away / Flash Fire, 0 /170/ 0 /170/ 0 /170,105,340
-Fire,4 0 7 2,Rapidash,3,Modest,White Herb,Overheat,SolarBeam,Sunny Day,Hypnosis,3,Run Away / Flash Fire,170/ 0 / 0 /170/ 0 /170,105,341
-Fire,4 4 0 0,Rapidash,4,Docile,White Herb,Overheat,Double-Edge,Iron Tail,Double Kick,4,Run Away / Flash Fire, 0 /170/ 0 /170/ 0 /170,105,342
-Ice,0 0 1 3,Regice,1,Modest,Chesto Berry,Ice Beam,Thunderbolt,Amnesia,Rest,5,Clear Body,255/ 0 / 0 /255/ 0 / 0 ,50,343
-Ice,0 7 0 0,Regice,2,Quiet,BrightPowder,Thunder,Rain Dance,Blizzard,Brick Break,5,Clear Body,255/ 0 / 0 /255/ 0 / 0 ,50,344
-Ice,0 0 2 4,Regice,3,Quiet,Lum Berry,Ice Beam,Thunderbolt,Thunder Wave,Explosion,5,Clear Body,255/ 0 / 0 /255/ 0 / 0 ,50,345
-Ice,0 7 1 2,Regice,4,Bold,Leftovers,Ice Beam,Hail,Double Team,Thunder Wave,5,Clear Body,255/ 0 /255/ 0 / 0 / 0 ,50,346
-Ice,0 0 6 4,Regice,5,Brave,Leftovers,Earthquake,Ice Beam,Curse,Counter,5,Clear Body,170/ 0 /170/170/ 0 / 0 ,50,347
-Ice,0 0 0 3,Regice,6,Modest,Chesto Berry,Ice Beam,Thunderbolt,Sleep Talk,Rest,5,Clear Body,255/ 0 / 0 /255/ 0 / 0 ,50,348
-Rock,0 0 0 4,Regirock,1,Adamant,White Herb,Superpower,Earthquake,Rock Slide,Explosion,5,Clear Body,255/255/ 0 / 0 / 0 / 0 ,50,349
-Rock,0 0 4 4,Regirock,2,Adamant,Quick Claw,Earthquake,Rock Slide,Counter,Explosion,5,Clear Body,255/255/ 0 / 0 / 0 / 0 ,50,350
-Rock,0 0 6 3,Regirock,3,Adamant,Chesto Berry,Rock Slide,Earthquake,Curse,Rest,5,Clear Body,255/ 0 / 0 / 0 /255/ 0 ,50,351
-Rock,0 0 1 2,Regirock,4,Careful,Leftovers,Rock Slide,Brick Break,Double Team,Thunder Wave,5,Clear Body,170/170/ 0 / 0 /170/ 0 ,50,352
-Rock,4 4 0 1,Regirock,5,Adamant,Quick Claw,Hyper Beam,Focus Punch,Rock Slide,Double Team,5,Clear Body,255/255/ 0 / 0 / 0 / 0 ,50,353
-Rock,2 1 0 4,Regirock,6,Adamant,BrightPowder,Swagger,Psych Up,Rock Slide,Explosion,5,Clear Body,255/ 0 / 0 / 0 /255/ 0 ,50,354
-Steel,0 6 1 3,Registeel,1,Adamant,Chesto Berry,Metal Claw,Curse,Amnesia,Rest,5,Clear Body,255/255/ 0 / 0 / 0 / 0 ,50,355
-Steel,0 0 0 0,Registeel,2,Quiet,BrightPowder,Thunderbolt,Ice Punch,Earthquake,Aerial Ace,5,Clear Body,170/170/ 0 /170/ 0 / 0 ,50,356
-Steel,0 1 4 4,Registeel,3,Adamant,Quick Claw,AncientPower,Amnesia,Counter,Explosion,5,Clear Body,170/ 0 /170/ 0 /170/ 0 ,50,357
-Steel,0 0 1 2,Registeel,4,Impish,Leftovers,AncientPower,Earthquake,Double Team,Thunder Wave,5,Clear Body,170/ 0 /170/ 0 /170/ 0 ,50,358
-Steel,4 6 2 1,Registeel,5,Adamant,Leftovers,Focus Punch,Substitute,Toxic,Double Team,5,Clear Body,170/ 0 /170/ 0 /170/ 0 ,50,359
-Steel,0 0 2 1,Registeel,6,Adamant,White Herb,Superpower,Aerial Ace,Swagger,Psych Up,5,Clear Body,170/ 0 /170/ 0 /170/ 0 ,50,360
-Ground Rock,0 0 5 0,Rhydon,1,Adamant,Quick Claw,Earthquake,Rock Tomb,Scary Face,Brick Break,1,Lightningrod / Rock Head,170/170/ 0 / 0 /170/ 0 ,40,361
-Ground Rock,0 4 0 0,Rhydon,2,Adamant,Quick Claw,Earthquake,Horn Drill,Rock Slide,Brick Break,2,Lightningrod / Rock Head, 0 /255/ 0 / 0 /255/ 0 ,40,362
-Ground Rock,0 0 0 4,Rhydon,3,Adamant,Quick Claw,Megahorn,Crush Claw,Earthquake,Horn Drill,3,Lightningrod / Rock Head,255/255/ 0 / 0 / 0 / 0 ,40,363
-Ground Rock,0 0 0 4,Rhydon,4,Adamant,Quick Claw,Megahorn,Earthquake,Rock Slide,Horn Drill,4,Lightningrod / Rock Head,255/255/ 0 / 0 / 0 / 0 ,40,364
-Dragon Flying,0 0 0 0,Salamence,1,Hardy,King's Rock,Dragon Claw,Aerial Ace,Headbutt,Rock Slide,1,Intimidate, 0 /255/ 0 / 0 / 0 /255,100,365
-Dragon Flying,4 0 2 3,Salamence,2,Hardy,Leftovers,Double-Edge,Crunch,Swagger,Protect,2,Intimidate, 0 /170/ 0 /170/ 0 /170,100,366
-Dragon Flying,4 0 0 3 ,Salamence,3,Hardy,Salac Berry,Double-Edge,Earthquake,Crunch,Endure,3,Intimidate, 0 /255/ 0 /255/ 0 / 0 ,100,367
-Dragon Flying,4 0 0 1,Salamence,4,Adamant,BrightPowder,Double-Edge,Earthquake,Aerial Ace,Dragon Dance,4,Intimidate,255/255/ 0 / 0 / 0 / 0 ,100,368
-Dragon Flying,4 0 0 1,Salamence,5,Adamant,BrightPowder,Facade,Earthquake,Rock Slide,Dragon Dance,5,Intimidate,170/ 0 /170/ 0 /170/ 0 ,100,369
-Dragon Flying,0 0 0 1,Salamence,6,Hardy,Lum Berry,Headbutt,Aerial Ace,Crunch,Dragon Dance,5,Intimidate,170/ 0 /170/ 0 /170/ 0 ,100,370
-Dragon Flying,0 0 0 0,Salamence,7,Modest,Lum Berry,Flamethrower,Dragon Claw,Crunch,Brick Break,5,Intimidate, 0 / 0 / 0 /255/ 0 /255,100,371
-Dragon Flying,0 0 0 2,Salamence,8,Modest,Leftovers,Flamethrower,Dragon Claw,Crunch,Attract,5,Intimidate, 0 / 0 / 0 /255/ 0 /255,100,372
-Grass,0 2 0 3,Sceptile,1,Modest,Leftovers,Leaf Blade,Leech Seed,Aerial Ace,Detect,1,Overgrow, 0 / 0 / 0 /255/ 0 /255,120,373
-Grass,0 0 2 1,Sceptile,2,Modest,Lum Berry,Leaf Blade,ThunderPunch,Attract,Double Team,2,Overgrow, 0 / 0 / 0 /255/ 0 /255,120,374
-Grass,0 0 0 0,Sceptile,3,Docile,Scope Lens,Leaf Blade,Earthquake,Crush Claw,Aerial Ace,3,Overgrow, 0 /170/ 0 /170/ 0 /170,120,375
-Grass,0 0 0 0,Sceptile,4,Modest,BrightPowder,Leaf Blade,Dragon Claw,Crunch,ThunderPunch,4,Overgrow, 0 / 0 / 0 /255/ 0 /255,120,376
-Bug Steel,0 0 4 0,Scizor,1,Adamant,Focus Band,Metal Claw,Aerial Ace,Counter,Quick Attack,1,Swarm, 0 /255/ 0 / 0 /255/ 0 ,65,377
-Bug Steel,0 0 1 3,Scizor,2,Adamant,Quick Claw,Silver Wind,Steel Wing,Swords Dance,Light Screen,2,Swarm, 0 /255/ 0 / 0 /255/ 0 ,65,378
-Bug Steel,4 3 1 0,Scizor,3,Careful,Focus Band,Reversal,Endure,Agility,Slash,3,Swarm, 0 /255/ 0 / 0 /255/ 0 ,65,379
-Bug Steel,0 1 1 3,Scizor,4,Careful,BrightPowder,Silver Wind,Swords Dance,Agility,Baton Pass,4,Swarm,255/ 0 / 0 / 0 /255/ 0 ,65,380
-Dark Grass,0 0 0 0,Shiftry,1,Quiet,Miracle Seed,Giga Drain,Faint Attack,Quick Attack,Fake Out,1,Chlorophyll / Early Bird, 0 / 0 /170/170/170/ 0 ,80,381
-Dark Grass,2 0 1 3,Shiftry,2,Impish,Chesto Berry,Leech Seed,Dig,Double Team,Rest,2,Chlorophyll / Early Bird, 0 / 0 /255/ 0 /255/ 0 ,80,382
-Dark Grass,0 7 4 3,Shiftry,3,Quirky,Focus Band,SolarBeam,Sunny Day,Explosion,Synthesis,3,Chlorophyll / Early Bird, 0 /255/ 0 /255/ 0 / 0 ,80,383
-Dark Grass,4 0 0 0,Shiftry,4,Hardy,Focus Band,Explosion,Giga Drain,Mega Kick,Fake Out,4,Chlorophyll / Early Bird, 0 /255/ 0 /255/ 0 / 0 ,80,384
-Bug Rock,0 1 0 3,Shuckle,1,Brave,Chesto Berry,Rollout,Defense Curl,Sleep Talk,Rest,1,Sturdy, 0 / 0 /255/ 0 /255/ 0 ,5,385
-Bug Rock,7 0 5 1,Shuckle,2,Careful,Leftovers,Sandstorm,Dig,Flash,Double Team,2,Sturdy, 0 / 0 /255/ 0 /255/ 0 ,5,386
-Bug Rock,6 2 2 1,Shuckle,3,Careful,Leftovers,Substitute,Attract,Toxic,Double Team,3,Sturdy, 0 / 0 /255/ 0 /255/ 0 ,5,387
-Bug Rock,2 1 0 3,Shuckle,4,Careful,Chesto Berry,Toxic,Double Team,Wrap,Rest,4,Sturdy, 0 / 0 /255/ 0 /255/ 0 ,5,388
-Flying Steel,0 0 4 1,Skarmory,1,Adamant,Scope Lens,Steel Wing,Air Cutter,Counter,Agility,1,Keen Eye / Sturdy,170/170/ 0 / 0 /170/ 0 ,70,389
-Flying Steel,2 0 0 2,Skarmory,2,Careful,BrightPowder,Spikes,Roar,Drill Peck,Toxic,2,Keen Eye / Sturdy,170/170/ 0 / 0 /170/ 0 ,70,390
-Flying Steel ,2 6 3 0,Skarmory,3,Careful,Chesto Berry,Toxic,Curse,Rest,Fly,3,Keen Eye / Sturdy,255/ 0 / 0 / 0 /255/ 0 ,70,391
-Flying Steel,0 0 4 0,Skarmory,4,Adamant,Quick Claw,Drill Peck,Steel Wing,Counter,Rock Slide,4,Keen Eye / Sturdy,255/255/ 0 / 0 / 0 / 0 ,70,392
-Normal,2 1 2 0,Slaking,1,Adamant,Scope Lens,Yawn,Bulk Up,Swagger,Aerial Ace,1,Truant,170/ 0 /170/ 0 /170/ 0 ,100,393
-Normal,0 0 2 1,Slaking,2,Adamant,Leftovers,Mega Kick,Shadow Ball,Yawn,Amnesia,2,Truant, 0 / 0 /255/ 0 /255/ 0 ,100,394
-Normal,0 0 0 0,Slaking,3,Adamant,Choice Band,Earthquake,Shadow Ball,Aerial Ace,Brick Break,3,Truant, 0 / 0 /255/ 0 /255/ 0 ,100,395
-Normal,0 0 0 2,Slaking,4,Modest,Lum Berry,Thunderbolt,Flamethrower,Ice Beam,Yawn,4,Truant, 0 / 0 / 0 /255/255/ 0 ,100,396
-Psychic Water,0 7 0 0,Slowbro,1,Quiet,Shell Bell,Surf,Rain Dance,Headbutt,Ice Punch,1,Oblivious / Own Tempo,255/ 0 / 0 / 0 /255/ 0 ,30,397
-Psychic Water,0 0 1 2,Slowbro,2,Modest,Leftovers,Surf,Ice Beam,Calm Mind,Yawn,2,Oblivious / Own Tempo, 0 /255/ 0 / 0 /255/ 0 ,30,398
-Psychic Water,0 0 0 2,Slowbro,3,Quiet,Quick Claw,Surf,Psychic,Shadow Ball,Attract,3,Oblivious / Own Tempo, 0 / 0 / 0 /255/255/ 0 ,30,399
-Psychic Water,0 0 0 0,Slowbro,4,Sassy,Quick Claw,Psychic,Surf,Earthquake,Ice Beam,4,Oblivious / Own Tempo, 0 / 0 / 0 /255/255/ 0 ,30,400
-Psychic Water,0 0 1 2,Slowking,1,Quiet,Leftovers,Psychic,Brick Break,Amnesia,Attract,1,Oblivious / Own Tempo,255/ 0 /255/ 0 / 0 / 0 ,30,401
-Psychic Water,2 2 0 0,Slowking,2,Modest,Shell Bell,Yawn,Thunder Wave,Surf,Psychic,2,Oblivious / Own Tempo, 0 / 0 /255/255/ 0 / 0 ,30,402
-Psychic Water,0 0 0 0,Slowking,3,Quiet,Quick Claw,Psychic,Surf,Ice Beam,Earthquake,3,Oblivious / Own Tempo, 0 /170/170/170/ 0 / 0 ,30,403
-Psychic Water,0 0 0 0,Slowking,4,Modest,Quick Claw,Psychic,Surf,Ice Beam,Flamethrower,4,Oblivious / Own Tempo, 0 / 0 /255/255/ 0 / 0 ,30,404
-Normal,4 0 2 1,Snorlax,1,Adamant,Leftovers,Facade,Shadow Ball,Attract,Double Team,1,Immunity / Thick Fat, 0 /255/255/ 0 / 0 / 0 ,30,405
-Normal,0 0 6 3,Snorlax,2,Adamant,Chesto Berry,Earthquake,Rock Slide,Curse,Rest,2,Immunity / Thick Fat,170/ 0 /170/ 0 /170/ 0 ,30,406
-Normal,0 0 2 1,Snorlax,3,Adamant,Quick Claw,Mega Kick,Shadow Ball,Swagger,Psych Up,3,Immunity / Thick Fat, 0 / 0 /255/ 0 /255/ 0 ,30,407
-Normal,4 0 0 6,Snorlax,4,Adamant,Quick Claw,Double-Edge,Shadow Ball,Brick Break,Curse,4,Immunity / Thick Fat, 0 /255/255/ 0 / 0 / 0 ,30,408
-Normal,0 0 0 4,Snorlax,5,Adamant,Quick Claw,Mega Kick,Shadow Ball,Brick Break,Counter,5,Immunity / Thick Fat, 0 /255/255/ 0 / 0 / 0 ,30,409
-Normal,0 0 0 4,Snorlax,6,Adamant,Leftovers,Earthquake,Shadow Ball,Brick Break,Counter,5,Immunity / Thick Fat, 0 /255/255/ 0 / 0 / 0 ,30,410
-Normal,4 0 0 6,Snorlax,7,Adamant,Quick Claw,Hyper Beam,Shadow Ball,Earthquake,Curse,5,Immunity / Thick Fat,170/ 0 /170/ 0 /170/ 0 ,30,411
-Normal,0 0 1 3,Snorlax,8,Adamant,Chesto Berry,Return,Shadow Ball,Belly Drum,Rest,5,Immunity / Thick Fat,170/ 0 /170/ 0 /170/ 0 ,30,412
-Psychic Water,0 2 2 3,Starmie,1,Modest,Shell Bell,Psychic,Confuse Ray,Thunder Wave,Recover,1,Illuminate / Natural Cure,255/ 0 / 0 /255/ 0 / 0 ,115,413
-Psychic Water,0 0 7 3,Starmie,2,Modest,Shell Bell,Hydro Pump,Thunder,Rain Dance,Recover,2,Illuminate / Natural Cure,170/ 0 /170/ 0 /170/ 0 ,115,414
-Psychic Water,0 0 0 0,Starmie,3,Modest,Lum Berry,Surf,Psychic,Thunderbolt,Ice Beam,3,Illuminate / Natural Cure, 0 / 0 / 0 /255/ 0 /255,115,415
-Psychic Water,0 0 0 3,Starmie,4,Modest,Lum Berry,Psychic,Thunderbolt,Ice Beam,Recover,4,Illuminate / Natural Cure, 0 / 0 / 0 /255/ 0 /255,115,416
-Psychic Water,0 0 3 3,Starmie,5,Modest,Lum Berry,Surf,Psychic,Recover,Light Screen,5,Illuminate / Natural Cure, 0 / 0 / 0 /255/ 0 /255,115,417
-Psychic Water,0 2 2 3,Starmie,6,Calm,Leftovers,Surf,Confuse Ray,Thunder Wave,Recover,5,Illuminate / Natural Cure,170/ 0 /170/ 0 /170/ 0 ,115,418
-Psychic Water,0 0 1 3,Starmie,7,Modest,BrightPowder,Psychic,Ice Beam,Cosmic Power,Recover,5,Illuminate / Natural Cure, 0 / 0 / 0 /255/ 0 /255,115,419
-Psychic Water,0 0 1 3,Starmie,8,Modest,BrightPowder,Surf,Thunderbolt,Cosmic Power,Recover,5,Illuminate / Natural Cure, 0 / 0 / 0 /255/ 0 /255,115,420
-Ground Steel,0 0 0 0,Steelix,1,Adamant,Sitrus Berry,Earthquake,DragonBreath,Rock Tomb,Roar,1,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,30,421
-Ground Steel,0 0 7 2,Steelix,2,Hardy,Leftovers,Earthquake,DragonBreath,Sandstorm,Block,2,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,30,422
-Ground Steel,0 0 0 4,Steelix,3,Adamant,Quick Claw,Earthquake,Body Slam,Rock Slide,Explosion,3,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,30,423
-Ground Steel,0 0 4 4,Steelix,4,Adamant,Quick Claw,Earthquake,Iron Tail,Double-Edge,Explosion,4,Rock Head / Sturdy, 0 /255/ 0 / 0 /255/ 0 ,30,424
-Water,0 1 1 3,Suicune,1,Modest,Chesto Berry,Surf,Double Team,Calm Mind,Rest,5,Pressure, 0 / 0 / 0 /255/ 0 /255,85,425
-Water,2 0 1 3,Suicune,2,Calm,Leftovers,Toxic,Dive,Double Team,Protect,5,Pressure,170/ 0 /170/ 0 /170/ 0 ,85,426
-Water,0 0 7 0,Suicune,3,Modest,Lum Berry,Surf,Ice Beam,Rain Dance,Roar,5,Pressure, 0 / 0 / 0 /255/ 0 /255,85,427
-Water,0 0 0 3,Suicune,4,Modest,BrightPowder,Surf,Ice Beam,Bite,Reflect,5,Pressure, 0 / 0 / 0 /255/ 0 /255,85,428
-Water,0 0 1 0,Suicune,5,Modest,Lum Berry,Surf,Ice Beam,Calm Mind,Icy Wind,6,Pressure,255/ 0 / 0 /255/ 0 / 0 ,85,429
-Water,0 0 1 3,Suicune,6,Modest,Chesto Berry,Surf,Ice Beam,Calm Mind,Rest,6,Pressure,170/ 0 /170/ 0 /170/ 0 ,85,430
-Ground Water,0 4 3 6,Swampert,1,Adamant,Lum Berry,Earthquake,Counter,Rest,Curse,1,Torrent,170/ 0 /170/ 0 /170/ 0 ,60,431
-Ground Water,0 0 4 4,Swampert,2,Docile,Quick Claw,Surf,Earthquake,Counter,Mirror Coat,2,Torrent,170/ 0 /170/ 0 /170/ 0 ,60,432
-Ground Water,0 0 0 4,Swampert,3,Brave,Shell Bell,Surf,Earthquake,Ice Beam,Counter,3,Torrent, 0 /255/ 0 /255/ 0 / 0 ,60,433
-Ground Water,0 0 0 4,Swampert,4,Quiet,Shell Bell,Surf,Earthquake,Ice Beam,Mirror Coat,4,Torrent, 0 /255/ 0 /255/ 0 / 0 ,60,434
-Normal,0 0 2 4,Tauros,1,Adamant,Persim Berry,Earthquake,Thrash,Swagger,Facade,1,Intimidate, 0 /255/ 0 / 0 / 0 /255,110,435
-Normal,4 0 1 3,Tauros,2,Adamant,Chesto Berry,Double-Edge,Earthquake,Double Team,Rest,2,Intimidate,255/255/ 0 / 0 / 0 / 0 ,110,436
-Normal,4 0 0 0,Tauros,3,Docile,Leftovers,Double-Edge,Earthquake,Flamethrower,Ice Beam,3,Intimidate, 0 /255/ 0 /255/ 0 / 0 ,110,437
-Normal,4 0 0 0,Tauros,4,Docile,BrightPowder,Double-Edge,Rock Tomb,Thunderbolt,Surf,4,Intimidate, 0 /255/ 0 /255/ 0 / 0 ,110,438
-Poison Water,0 0 1 2,Tentacruel,1,Impish,Persim Berry,Sludge Bomb,Icy Wind,Barrier,Confuse Ray,1,Clear Body / Liquid Ooze, 0 /255/255/ 0 / 0 / 0 ,100,439
-Poison Water,2 0 2 0,Tentacruel,2,Hardy,Leftovers,Toxic,Giga Drain,Confuse Ray,Surf,2,Clear Body / Liquid Ooze,170/ 0 /170/170/ 0 / 0 ,100,440
-Poison Water,0 0 0 4,Tentacruel,3,Modest,Shell Bell,Surf,Giga Drain,Ice Beam,Mirror Coat,3,Clear Body / Liquid Ooze, 0 / 0 /170/170/ 0 /170,100,441
-Poison Water,0 0 0 4,Tentacruel,4,Quirky,Shell Bell,Hydro Pump,Sludge Bomb,Ice Beam,Mirror Coat,4,Clear Body / Liquid Ooze, 0 /170/170/170/ 0 / 0 ,100,442
-Fire,0 7 5 0,Typhlosion,1,Modest,Focus Band,Fire Blast,Sunny Day,SmokeScreen,Roar,1,Blaze, 0 / 0 / 0 /255/ 0 /255,100,443
-Fire,0 0 0 0,Typhlosion,2,Hardy,Scope Lens,Flamethrower,ThunderPunch,Aerial Ace,Rock Slide,2,Blaze, 0 /170/ 0 /170/ 0 /170,100,444
-Fire,0 4 3 4,Typhlosion,3,Adamant,Salac Berry,Earthquake,Overheat,Endure,Reversal,3,Blaze, 0 /255/ 0 / 0 / 0 /255,100,445
-Fire,4 0 0 0,Typhlosion,4,Hardy,White Herb,Overheat,ThunderPunch,Earthquake,Crush Claw,4,Blaze, 0 /170/ 0 /170/ 0 /170,100,446
-Dark Rock,0 0 0 0,Tyranitar,1,Hardy,BrightPowder,Earthquake,Aerial Ace,Thunderbolt,Surf,6,Sand Stream, 0 /255/ 0 /255/ 0 / 0 ,61,447
-Dark Rock,0 0 0 0,Tyranitar,2,Hardy,BrightPowder,Earthquake,Rock Slide,Crunch,Thunderbolt,6,Sand Stream, 0 /255/ 0 /255/ 0 / 0 ,61,448
-Dark Rock,0 0 4 1,Tyranitar,3,Adamant,Focus Band,Earthquake,Rock Slide,Counter,Dragon Dance,6,Sand Stream,170/ 0 /170/ 0 /170/ 0 ,61,449
-Dark Rock,0 0 0 0 ,Tyranitar,4,Modest,Quick Claw,Crunch,Ice Beam,Thunderbolt,Flamethrower,6,Sand Stream,255/ 0 / 0 /255/ 0 / 0 ,61,450
-Dark Rock,0 0 1 3,Tyranitar,5,Adamant,Chesto Berry,Earthquake,Rock Slide,Dragon Dance,Rest,6,Sand Stream,170/ 0 /170/ 0 /170/ 0 ,61,451
-Dark Rock,0 0 6 3,Tyranitar,6,Adamant,Chesto Berry,Earthquake,Rock Slide,Curse,Rest,6,Sand Stream,170/ 0 /170/ 0 /170/ 0 ,61,452
-Dark Rock,0 0 0 6,Tyranitar,7,Adamant,Quick Claw,Rock Slide,Aerial Ace,Brick Break,Curse,6,Sand Stream,255/255/ 0 / 0 / 0 / 0 ,61,453
-Dark Rock,0 2 1 3,Tyranitar,8,Adamant,Lum Berry,Rock Slide,Thunder Wave,Dragon Dance,Rest,6,Sand Stream,170/ 0 /170/ 0 /170/ 0 ,61,454
-Dark Rock,0 0 0 2,Tyranitar,9,Hardy,Quick Claw,Crunch,Earthquake,Aerial Ace,Attract,6,Sand Stream, 0 /255/ 0 /255/ 0 / 0 ,61,455
-Dark Rock,4 0 0 1,Tyranitar,X,Adamant,Lum Berry,Double-Edge,Earthquake,Rock Slide,Dragon Dance,6,Sand Stream,170/ 0 /170/ 0 /170/ 0 ,61,456
-Dark,2 0 1 3,Umbreon,1,Bold,BrightPowder,Confuse Ray,Faint Attack,Double Team,Baton Pass,1,Synchronize,170/ 0 /170/ 0 /170/ 0 ,65,457
-Dark,6 5 1 4,Umbreon,2,Adamant,Leftovers,Curse,Screech,Double Team,Double-Edge,2,Synchronize,170/170/ 0 / 0 /170/ 0 ,65,458
-Dark,2 1 2 0,Umbreon,3,Bold,BrightPowder,Swagger,Psych Up,Attract,Shadow Ball,3,Synchronize,170/ 0 /170/ 0 /170/ 0 ,65,459
-Dark ,2 2 0 1,Umbreon,4,Bold,Leftovers,Confuse Ray,Toxic,Faint Attack,Double Team,4,Synchronize,170/ 0 /170/ 0 /170/ 0 ,65,460
-Normal,0 0 0 4,Ursaring,1,Docile,Quick Claw,Mega Kick,Crunch,Aerial Ace,Counter,1,Guts,170/170/ 0 /170/ 0 / 0 ,55,461
-Normal,4 0 0 4,Ursaring,2,Adamant,Quick Claw,Double-Edge,Earthquake,Brick Break,Counter,2,Guts,255/255/ 0 / 0 / 0 / 0 ,55,462
-Normal,0 0 0 0,Ursaring,3,Modest,Lum Berry,Fire Punch,ThunderPunch,Ice Punch,Crunch,3,Guts,170/ 0 / 0 /170/ 0 /170,55,463
-Normal,4 0 0 0,Ursaring,4,Adamant,BrightPowder,Double-Edge,Earthquake,Rock Slide,Aerial Ace,4,Guts,255/255/ 0 / 0 / 0 / 0 ,55,464
-Normal,0 0 0 0 ,Ursaring,5,Adamant,Choice Band,Mega Kick,Aerial Ace,Rock Slide,Brick Break,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,465
-Normal,4 2 1 1,Ursaring,6,Adamant,Focus Band,Hyper Beam,Yawn,Swords Dance,Double Team,5,Guts,255/255/ 0 / 0 / 0 / 0 ,55,466
-Normal,4 0 0 1,Ursaring,7,Docile,Quick Claw,Facade,Earthquake,Crunch,Bulk Up,5,Guts,170/170/ 0 /170/ 0 / 0 ,55,467
-Normal,4 0 0 0,Ursaring,8,Docile,Quick Claw,Facade,Earthquake,Crunch,Brick Break,5,Guts,170/170/ 0 /170/ 0 / 0 ,55,468
-Water,0 0 0 0,Vaporeon,1,Modest,Mystic Water,Surf,Roar,Bite,Quick Attack,1,Water Absorb, 0 / 0 /170/170/170/ 0 ,65,469
-Water,0 0 0 0,Vaporeon,2,Docile,Shell Bell,Surf,Ice Beam,Body Slam,Shadow Ball,2,Water Absorb,170/ 0 /170/ 0 /170/ 0 ,65,470
-Water,0 0 1 3,Vaporeon,3,Calm,Quick Claw,Surf,Ice Beam,Acid Armor,Baton Pass,3,Water Absorb,170/ 0 /170/ 0 /170/ 0 ,65,471
-Water,0 0 1 3,Vaporeon,4,Calm,Lum Berry,Surf,Ice Beam,Acid Armor,Rest,4,Water Absorb,170/ 0 / 0 /170/170/ 0 ,65,472
-Grass Poison,0 7 3 2,Venusaur,1,Quiet,Chesto Berry,Giga Drain,Sunny Day,Synthesis,Sleep Powder,1,Overgrow,255/ 0 / 0 /255/ 0 / 0 ,80,473
-Grass Poison,2 0 1 3,Venusaur,2,Bold,BrightPowder,Leech Seed,Giga Drain,Double Team,Light Screen,2,Overgrow,170/ 0 /170/ 0 /170/ 0 ,80,474
-Grass Poison,4 0 0 2,Venusaur,3,Adamant,Scope Lens,Double-Edge,Sludge Bomb,Earthquake,Sleep Powder,3,Overgrow, 0 /170/170/ 0 /170/ 0 ,80,475
-Grass Poison,0 0 7 0,Venusaur,4,Docile,Lum Berry,SolarBeam,Sludge Bomb,Sunny Day,Earthquake,4,Overgrow, 0 /170/ 0 /170/170/ 0 ,80,476
-Grass Poison,0 2 5 3,Victreebel,1,Quiet,Sitrus Berry,Giga Drain,Sleep Powder,Sweet Scent,Synthesis,1,Chlorophyll, 0 / 0 /255/ 0 /255/ 0 ,70,477
-Grass Poison,0 0 2 2,Victreebel,2,Serious,Leftovers,Giga Drain,Sludge Bomb,Sleep Powder,Attract,2,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,70,478
-Grass Poison,2 3 0 0,Victreebel,3,Quirky,BrightPowder,Stun Spore,Ingrain,Giga Drain,Sludge Bomb,3,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,70,479
-Grass Poison,0 4 0 3,Victreebel,4,Quirky,BrightPowder,Giga Drain,Double-Edge,Sludge Bomb,Synthesis,4,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,70,480
-Grass Poison,0 0 3 3,Vileplume,1,Impish,Persim Berry,Sludge Bomb,Petal Dance,Moonlight,Aromatherapy,1,Chlorophyll,255/255/ 0 / 0 / 0 / 0 ,50,481
-Grass Poison,3 1 2 0,Vileplume,2,Bold,BrightPowder,Ingrain,Double Team,Toxic,Giga Drain,2,Chlorophyll,170/ 0 /170/ 0 /170/ 0 ,50,482
-Grass Poison,2 2 0 0,Vileplume,3,Quirky,Leftovers,Attract,Stun Spore,Sludge Bomb,Giga Drain,3,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,50,483
-Grass Poison,0 0 7 3,Vileplume,4,Quiet,Quick Claw,SolarBeam,Sludge Bomb,Sunny Day,Synthesis,4,Chlorophyll, 0 /255/ 0 /255/ 0 / 0 ,50,484
-Water,0 0 0 0,Wailord,1,Sassy,Shell Bell,Surf,Icy Wind,Body Slam,Roar,1,Water Veil / Oblivious,170/ 0 /170/ 0 /170/ 0 ,60,485
-Water,4 3 6 1,Wailord,2,Adamant,Chesto Berry,Double-Edge,Rest,Curse,Amnesia,2,Water Veil / Oblivious,170/ 0 /170/ 0 /170/ 0 ,60,486
-Water,0 4 1 3 ,Wailord,3,Modest,Chesto Berry,Hydro Pump,Fissure,Double Team,Rest,3,Water Veil / Oblivious,170/ 0 /170/ 0 /170/ 0 ,60,487
-Water,0 0 0 4,Wailord,4,Hardy,Quick Claw,Surf,Ice Beam,Earthquake,Fissure,4,Water Veil / Oblivious,170/ 0 /170/ 0 /170/ 0 ,60,488
-Ice Water,0 7 2 3,Walrein,1,Quiet,Leftovers,Blizzard,Hail,Yawn,Protect,1,Thick Fat,170/ 0 /170/ 0 /170/ 0 ,65,489
-Ice Water,0 0 6 1,Walrein,2,Quirky,Focus Band,Earthquake,Ice Beam,Curse,Double Team,2,Thick Fat,170/ 0 /170/ 0 /170/ 0 ,65,490
-Ice Water,0 4 0 2,Walrein,3,Hardy,Quick Claw,Sheer Cold,Fissure,Surf,Attract,3,Thick Fat,170/ 0 /170/ 0 /170/ 0 ,65,491
-Ice Water,0 0 0 0,Walrein,4,Quiet,BrightPowder,Surf,Ice Beam,Earthquake,Sheer Cold,4,Thick Fat, 0 /255/ 0 /255/ 0 / 0 ,65,492
-Poison,0 2 0 5,Weezing,1,Adamant,BrightPowder,Sludge Bomb,Will-O-Wisp,Shadow Ball,SmokeScreen,1,Levitate,255/255/ 0 / 0 / 0 / 0 ,60,493
-Poison,4 0 4 4,Weezing,2,Adamant,Sitrus Berry,Memento,Sludge Bomb,Facade,Destiny Bond,2,Levitate,255/255/ 0 / 0 / 0 / 0 ,60,494
-Poison,4 0 0 0,Weezing,3,Quirky,Focus Band,Explosion,Sludge Bomb,Flamethrower,Thunderbolt,3,Levitate, 0 /255/ 0 /255/ 0 / 0 ,60,495
-Poison,4 0 0 0,Weezing,4,Adamant,Focus Band,Explosion,Sludge Bomb,Return,Shadow Ball,4,Levitate,255/255/ 0 / 0 / 0 / 0 ,60,496
-Ground Water,0 0 1 3,Whiscash,1,Adamant,Chesto Berry,Earthquake,Rock Slide,Amnesia,Rest,1,Oblivious,255/255/ 0 / 0 / 0 / 0 ,60,497
-Ground Water,0 0 0 0 ,Whiscash,2,Hardy,Shell Bell,Surf,Earthquake,Spark,Future Sight,2,Oblivious, 0 /255/ 0 /255/ 0 / 0 ,60,498
-Ground Water,0 3 0 4,Whiscash,3,Hardy,Chesto Berry,Sleep Talk,Rest,Surf,Fissure,3,Oblivious, 0 / 0 /255/ 0 /255/ 0 ,60,499
-Ground Water,4 0 0 0,Whiscash,4,Quiet,Quick Claw,Fissure,Surf,Earthquake,Ice Beam,4,Oblivious, 0 /255/ 0 /255/ 0 / 0 ,60,500
-Flying Psychic,0 0 3 0,Xatu,1,Hardy,Sharp Beak,Drill Peck,Night Shade,Wish,Future Sight,1,Synchronize / Early Bird,170/170/ 0 /170/ 0 / 0 ,95,501
-Flying Psychic,0 2 2 2,Xatu,2,Impish,Leftovers,Fly,Toxic,Confuse Ray,Attract,2,Synchronize / Early Bird,170/ 0 /170/ 0 /170/ 0 ,95,502
-Flying Psychic,0 0 0 0,Xatu,3,Jolly,King's Rock,Drill Peck,Psychic,Giga Drain,Steel Wing,3,Synchronize / Early Bird, 0 /170/ 0 /170/ 0 /170,95,503
-Flying Psychic,0 0 0 2,Xatu,4,Docile,Petaya Berry,Psychic,Drill Peck,Shadow Ball,Confuse Ray,4,Synchronize / Early Bird, 0 /255/ 0 /255/ 0 / 0 ,95,504
-Electric Flying,0 0 2 0,Zapdos,1,Docile,Lum Berry,Thunderbolt,Drill Peck,Thunder Wave,Roar,5,Pressure, 0 / 0 / 0 /255/ 0 /255,100,505
-Electric Flying,0 7 0 1,Zapdos,2,Docile,BrightPowder,Thunder,Rain Dance,Drill Peck,Double Team,5,Pressure, 0 /255/ 0 / 0 / 0 /255,100,506
-Electric Flying,0 0 2 6,Zapdos,3,Docile,Leftovers,Thunderbolt,Drill Peck,Thunder Wave,Substitute,5,Pressure, 0 /170/ 0 /170/ 0 /170,100,507
-Electric Flying,0 0 2 3,Zapdos,4,Docile,Shell Bell,Thunderbolt,Drill Peck,Thunder Wave,Light Screen,5,Pressure, 0 /255/ 0 /255/ 0 / 0 ,100,508
-Electric Flying,0 0 4 2,Zapdos,5,Docile,Scope Lens,Thunderbolt,Drill Peck,Double-Edge,Thunder Wave,6,Pressure, 0 /255/ 0 /255/ 0 / 0 ,100,509
-Electric Flying,0 0 7 4,Zapdos,6,Docile,Lum Berry,Thunder,Drill Peck,Rain Dance,Double-Edge,6,Pressure, 0 /170/ 0 /170/ 0 /170,100,510
+﻿Normal,0 5 3 1,Aipom,1,Relaxed,Silk Scarf,Fury Swipes,Sand-Attack,Baton Pass,Agility,1,Run Away / Pickup,255/255/ 0 / 0 / 0 / 0,85,1
+Dark,0 0 0 0,Absol,1,Adamant,BrightPowder,Bite,Razor Wind,Future Sight,Quick Attack,3,Pressure,255/255/ 0 / 0 / 0 / 0,75,2
+Dark,4 0 0 0,Absol,2,Adamant,Choice Band,Double-Edge,Shadow Ball,Aerial Ace,Iron Tail,4,Battle Armor,255/255/ 0 / 0 / 0 / 0,75,3
+Rock Bug,0 0 0 0,Anorith,1,Hardy,Scope Lens,Metal Claw,Fury Cutter,AncientPower,Water Gun,1,Intimidate / Shed Skin,255/255/ 0 / 0 / 0 / 0,75,4
+Poison,0 0 0 2,Arbok,1,Adamant,Persim Berry,Poison Fang,Dig,Bite,Glare,3,Swarm / Insomnia,255/255/ 0 / 0 / 0 / 0,80,5
+Poison,0 0 0 2,Arbok,2,Adamant,Lum Berry,Sludge Bomb,Earthquake,Iron Tail,Glare,4,Sturdy / Rock Head,255/255/ 0 / 0 / 0 / 0,80,6
+Bug Poison,0 2 0 2,Ariados,1,Serious,Lax Incense,Signal Beam,Spider Web,Night Shade,Toxic,1,Thick Fat / Huge Power,0 / 0 /255/ 0 /255/ 0,40,7
+Steel Rock,0 0 5 0,Aron,1,Docile,Persim Berry,Metal Claw,Aerial Ace,Metal Sound,Roar,1,Insomnia,170/ 0 /170/ 0 /170/ 0,30,8
+Water,0 4 0 3,Azumarill,1,Docile,Sitrus Berry,BubbleBeam,Facade,Dig,Protect,2,Overgrow,255/ 0 / 0 /255/ 0 / 0,50,9
+Water,0 0 0 0,Azumarill,2,Adamant,Shell Bell,Mega Kick,Brick Break,Iron Tail,Dig,4,Swarm,255/ 0 / 0 / 0 / 0 /255,50,10
+Ghost,0 2 5 5,Banette,1,Sassy,Rawst Berry,Night Shade,Will-O-Wisp,Spite,Knock Off,3,Swarm,0 /255/ 0 / 0 / 0 /255,65,11
+Ghost,0 0 5 2,Banette,2,Adamant,Lax Incense,Shadow Ball,Frustration,Screech,Will-O-Wisp,4,Chlorophyll,255/ 0 / 0 /255/ 0 / 0,65,12
+Grass,0 2 3 3,Bayleef,1,Docile,BrightPowder,Razor Leaf,Toxic,Safeguard,Light Screen,2,Compoundeyes,255/ 0 / 0 /255/ 0 / 0,60,13
+Grass,0 0 2 3,Bayleef,2,Docile,Chesto Berry,Giga Drain,Body Slam,GrassWhistle,Rest,4,Sand Veil,255/255/ 0 / 0 / 0 / 0,60,14
+Bug Flying,0 0 2 0,Beautifly,1,Docile,Mental Herb,Silver Wind,Mega Drain,Attract,Whirlwind,1,Sand Veil,255/ 0 / 0 / 0 / 0 /255,65,15
+Bug Poison,0 0 0 1,Beedrill,1,Naughty,Scope Lens,Twineedle,Pursuit,Endeavor,Agility,1,Magma Armor,255/255/ 0 / 0 / 0 / 0,75,16
+Grass,0 3 7 3,Bellossom,1,Quiet,Persim Berry,Petal Dance,Safeguard,Sunny Day,Synthesis,3,Forecast,255/ 0 / 0 /255/ 0 / 0,50,17
+Grass,0 2 7 3,Bellossom,2,Modest,BrightPowder,SolarBeam,Attract,Sunny Day,Synthesis,4,Natural Cure / Serene Grace,0 / 0 /255/ 0 /255/ 0,50,18
+Bug Flying,0 0 2 0,Butterfree,1,Quirky,Pecha Berry,Silver Wind,Psybeam,Toxic,Whirlwind,1,Blaze,255/255/ 0 / 0 / 0 / 0,70,19
+Grass,0 0 5 5,Cacnea,1,Quirky,Sitrus Berry,Needle Arm,Faint Attack,Cotton Spore,Sand-Attack,1,Levitate,255/ 0 / 0 /255/ 0 / 0,35,20
+Grass Dark,0 0 0 0,Cacturne,1,Hasty,Scope Lens,Needle Arm,Faint Attack,Acid,Mega Punch,3,Volt Absorb / Illuminate,0 /255/ 0 /255/ 0 / 0,55,21
+Grass Dark,0 2 0 7,Cacturne,2,Hardy,Persim Berry,Mega Kick,Teeter Dance,Faint Attack,Sandstorm,4,Shell Armor,170/ 0 /170/ 0 /170/ 0,55,22
+Fire Ground,0 3 7 0,Camerupt,1,Quirky,Focus Band,Magnitude,Protect,Sandstorm,Rock Slide,3,Shell Armor,255/ 0 / 0 / 0 /255/ 0,40,23
+Fire Ground,0 0 0 5,Camerupt,2,Quirky,Lax Incense,Earthquake,Eruption,Body Slam,Scary Face,4,Blaze,0 /255/ 0 /255/ 0 / 0,40,24
+Normal,0 0 0 0,Castform,1,Hasty,Petaya Berry,Ember,Water Pulse,Shock Wave,Icy Wind,3,Hustle / Natural Cure,170/ 0 /170/ 0 /170/ 0,70,25
+Normal,0 0 0 0,Castform,2,Modest,Lax Incense,Thunderbolt,Flamethrower,Ice Beam,Water Pulse,4,Hyper Cutter / Shell Armor,170/ 0 /170/ 0 /170/ 0,70,26
+Normal,6 3 1 1,Chansey,1,Relaxed,Sitrus Berry,Metronome,Refresh,Defense Curl,Minimize,3,Torrent,0 /255/ 0 /255/ 0 / 0,50,27
+Normal,0 0 1 3,Chansey,2,Relaxed,Leftovers,Seismic Toss,Shadow Ball,Double Team,Softboiled,4,Cute Charm,255/255/ 0 / 0 / 0 / 0,50,28
+Fire,0 0 1 0,Charmeleon,1,Naughty,Scope Lens,Slash,Fire Spin,Swords Dance,Aerial Ace,2,Vital Spirit / Hustle,255/ 0 / 0 /255/ 0 / 0,80,29
+Fire,0 0 0 0,Charmeleon,2,Hardy,Scope Lens,Flamethrower,Slash,AncientPower,Dragon Rage,4,Shed Skin,255/ 0 / 0 / 0 /255/ 0,80,30
+Psychic,0 0 3 3,Chimecho,1,Sassy,TwistedSpoon,Psywave,Take Down,Heal Bell,Safeguard,3,Insomnia,170/170/ 0 /170/ 0 / 0,65,31
+Psychic,0 2 0 3,Chimecho,2,Quiet,TwistedSpoon,Psychic,Hypnosis,Dream Eater,Heal Bell,4,Serene Grace / Run Away,255/255/ 0 / 0 / 0 / 0,65,32
+Water Electric,0 0 2 0,Chinchou,1,Hardy,Lax Incense,Spark,Dive,Confuse Ray,Take Down,1,Shield Dust,255/ 0 / 0 / 0 / 0 /255,67,33
+Water,0 2 1 1,Clamperl,1,Docile,DeepSeaScale,Dive,Toxic,Iron Defense,Double Team,1,Run Away,255/ 0 / 0 / 0 / 0 /255,32,34
+Water Ice,0 0 2 3,Cloyster,1,Sassy,NeverMeltIce,Aurora Beam,Spike Cannon,Supersonic,Protect,3,Static,255/ 0 / 0 /255/ 0 / 0,70,35
+Water Ice,0 2 1 3,Cloyster,2,Careful,Leftovers,Dive,Toxic,Double Team,Protect,4,Chlorophyll,255/ 0 / 0 /255/ 0 / 0,70,36
+Fire Fighting,0 0 0 5,Combusken,1,Docile,Scope Lens,Ember,Double Kick,Quick Attack,Sand-Attack,2,Keen Eye / Inner Focus,170/ 0 /170/ 0 /170/ 0,55,37
+Fire Fighting,0 0 0 5,Combusken,2,Docile,Scope Lens,Flamethrower,Sky Uppercut,Slash,Sand-Attack,4,Static,255/ 0 / 0 /255/ 0 / 0,55,38
+Water Rock,0 4 2 0,Corsola,1,Impish,Sitrus Berry,BubbleBeam,Mirror Coat,Attract,AncientPower,1,Run Away / Keen Eye,0 / 0 /255/ 0 /255/ 0,35,39
+Water Dark,0 0 5 3,Crawdaunt,1,Adamant,Persim Berry,BubbleBeam,ViceGrip,Knock Off,Protect,3,Inner Focus / Early Bird,255/ 0 / 0 /255/ 0 / 0,55,40
+Water Dark,4 0 0 0,Crawdaunt,2,Adamant,Quick Claw,Guillotine,Frustration,AncientPower,Aerial Ace,4,Hyper Cutter / Sand Veil,255/ 0 / 0 / 0 /255/ 0,55,41
+Water,0 0 0 5,Croconaw,1,Docile,Scope Lens,Slash,Water Pulse,Bite,Scary Face,2,Chlorophyll,255/ 0 / 0 /255/ 0 / 0,58,42
+Water,0 0 0 0,Croconaw,2,Adamant,Focus Band,Mega Kick,Aerial Ace,Rock Slide,Dig,4,Inner Focus,255/255/ 0 / 0 / 0 / 0,58,43
+Normal,0 0 1 3,Delcatty,1,Lonely,Sitrus Berry,Secret Power,Faint Attack,Double Team,Heal Bell,2,Swift Swim,255/ 0 / 0 /255/ 0 / 0,70,44
+Normal,5 2 0 0,Delcatty,2,Modest,Quick Claw,Fake Tears,Sing,Thunderbolt,Ice Beam,4,Rock Head / Sturdy,170/170/ 0 / 0 /170/ 0,70,45
+Ice Flying,6 0 0 7,Delibird,1,Docile,NeverMeltIce,Present,Ice Ball,Aerial Ace,Hail,1,Stench / Sticky Hold,170/ 0 /170/ 0 /170/ 0,75,46
+Dragon,0 5 0 3,Dragonair,1,Docile,Cheri Berry,DragonBreath,Leer,Wrap,Safeguard,3,Overgrow,255/255/ 0 / 0 / 0 / 0,70,47
+Dragon,0 3 2 1,Dragonair,2,Adamant,Chesto Berry,Return,Rest,Thunder Wave,Dragon Dance,4,Intimidate / Flash Fire,255/ 0 / 0 /255/ 0 / 0,70,48
+Psychic,0 0 2 1,Drowzee,1,Quirky,Sitrus Berry,Confusion,Headbutt,Disable,Barrier,1,Thick Fat / Own Tempo,255/ 0 / 0 /255/ 0 / 0,42,49
+Normal,0 2 1 0,Dunsparce,1,Docile,Lax Incense,Headbutt,Glare,Defense Curl,Rollout,3,Levitate,255/255/ 0 / 0 / 0 / 0,45,50
+Normal,0 0 0 0,Dunsparce,2,Quiet,Lax Incense,Ice Beam,Rock Tomb,Bite,Shadow Ball,4,Keen Eye,255/ 0 /255/ 0 / 0 / 0,45,51
+Bug Poison,0 2 0 0,Dustox,1,Docile,SilverPowder,Silver Wind,Toxic,Psybeam,Whirlwind,1,Limber,255/ 0 /255/ 0 / 0 / 0,65,52
+Grass Psychic,5 2 4 3,Eevee,1,Docile,Salac Berry,Charm,Attract,Flail,Endure,1,Intimidate,255/255/ 0 / 0 / 0 / 0,55,53
+Electric,0 0 0 3,Elekid,1,Naive,Cheri Berry,ThunderPunch,Quick Attack,Swift,Light Screen,1,Early Bird / Flash Fire,255/ 0 / 0 /255/ 0 / 0,95,54
+Grass,0 0 2 3,Exeggcute,1,Naughty,Persim Berry,Confusion,AncientPower,Leech Seed,Light Screen,1,Swift Swim,255/255/ 0 / 0 / 0 / 0,40,55
+Normal Flying,0 5 1 1,Farfetch'd,1,Relaxed,Stick,Slash,Knock Off,Swords Dance,Agility,1,Oblivious,255/255/ 0 / 0 / 0 / 0,60,56
+Electric,0 2 5 3,Flaaffy,1,Mild,Magnet,Shock Wave,Thunder Wave,Cotton Spore,Light Screen,1,Overgrow,255/ 0 / 0 /255/ 0 / 0,45,57
+Normal,0 3 0 6,Furret,1,Serious,Liechi Berry,Slam,Protect,Helping Hand,Follow Me,2,Chlorophyll,255/ 0 / 0 / 0 / 0 /255,90,58
+Normal,6 0 0 6,Furret,2,Adamant,Choice Band,Trick,Frustration,Shadow Ball,Follow Me,4,Swift Swim / Battle Armor,0 /255/ 0 /255/ 0 / 0,90,59
+Normal Psychic,0 0 3 6,Girafarig,1,Quiet,Petaya Berry,Psybeam,Stomp,Wish,Skill Swap,3,Swift Swim / Battle Armor,255/255/ 0 / 0 / 0 / 0,85,60
+Normal Psychic,0 0 3 1,Girafarig,2,Modest,Lum Berry,Psychic,Crunch,Baton Pass,Agility,4,Synchronize / Inner Focus,255/ 0 /255/ 0 / 0 / 0,85,61
+Ground Flying,0 0 0 0,Gligar,1,Hasty,Scope Lens,Metal Claw,Dig,Aerial Ace,Quick Attack,3,Color Change,170/170/170/ 0 / 0 / 0,85,62
+Ground Flying,0 0 4 5,Gligar,2,Adamant,Quick Claw,Earthquake,Aerial Ace,Guillotine,Screech,4,Hyper Cutter / Shell Armor,255/ 0 / 0 / 0 /255/ 0,85,63
+Grass Poison,0 0 2 3,Gloom,1,Quirky,Persim Berry,Petal Dance,Acid,Stun Spore,Moonlight,2,Levitate,255/255/ 0 / 0 / 0 / 0,40,64
+Grass Poison,0 7 0 3,Gloom,2,Quirky,Pecha Berry,SolarBeam,Sunny Day,Sludge Bomb,Moonlight,4,Hyper Cutter / Shell Armor,255/255/ 0 / 0 / 0 / 0,40,65
+Poison Flying,0 2 2 0,Golbat,1,Relaxed,Scope Lens,Air Cutter,Confuse Ray,Toxic,Steel Wing,3,Sturdy / Rock Head,255/ 0 / 0 / 0 /255/ 0,90,66
+Poison Flying,0 0 2 0,Golbat,2,Adamant,Scope Lens,Sludge Bomb,Shadow Ball,Confuse Ray,Air Cutter,4,Swarm / Early Bird,0 /255/ 0 / 0 / 0 /255,90,67
+Water,0 1 0 0,Gorebyss,1,Brave,Persim Berry,Whirlpool,Amnesia,Icy Wind,Confusion,3,Own Tempo / Oblivious,255/255/ 0 / 0 / 0 / 0,52,68
+Water,0 7 0 0,Gorebyss,2,Quiet,Shell Bell,Surf,Rain Dance,Psychic,Body Slam,4,Suction Cups,255/255/ 0 / 0 / 0 / 0,52,69
+Rock Ground,0 0 1 0,Graveler,1,Adamant,Focus Band,Magnitude,Rock Throw,Defense Curl,Brick Break,2,Pickup,255/255/ 0 / 0 / 0 / 0,35,70
+Rock Ground,0 0 0 4,Graveler,2,Adamant,Focus Band,Earthquake,Rock Slide,Brick Break,Counter,4,Swift Swim / Rain Dish,255/255/ 0 / 0 / 0 / 0,35,71
+Poison,0 0 1 1,Grimer,1,Quirky,Pecha Berry,Sludge,Rock Tomb,Acid Armor,Minimize,1,Soundproof,255/255/ 0 / 0 / 0 / 0,25,72
+Grass,0 0 0 1,Grovyle,1,Relaxed,BrightPowder,Fury Cutter,Endeavor,Brick Break,Double Team,2,Levitate,255/ 0 /255/ 0 / 0 / 0,95,73
+Grass,0 0 5 0,Grovyle,2,Docile,Lum Berry,Giga Drain,Crush Claw,Screech,Rock Tomb,4,Swift Swim,255/ 0 / 0 /255/ 0 / 0,95,74
+Fire,0 0 0 1,Growlithe,1,Docile,Rawst Berry,Flame Wheel,Bite,Roar,Agility,1,Guts,255/ 0 / 0 / 0 /255/ 0,60,75
+Psychic,0 2 0 3,Grumpig,1,Relaxed,Petaya Berry,Psybeam,Confuse Ray,Future Sight,Magic Coat,3,Flame Body,255/ 0 / 0 /255/ 0 / 0,80,76
+Psychic,0 0 0 0,Grumpig,2,Modest,Lum Berry,Psychic,Ice Punch,ThunderPunch,Fire Punch,4,Magma Armor / Flame Body,255/ 0 / 0 / 0 /255/ 0,80,77
+Ghost Poison,0 2 5 4,Haunter,1,Rash,Persim Berry,Shadow Punch,Confuse Ray,Spite,Grudge,2,Magnet Pull / Sturdy,0 / 0 / 0 /255/ 0 /255,95,78
+Ghost Poison,0 2 0 2,Haunter,2,Relaxed,Lum Berry,Psychic,Hypnosis,Nightmare,Confuse Ray,4,Swift Swim / Water Absorb,255/ 0 / 0 / 0 /255/ 0,95,79
+Fighting,0 0 3 4,Hitmonchan,1,Adamant,King's Rock,Mach Punch,Sky Uppercut,Detect,Counter,3,Torrent,0 /255/ 0 /255/ 0 / 0,76,80
+Fighting,0 0 3 4,Hitmonchan,2,Adamant,King's Rock,DynamicPunch,Mach Punch,Detect,Counter,4,Intimidate,0 /255/255/ 0 / 0 / 0,76,81
+Fighting,0 0 1 4,Hitmonlee,1,Adamant,Black Belt,Rolling Kick,Brick Break,Focus Energy,Facade,3,Hyper Cutter / Intimidate,255/ 0 / 0 /255/ 0 / 0,87,82
+Fighting,0 0 0 0,Hitmonlee,2,Adamant,Lax Incense,Mega Kick,Brick Break,Foresight,Rock Tomb,4,Clear Body,0 /255/ 0 / 0 /255/ 0,87,83
+Fighting,0 0 0 0,Hitmontop,1,Hardy,Liechi Berry,Triple Kick,Dig,Mach Punch,Quick Attack,3,Intimidate,0 /255/ 0 /255/ 0 / 0,70,84
+Fighting,4 0 0 4,Hitmontop,2,Adamant,Focus Band,Double-Edge,Seismic Toss,Rock Slide,Counter,4,Minus,255/ 0 /255/ 0 / 0 / 0,70,85
+Dark Fire,0 0 0 3,Houndour,1,Docile,Charcoal,Crunch,Ember,Roar,Protect,1,Insomnia,170/ 0 /170/ 0 /170/ 0,65,86
+Water,0 5 0 0,Huntail,1,Quiet,Persim Berry,Whirlpool,Scary Face,Mud-Slap,Bite,3,Poison Point,255/255/ 0 / 0 / 0 / 0,52,87
+Water,0 7 0 0,Huntail,2,Quiet,Shell Bell,Surf,Rain Dance,Crunch,Body Slam,4,Poison Point,255/255/ 0 / 0 / 0 / 0,52,88
+Bug,0 3 0 0,Illumise,1,Quirky,Liechi Berry,Silver Wind,Wish,Quick Attack,Helping Hand,2,Speed Boost,170/ 0 /170/ 0 /170/ 0,85,89
+Bug,0 0 0 0,Illumise,2,Quirky,Petaya Berry,Silver Wind,Thunderbolt,Ice Punch,Giga Drain,4,Insomnia / Keen Eye,255/ 0 /255/ 0 / 0 / 0,85,90
+Grass Poison,0 1 5 0,Ivysaur,1,Gentle,Persim Berry,Petal Dance,Growth,Sweet Scent,Fury Cutter,2,Sturdy / Magnet Pull,255/ 0 / 0 / 0 /255/ 0,60,91
+Grass Poison,0 0 2 2,Ivysaur,2,Quirky,BrightPowder,Giga Drain,Sludge Bomb,Sleep Powder,Leech Seed,4,Chlorophyll / Early Bird,255/ 0 / 0 /255/ 0 / 0,60,92
+Grass Flying,0 2 1 3,Jumpluff,1,Docile,Lax Incense,Aerial Ace,Swagger,Psych Up,Synthesis,3,Suction Cups,0 /255/ 0 /255/ 0 / 0,110,93
+Grass Flying,2 2 0 1,Jumpluff,2,Bold,Leftovers,Leech Seed,Sleep Powder,Giga Drain,Double Team,4,Swift Swim / Shell Armor,170/170/ 0 /170/ 0 / 0,110,94
+Rock Water,0 0 5 3,Kabuto,1,Hardy,Sitrus Berry,Mega Drain,AncientPower,Sand-Attack,Protect,1,Swift Swim / Shell Armor,255/ 0 / 0 /255/ 0 / 0,55,95
+Rock Water,0 0 0 5,Kabutops,1,Adamant,Scope Lens,Slash,Dig,Fury Cutter,Knock Off,3,Rock Head / Sturdy,170/ 0 /170/ 0 /170/ 0,80,96
+Rock Water,0 0 4 3,Kabutops,2,Adamant,Salac Berry,Slash,Rock Slide,Flail,Endure,4,Effect Spore,0 / 0 /255/ 0 /255/ 0,80,97
+Psychic,0 6 0 2,Kadabra,1,Impish,TwistedSpoon,Confusion,Role Play,Future Sight,Disable,2,Keen Eye,255/ 0 / 0 / 0 /255/ 0,105,98
+Psychic,0 2 3 3,Kadabra,2,Modest,TwistedSpoon,Psychic,Thunder Wave,Reflect,Recover,4,Limber,170/ 0 /170/ 0 /170/ 0,105,99
+Normal,0 0 3 0,Kecleon,1,Naive,Focus Band,Secret Power,Psybeam,Magic Coat,Seismic Toss,3,Pickup,255/255/ 0 / 0 / 0 / 0,40,100
+Normal,6 0 0 6,Kecleon,2,Docile,Choice Band,Trick,Brick Break,Shadow Ball,Skill Swap,4,Keen Eye,255/255/ 0 / 0 / 0 / 0,40,101
+Water,0 0 0 3,Kingler,1,Hardy,Scope Lens,Crabhammer,Metal Claw,Mud Shot,Protect,3,Keen Eye,255/255/ 0 / 0 / 0 / 0,75,102
+Water,4 0 4 3,Kingler,2,Adamant,Salac Berry,Guillotine,Rock Tomb,Flail,Endure,4,Oblivious,255/255/ 0 / 0 / 0 / 0,75,103
+Poison,0 5 2 3,Koffing,1,Quirky,Poison Barb,Sludge,SmokeScreen,Torment,Haze,1,Hyper Cutter,255/255/ 0 / 0 / 0 / 0,35,104
+Water,0 0 4 5,Krabby,1,Hardy,Focus Band,Crabhammer,Mud Shot,Flail,Knock Off,1,Plus,255/ 0 /255/ 0 / 0 / 0,50,105
+Steel Rock,0 0 1 3,Lairon,1,Sassy,Metal Coat,Metal Claw,Rock Tomb,Iron Defense,Protect,3,Water Absorb / Damp,0 / 0 /255/ 0 /255/ 0,40,106
+Steel Rock,0 0 0 3,Lairon,2,Sassy,Sitrus Berry,Earthquake,Iron Tail,Roar,Protect,4,Water Absorb / Damp,255/ 0 / 0 /255/ 0 / 0,40,107
+Bug Flying,0 3 1 1,Ledian,1,Bashful,Focus Band,Comet Punch,Baton Pass,Swords Dance,Agility,1,Water Absorb / Damp,255/255/ 0 / 0 / 0 / 0,85,108
+Normal,0 0 0 0,Lickitung,1,Quirky,Sitrus Berry,Slam,Brick Break,Lick,Mud-Slap,2,Run Away / Flash Fire,255/255/ 0 / 0 / 0 / 0,30,109
+Normal,0 0 0 0,Lickitung,2,Adamant,Cheri Berry,Earthquake,Body Slam,Shadow Ball,Rock Slide,4,Trace,255/ 0 / 0 /255/ 0 / 0,30,110
+Rock Grass,0 0 3 2,Lileep,1,Docile,Lax Incense,AncientPower,Acid,Ingrain,Confuse Ray,1,Vital Spirit,170/ 0 /170/ 0 /170/ 0,23,111
+Normal,0 5 0 5,Linoone,1,Adamant,White Herb,Secret Power,Sand-Attack,Covet,Tickle,3,Shed Skin,255/ 0 / 0 / 0 / 0 /255,100,112
+Normal,6 0 2 5,Linoone,2,Jolly,Choice Band,Trick,Frustration,Thunder Wave,Sand-Attack,4,Blaze,255/ 0 / 0 /255/ 0 / 0,100,113
+Water Grass,0 0 0 0,Lombre,1,Quirky,Lax Incense,Water Pulse,Fake Out,Brick Break,Absorb,1,Poison Point / Swift Swim,0 / 0 / 0 /255/255/ 0,50,114
+Normal,0 1 0 2,Loudred,1,Relaxed,Focus Band,Stomp,Howl,Astonish,Supersonic,1,Run Away / Guts,170/170/ 0 / 0 / 0 /170,48,115
+Rock Psychic,0 1 3 7,Lunatone,1,Quiet,Sitrus Berry,Confusion,Cosmic Power,Light Screen,Sandstorm,3,Swift Swim / Rock Head,170/ 0 / 0 /170/170/ 0,70,116
+Rock Psychic,0 0 1 1,Lunatone,2,Quiet,Lax Incense,Psychic,Ice Beam,Cosmic Power,Calm Mind,4,Lightningrod / Rock Head,255/255/ 0 / 0 / 0 / 0,70,117
+Water,2 2 0 7,Luvdisc,1,Relaxed,Quick Claw,Sweet Kiss,Attract,Dive,Rain Dance,1,Natural Cure / Poison Point,255/ 0 /255/ 0 / 0 / 0,97,118
+Fighting,0 0 0 5,Machoke,1,Adamant,Focus Band,Low Kick,Rock Tomb,Foresight,Scary Face,2,Keen Eye,255/255/ 0 / 0 / 0 / 0,45,119
+Fighting,0 0 0 5,Machoke,2,Adamant,Scope Lens,Cross Chop,Rock Slide,Foresight,Scary Face,4,Sand Veil,255/ 0 / 0 / 0 /255/ 0,45,120
+Fire,0 5 2 0,Magby,1,Docile,Lax Incense,Fire Punch,SmokeScreen,Confuse Ray,Smog,1,Swarm,255/255/ 0 / 0 / 0 / 0,83,121
+Fire Rock,0 0 1 7,Magcargo,1,Gentle,Lax Incense,Rock Slide,Ember,Acid Armor,Sandstorm,2,Poison Point,255/ 0 / 0 /255/ 0 / 0,30,122
+Fire Rock,4 0 0 0,Magcargo,2,Quiet,Quick Claw,Overheat,Earthquake,Rock Slide,Body Slam,4,Swift Swim / Water Veil,255/ 0 / 0 / 0 /255/ 0,30,123
+Electric Steel,0 0 2 2,Magneton,1,Lonely,Cheri Berry,Shock Wave,SonicBoom,Thunder Wave,Supersonic,3,Thick Fat,170/ 0 /170/ 0 /170/ 0,70,124
+Electric Steel,0 7 2 5,Magneton,2,Hardy,Lum Berry,Thunder,Rain Dance,Thunder Wave,Metal Sound,4,Shed Skin,255/255/ 0 / 0 / 0 / 0,70,125
+Water Flying,0 0 7 0,Mantine,1,Docile,Mystic Water,BubbleBeam,Aerial Ace,Rain Dance,Icy Wind,3,Rough Skin,0 /255/ 0 / 0 /255/ 0,70,126
+Water Flying,0 0 7 2,Mantine,2,Modest,Shell Bell,Surf,Ice Beam,Rain Dance,Confuse Ray,4,Rock Head,170/170/ 0 / 0 /170/ 0,70,127
+Water Ground,0 0 0 0,Marshtomp,1,Hardy,Focus Band,Mud Shot,Water Gun,Rock Tomb,Mud-Slap,2,Chlorophyll,255/ 0 / 0 /255/ 0 / 0,50,128
+Water Ground,0 0 0 3,Marshtomp,2,Docile,Focus Band,Muddy Water,Earthquake,Mud-Slap,Protect,4,Inner Focus / Keen Eye,170/ 0 /170/ 0 /170/ 0,50,129
+Bug Flying,0 0 0 2,Masquerain,1,Relaxed,Cheri Berry,Silver Wind,Aerial Ace,Icy Wind,Stun Spore,2,Levitate,255/ 0 / 0 / 0 /255/ 0,60,130
+Bug Flying,0 0 0 2,Masquerain,2,Quiet,Lax Incense,Hydro Pump,Ice Beam,Giga Drain,Stun Spore,4,Own Tempo,255/255/ 0 / 0 / 0 / 0,60,131
+Steel Rock,0 5 1 3,Mawile,1,Docile,BrightPowder,Crunch,Fake Tears,Iron Defense,Baton Pass,1,Thick Fat / Own Tempo,255/ 0 / 0 /255/ 0 / 0,50,132
+Steel Psychic,0 0 0 5,Metang,1,Hardy,Focus Band,Metal Claw,Confusion,Pursuit,Scary Face,3,Intimidate,255/ 0 / 0 /255/ 0 / 0,50,133
+Steel Psychic,0 0 0 5,Metang,2,Quirky,Focus Band,Meteor Mash,Psychic,Body Slam,Scary Face,4,Illuminate / Natural Cure,255/ 0 / 0 /255/ 0 / 0,50,134
+Dark,0 0 2 0,Mightyena,1,Timid,Mental Herb,Bite,Poison Fang,Taunt,Roar,3,Sturdy / Rock Head,255/ 0 / 0 / 0 /255/ 0,70,135
+Dark,0 0 0 5,Mightyena,2,Quirky,King's Rock,Crunch,Shadow Ball,Frustration,Scary Face,4,Chlorophyll,255/ 0 /255/ 0 / 0 / 0,70,136
+Electric,0 5 2 0,Minun,1,Docile,Salac Berry,Spark,Charm,Encore,Helping Hand,2,Liquid Ooze / Sticky Hold,0 / 0 /255/ 0 /255/ 0,95,137
+Electric,0 2 5 3,Minun,2,Docile,Salac Berry,Thunderbolt,Attract,Charm,Wish,4,Guts,255/ 0 / 0 / 0 /255/ 0,95,138
+Dark Flying,0 0 2 2,Murkrow,1,Quirky,Lax Incense,Faint Attack,Fly,Torment,Taunt,2,Chlorophyll,255/ 0 / 0 / 0 /255/ 0,91,139
+Dark Flying,4 2 1 2,Murkrow,2,Quirky,BrightPowder,Perish Song,Mean Look,Double Team,Thunder Wave,4,Pickup,255/255/ 0 / 0 / 0 / 0,91,140
+Poison,0 0 0 2,Nidorina,1,Quirky,Focus Band,Double Kick,Bite,Aerial Ace,Flatter,1,Clear Body / Liquid Ooze,170/170/ 0 /170/ 0 / 0,56,141
+Poison,0 0 0 2,Nidorino,1,Quirky,Focus Band,Double Kick,Water Pulse,Mud-Slap,Flatter,1,Hustle / Serene Grace,255/ 0 /255/ 0 / 0 / 0,65,142
+Bug Flying,3 1 3 0,Ninjask,1,Mild,Petaya Berry,Baton Pass,Swords Dance,Endure,Dig,3,White Smoke,255/ 0 / 0 / 0 /255/ 0,160,143
+Bug Flying,0 0 1 3,Ninjask,2,Quirky,Focus Band,Slash,Shadow Ball,Swords Dance,Baton Pass,4,Chlorophyll,255/255/ 0 / 0 / 0 / 0,160,144
+Normal Flying,0 0 0 3,Noctowl,1,Relaxed,Persim Berry,Confusion,Aerial Ace,Faint Attack,Reflect,3,Shield Dust,255/ 0 / 0 / 0 / 0 /255,70,145
+Normal Flying,0 0 0 3,Noctowl,2,Quiet,Persim Berry,Psychic,Faint Attack,Aerial Ace,Reflect,4,Levitate,255/255/ 0 / 0 / 0 / 0,70,146
+Rock Bug,0 0 2 7,Nosepass,1,Sassy,Hard Stone,Rock Slide,Shock Wave,Thunder Wave,Sandstorm,1,Vital Spirit,255/255/ 0 / 0 / 0 / 0,30,147
+Grass Dark,0 0 0 0,Nuzleaf,1,Hardy,Sitrus Berry,Extrasensory,Fake Out,Razor Wind,Faint Attack,1,Illuminate / Swarm,0 /255/ 0 / 0 / 0 /255,60,148
+Water,0 0 0 0,Octillery,1,Hardy,Shell Bell,Octazooka,Aurora Beam,Psybeam,Rock Blast,3,Soundproof / Static,255/ 0 / 0 /255/ 0 / 0,45,149
+Water,0 0 2 0,Octillery,2,Quirky,Lax Incense,Octazooka,Fire Blast,Thunder Wave,Mud-Slap,4,Water Veil / Oblivious,0 / 0 /255/ 0 /255/ 0,45,150
+Rock Water,0 0 0 5,Omanyte,1,Quirky,Sitrus Berry,Mud Shot,Water Gun,AncientPower,Tickle,1,Torrent,255/ 0 / 0 /255/ 0 / 0,35,151
+Rock Water,0 0 5 0,Omastar,1,Quirky,Shell Bell,BubbleBeam,Spike Cannon,Tickle,AncientPower,3,Chlorophyll,255/ 0 / 0 /255/ 0 / 0,55,152
+Rock Water,0 7 0 3,Omastar,2,Modest,Sitrus Berry,Hydro Pump,Rain Dance,Ice Beam,Protect,4,Cute Charm,0 / 0 /255/ 0 /255/ 0,55,153
+Rock Ground,0 0 0 7,Onix,1,Hardy,Sitrus Berry,Rock Slide,Bind,DragonBreath,Sandstorm,1,Shadow Tag,170/ 0 /170/ 0 /170/ 0,70,154
+Bug Grass,0 0 2 5,Parasect,1,Rash,Sitrus Berry,Slash,Psybeam,Stun Spore,Flash,2,Speed Boost / Compoundeyes,0 / 0 /255/ 0 /255/ 0,30,155
+Bug Grass,2 0 0 1,Parasect,2,Calm,Leftovers,Spore,Giga Drain,Dig,Double Team,4,Immunity,255/255/ 0 / 0 / 0 / 0,30,156
+Water Flying,0 0 0 3,Pelipper,1,Quiet,Sitrus Berry,Water Pulse,Aerial Ace,Stockpile,Swallow,3,Pressure,0 /255/ 0 / 0 / 0 /255,65,157
+Water Flying,0 0 0 3,Pelipper,2,Quiet,Shell Bell,Surf,Blizzard,Aerial Ace,Protect,4,Intimidate / Shed Skin,255/ 0 /255/ 0 / 0 / 0,65,158
+Normal,0 0 2 2,Persian,1,Quirky,Silk Scarf,Fake Out,Slash,Torment,Swagger,3,Thick Fat / Huge Power,255/ 0 / 0 / 0 /255/ 0,115,159
+Normal,0 0 0 0,Persian,2,Quirky,Silk Scarf,Frustration,Shadow Ball,Roar,Fake Out,4,Insomnia,0 / 0 /255/ 0 /255/ 0,115,160
+Ground,0 1 0 7,Phanpy,1,Naughty,Lax Incense,Rollout,Defense Curl,Rock Tomb,Sandstorm,1,Overgrow,170/ 0 /170/ 0 /170/ 0,40,161
+Normal Flying,0 5 0 0,Pidgeot,1,Hardy,Sharp Beak,Aerial Ace,FeatherDance,Mud-Slap,Faint Attack,3,Chlorophyll,0 / 0 /255/255/ 0 / 0,91,162
+Normal Flying,0 0 0 0,Pidgeot,2,Adamant,Scope Lens,Return,Aerial Ace,Steel Wing,Mud-Slap,4,Sand Veil,0 / 0 /255/ 0 /255/ 0,91,163
+Normal Flying,0 0 5 5,Pidgeotto,1,Quirky,White Herb,Aerial Ace,Quick Attack,FeatherDance,Sand-Attack,1,Magma Armor,0 /255/ 0 /255/ 0 / 0,71,164
+Ice Ground,0 0 7 3,Piloswine,1,Quirky,Soft Sand,Dig,AncientPower,Hail,Light Screen,3,Forecast,255/ 0 / 0 /255/ 0 / 0,50,165
+Ice Ground,0 0 0 0,Piloswine,2,Adamant,Shell Bell,Earthquake,Rock Slide,Body Slam,Roar,4,Natural Cure / Serene Grace,0 / 0 /255/ 0 /255/ 0,50,166
+Bug,0 1 1 0,Pinsir,1,Naughty,Black Belt,Submission,Focus Energy,Swords Dance,Revenge,3,Blaze,0 /255/ 0 / 0 / 0 /255,85,167
+Bug,4 1 4 3,Pinsir,2,Jolly,Salac Berry,Guillotine,Swords Dance,Flail,Endure,4,Levitate,170/ 0 /170/ 0 /170/ 0,85,168
+Electric,0 5 0 0,Plusle,1,Docile,Petaya Berry,Spark,Fake Tears,Quick Attack,Helping Hand,2,Shell Armor,255/ 0 / 0 / 0 /255/ 0,95,169
+Electric,0 2 0 3,Plusle,2,Docile,Petaya Berry,Thunderbolt,Thunder Wave,Seismic Toss,Wish,4,Blaze,0 /170/ 0 /170/ 0 /170,95,170
+Water,0 0 2 2,Politoed,1,Relaxed,Shell Bell,Dive,Dig,Hypnosis,Swagger,3,Hyper Cutter / Shell Armor,255/ 0 / 0 / 0 /255/ 0,70,171
+Water,0 0 0 2,Politoed,2,Modest,Lax Incense,Surf,Psychic,Mud-Slap,Swagger,4,Torrent,255/255/ 0 / 0 / 0 / 0,70,172
+Water,0 0 0 7,Poliwhirl,1,Quirky,Petaya Berry,Water Pulse,DoubleSlap,Icy Wind,Rain Dance,1,Cute Charm,0 / 0 / 0 /255/ 0 /255,90,173
+Water Fighting,0 0 0 0,Poliwrath,1,Adamant,Black Belt,Submission,Dig,Rock Tomb,BubbleBeam,3,Shed Skin,255/ 0 / 0 / 0 /255/ 0,70,174
+Water Fighting,0 2 3 1,Poliwrath,2,Adamant,Chesto Berry,Brick Break,Hypnosis,Rest,Belly Drum,4,Serene Grace / Run Away,0 / 0 /255/ 0 /255/ 0,70,175
+Fire,0 0 0 5,Ponyta,1,Hardy,Rawst Berry,Fire Spin,Bounce,Quick Attack,Tail Whip,2,Run Away / Keen Eye,0 /255/ 0 / 0 / 0 /255,90,176
+Fire,0 0 0 1,Ponyta,2,Quirky,Sitrus Berry,Flamethrower,Body Slam,Double Kick,Double Team,4,Inner Focus / Early Bird,0 / 0 /255/ 0 /255/ 0,90,177
+Normal,0 0 3 1,Porygon,1,Relaxed,Sitrus Berry,Psybeam,Icy Wind,Recycle,Agility,2,Hyper Cutter / Sand Veil,255/ 0 / 0 / 0 /255/ 0,40,178
+Normal,0 0 2 3,Porygon,2,Quiet,Cheri Berry,Tri Attack,Psychic,Thunder Wave,Recover,4,Chlorophyll,0 /255/ 0 /255/ 0 / 0,40,179
+Fighting,0 4 2 5,Primeape,1,Quirky,Scope Lens,Karate Chop,Counter,Swagger,Screech,3,Inner Focus,255/255/ 0 / 0 / 0 / 0,95,180
+Fighting,0 0 4 1,Primeape,2,Quirky,Scope Lens,Cross Chop,Rock Tomb,Overheat,Bulk Up,4,Swift Swim,255/ 0 / 0 / 0 /255/ 0,95,181
+Rock Ground,0 0 5 7,Pupitar,1,Hardy,Soft Sand,Dig,Bite,Scary Face,Sandstorm,2,Rock Head / Sturdy,255/ 0 / 0 / 0 /255/ 0,51,182
+Rock Ground,0 0 0 5,Pupitar,2,Hardy,Scope Lens,Earthquake,Rock Slide,Crunch,Scary Face,4,Overgrow,0 /255/ 0 / 0 / 0 /255,51,183
+Fire,0 0 0 5,Quilava,1,Docile,Focus Band,Flame Wheel,Fury Swipes,Swift,SmokeScreen,2,Thick Fat / Own Tempo,0 / 0 /255/255/ 0 / 0,80,184
+Fire,0 0 0 5,Quilava,2,Docile,BrightPowder,Flamethrower,Crush Claw,Body Slam,SmokeScreen,4,Levitate,170/ 0 /170/ 0 /170/ 0,80,185
+Water Poison,0 0 2 1,Qwilfish,1,Impish,Cheri Berry,BubbleBeam,Pin Missile,Spikes,Minimize,3,Keen Eye,255/ 0 /255/ 0 / 0 / 0,85,186
+Water Poison,0 0 0 4,Qwilfish,2,Adamant,Focus Band,Revenge,Sludge Bomb,Shadow Ball,Destiny Bond,4,Limber,255/ 0 /255/ 0 / 0 / 0,85,187
+Normal,0 0 5 0,Raticate,1,Naive,Silk Scarf,Endeavor,Pursuit,Scary Face,Quick Attack,2,Intimidate,255/ 0 /255/ 0 / 0 / 0,97,188
+Normal,0 0 0 5,Raticate,2,Adamant,Focus Band,Super Fang,Hyper Fang,Shadow Ball,Scary Face,4,Swift Swim,255/ 0 / 0 / 0 /255/ 0,97,189
+Water Rock,0 0 1 1,Relicanth,1,Sassy,Liechi Berry,AncientPower,Water Pulse,Harden,Amnesia,3,Oblivious,0 / 0 / 0 /255/ 0 /255,55,190
+Water Rock,0 0 1 3,Relicanth,2,Sassy,Chesto Berry,Earthquake,Rock Slide,Amnesia,Rest,4,Overgrow,0 /255/ 0 /255/ 0 / 0,55,191
+Ground Rock,0 0 5 0,Rhyhorn,1,Hardy,Focus Band,Rock Blast,Dig,Scary Face,Roar,1,Chlorophyll,0 / 0 /255/ 0 /255/ 0,25,192
+Grass Poison,0 2 2 5,Roselia,1,Docile,Pecha Berry,Magical Leaf,Toxic,GrassWhistle,Cotton Spore,2,Swift Swim / Battle Armor,0 /255/ 0 / 0 /255/ 0,65,193
+Grass Poison,0 0 2 3,Roselia,2,Docile,Quick Claw,Giga Drain,Sludge Bomb,GrassWhistle,Synthesis,4,Synchronize / Inner Focus,255/ 0 /255/ 0 / 0 / 0,65,194
+Dark Ghost,0 2 5 0,Sableye,1,Lonely,BlackGlasses,Faint Attack,Confuse Ray,Knock Off,Fake Out,2,Color Change,255/ 0 /255/ 0 / 0 / 0,50,195
+Dark Ghost,0 0 2 3,Sableye,2,Quirky,Lum Berry,Shadow Ball,Faint Attack,Confuse Ray,Recover,4,Hyper Cutter / Shell Armor,255/ 0 / 0 / 0 /255/ 0,50,196
+Ground,0 0 0 7,Sandslash,1,Adamant,Sitrus Berry,Crush Claw,Rock Slide,Swift,Sandstorm,3,Sturdy / Rock Head,255/ 0 / 0 / 0 /255/ 0,65,197
+Ground,0 0 0 7,Sandslash,2,Adamant,Quick Claw,Earthquake,Rock Slide,Crush Claw,Sandstorm,4,Own Tempo / Oblivious,0 /170/170/ 0 /170/ 0,65,198
+Bug Flying,0 0 3 1,Scyther,1,Relaxed,Liechi Berry,Fury Cutter,Aerial Ace,Light Screen,Double Team,3,Pickup,0 /255/ 0 / 0 / 0 /255,105,199
+Bug Flying,0 0 1 1,Scyther,2,Adamant,BrightPowder,Silver Wind,Aerial Ace,Swords Dance,Double Team,4,Levitate,255/ 0 /255/ 0 / 0 / 0,105,200
+Water,0 5 0 7,Seadra,1,Sassy,Mystic Water,Aurora Beam,SmokeScreen,Water Gun,Rain Dance,3,Guts,255/255/ 0 / 0 / 0 / 0,85,201
+Water,0 0 0 1,Seadra,2,Docile,Shell Bell,Hydro Pump,Frustration,DragonBreath,Dragon Dance,4,Magma Armor / Flame Body,255/ 0 / 0 / 0 /255/ 0,85,202
+Water,0 0 0 1,Seaking,1,Docile,Sitrus Berry,Water Pulse,Psybeam,Swift,Agility,3,Magnet Pull / Sturdy,255/ 0 / 0 / 0 /255/ 0,68,203
+Water,4 0 0 3,Seaking,2,Impish,Quick Claw,Horn Drill,Megahorn,Sleep Talk,Rest,4,Swift Swim / Water Absorb,255/ 0 /255/ 0 / 0 / 0,68,204
+Ice Water,0 7 0 3,Sealeo,1,Quirky,Persim Berry,Ice Ball,Hail,Snore,Rest,2,Torrent,0 /255/ 0 /255/ 0 / 0,45,205
+Ice Water,0 0 0 7,Sealeo,2,Quiet,Sitrus Berry,Ice Beam,Surf,Body Slam,Hail,4,Intimidate,0 / 0 /255/255/ 0 / 0,45,206
+Poison,0 0 2 5,Seviper,1,Hardy,Scope Lens,Poison Tail,Bite,Glare,Screech,3,Clear Body,255/ 0 / 0 /255/ 0 / 0,65,207
+Poison,0 0 0 0,Seviper,2,Quirky,Quick Claw,Sludge Bomb,Earthquake,Crunch,Giga Drain,4,Intimidate,0 / 0 /255/255/ 0 / 0,65,208
+Water Dark,0 0 0 5,Sharpedo,1,Adamant,Scope Lens,Slash,Bite,Water Pulse,Scary Face,3,Minus,0 / 0 / 0 /255/ 0 /255,95,209
+Water Dark,4 0 0 0,Sharpedo,2,Quirky,Scope Lens,Double-Edge,Crunch,Earthquake,Surf,4,Insomnia,170/ 0 /170/ 0 /170/ 0,95,210
+Dragon,0 0 3 5,Shelgon,1,Hardy,Cheri Berry,Headbutt,DragonBreath,Protect,Scary Face,3,Speed Boost,170/ 0 /170/ 0 /170/ 0,50,211
+Dragon,0 1 0 5,Shelgon,2,Hardy,Focus Band,Frustration,Dragon Dance,Crunch,Scary Face,4,Insomnia / Keen Eye,0 / 0 /255/255/ 0 / 0,50,212
+Grass Flying,0 0 5 3,Skiploom,1,Docile,Persim Berry,Mega Drain,Confusion,Cotton Spore,Synthesis,1,Suction Cups,170/ 0 /170/ 0 /170/ 0,80,213
+Dark Ice,0 0 0 0,Sneasel,1,Relaxed,Persim Berry,Faint Attack,Fake Out,Icy Wind,Quick Attack,3,Swift Swim / Shell Armor,255/ 0 / 0 / 0 /255/ 0,115,214
+Dark Ice,0 0 0 5,Sneasel,2,Jolly,King's Rock,Crush Claw,Brick Break,Aerial Ace,Screech,4,Effect Spore,170/ 0 /170/ 0 /170/ 0,115,215
+Rock Psychic,0 0 3 7,Solrock,1,Quiet,Sitrus Berry,Confusion,Fire Spin,Light Screen,Sandstorm,3,Keen Eye,255/ 0 / 0 / 0 /255/ 0,70,216
+Rock Psychic,0 0 1 4,Solrock,2,Hardy,White Herb,Earthquake,Rock Slide,Cosmic Power,Overheat,4,Limber,170/ 0 /170/ 0 /170/ 0,70,217
+Normal,0 2 0 0,Spinda,1,Relaxed,Sitrus Berry,Dizzy Punch,Teeter Dance,Psybeam,Faint Attack,1,Keen Eye,0 /255/ 0 / 0 / 0 /255,60,218
+Psychic,0 0 3 2,Spoink,1,Relaxed,Sitrus Berry,Psywave,Bounce,Magic Coat,Confuse Ray,1,Oblivious,0 / 0 /255/ 0 /255/ 0,60,219
+Normal,0 2 0 5,Stantler,1,Gentle,TwistedSpoon,Extrasensory,Confuse Ray,Stomp,Sand-Attack,3,Hyper Cutter,255/ 0 / 0 / 0 / 0 /255,85,220
+Normal,0 0 2 2,Stantler,2,Adamant,Lax Incense,Frustration,Shadow Ball,Thunder Wave,Confuse Ray,4,Plus,0 / 0 / 0 /255/ 0 /255,85,221
+Water,0 1 0 3,Staryu,1,Quirky,Shell Bell,BubbleBeam,Minimize,Swift,Light Screen,1,Water Absorb / Damp,0 / 0 /255/255/ 0 / 0,85,222
+Rock,0 0 7 2,Sudowoodo,1,Hardy,Hard Stone,Rock Slide,Faint Attack,Sandstorm,Block,2,Water Absorb / Damp,255/255/ 0 / 0 / 0 / 0,30,223
+Rock,0 0 0 4,Sudowoodo,2,Hardy,Focus Band,Mega Kick,Earthquake,Low Kick,Selfdestruct,4,Run Away / Flash Fire,0 / 0 / 0 /255/ 0 /255,30,224
+Grass,0 3 2 3,Sunflora,1,Quirky,Persim Berry,Petal Dance,Ingrain,Leech Seed,Light Screen,3,Trace,0 /255/ 0 /255/ 0 / 0,30,225
+Grass,0 2 1 1,Sunflora,2,Quiet,Leftovers,Giga Drain,GrassWhistle,Growth,Double Team,4,Vital Spirit,170/ 0 /170/ 0 /170/ 0,30,226
+Poison,0 3 0 0,Swalot,1,Quirky,Lax Incense,Stockpile,Swallow,Spit Up,Sludge,3,Shed Skin,255/255/ 0 / 0 / 0 / 0,55,227
+Poison,0 0 0 4,Swalot,2,Adamant,Leftovers,Sludge Bomb,Shadow Ball,Body Slam,Counter,4,Blaze,0 /255/ 0 /255/ 0 / 0,55,228
+Normal Flying,0 0 4 0,Swellow,1,Adamant,King's Rock,Fly,Endeavor,Facade,Quick Attack,3,Poison Point / Swift Swim,255/ 0 / 0 / 0 /255/ 0,125,229
+Normal Flying,4 0 0 1,Swellow,2,Adamant,King's Rock,Facade,Aerial Ace,Pursuit,Double Team,4,Run Away / Guts,0 /255/ 0 / 0 / 0 /255,125,230
+Grass,0 0 2 0,Tangela,1,Hardy,Lax Incense,Mega Drain,Slam,Toxic,Bind,3,Swift Swim / Rock Head,255/ 0 / 0 / 0 /255/ 0,60,231
+Grass,0 2 3 1,Tangela,2,Calm,Chesto Berry,Giga Drain,Stun Spore,Rest,Amnesia,4,Natural Cure / Poison Point,255/ 0 /255/ 0 / 0 / 0,60,232
+Normal,0 5 0 3,Teddiursa,1,Relaxed,Chesto Berry,Secret Power,Fake Tears,Faint Attack,Rest,1,Keen Eye,170/170/ 0 /170/ 0 / 0,40,233
+Water Poison,0 0 1 0,Tentacool,1,Hardy,Pecha Berry,BubbleBeam,Acid,Barrier,Wrap,1,Sand Veil,255/ 0 / 0 / 0 /255/ 0,70,234
+Normal Flying,0 0 3 6,Togetic,1,Relaxed,Lax Incense,Aerial Ace,Magical Leaf,Wish,Follow Me,2,Swarm,0 /255/ 0 / 0 / 0 /255,40,235
+Normal Flying,0 2 0 2,Togetic,2,Relaxed,Scope Lens,Return,Sweet Kiss,Aerial Ace,Yawn,4,Poison Point,255/ 0 / 0 / 0 /255/ 0,40,236
+Fire,0 0 5 1,Torkoal,1,Relaxed,Sitrus Berry,Ember,Fire Spin,SmokeScreen,Amnesia,3,Swift Swim / Water Veil,170/ 0 /170/ 0 /170/ 0,20,237
+Fire,4 0 5 3,Torkoal,2,Sassy,White Herb,Overheat,Body Slam,SmokeScreen,Protect,4,Thick Fat,255/ 0 / 0 /255/ 0 / 0,20,238
+Grass Flying,0 0 0 0,Tropius,1,Hardy,Sitrus Berry,Magical Leaf,Whirlwind,Aerial Ace,Steel Wing,3,Shed Skin,170/ 0 /170/ 0 /170/ 0,51,239
+Grass Flying,0 7 3 0,Tropius,2,Quiet,Focus Band,SolarBeam,Sunny Day,Synthesis,Body Slam,4,Rough Skin,0 /170/ 0 /170/ 0 /170,51,240
+Bug Poison,0 0 2 6,Venomoth,1,Quirky,Persim Berry,Silver Wind,Psybeam,Sleep Powder,Skill Swap,3,Rock Head,255/ 0 / 0 / 0 /255/ 0,90,241
+Bug Poison,0 0 0 0,Venomoth,2,Docile,Lum Berry,Signal Beam,Psychic,Sludge Bomb,Giga Drain,4,Inner Focus / Keen Eye,170/ 0 /170/ 0 / 0 /170,90,242
+Ground Dragon,0 0 5 0,Vibrava,1,Quirky,Cheri Berry,DragonBreath,Dig,Screech,Rock Tomb,1,Levitate,255/ 0 / 0 / 0 /255/ 0,70,243
+Normal,0 4 2 0,Vigoroth,1,Lonely,Focus Band,Slash,Counter,Encore,Uproar,3,Intimidate,0 /255/ 0 / 0 / 0 /255,90,244
+Normal,0 4 3 0,Vigoroth,2,Adamant,Salac Berry,Crush Claw,Reversal,Endure,Shadow Ball,4,Sturdy / Rock Head,255/ 0 / 0 / 0 /255/ 0,90,245
+Bug,0 2 0 0,Volbeat,1,Quirky,Liechi Berry,Silver Wind,Confuse Ray,Quick Attack,Helping Hand,2,Chlorophyll,255/ 0 /255/ 0 / 0 / 0,85,246
+Bug,0 0 0 1,Volbeat,2,Quirky,Petaya Berry,Signal Beam,Thunderbolt,Ice Punch,Tail Glow,4,Liquid Ooze / Sticky Hold,255/255/ 0 / 0 / 0 / 0,85,247
+Electric,0 5 0 3,Voltorb,1,Docile,Lax Incense,Spark,Screech,Rollout,Light Screen,1,Guts,255/ 0 / 0 / 0 /255/ 0,100,248
+Water,0 0 1 0,Wailmer,1,Docile,Lax Incense,Whirlpool,Roar,Defense Curl,Rollout,2,Chlorophyll,255/ 0 / 0 / 0 /255/ 0,60,249
+Water,0 0 0 3,Wailmer,2,Docile,Chesto Berry,Water Spout,Earthquake,Body Slam,Rest,4,Hustle / Serene Grace,255/ 0 /255/ 0 / 0 / 0,60,250
+Water,0 0 0 2,Wartortle,1,Docile,Focus Band,Water Pulse,Bite,Mud-Slap,Yawn,2,White Smoke,255/ 0 / 0 / 0 /255/ 0,58,251
+Water,0 0 0 3,Wartortle,2,Docile,Shell Bell,Surf,Ice Beam,Rapid Spin,Protect,4,Chlorophyll,0 /255/ 0 /255/ 0 / 0,58,252
+Grass Poison,0 0 0 5,Weepinbell,1,Quiet,Scope Lens,Razor Leaf,Acid,Wrap,Sweet Scent,2,Shield Dust,255/ 0 / 0 / 0 / 0 /255,55,253
+Grass Poison,0 0 2 3,Weepinbell,2,Quirky,Scope Lens,Sludge Bomb,Razor Leaf,Sleep Powder,Reflect,4,Vital Spirit,0 /255/ 0 / 0 /255/ 0,55,254
+Normal,2 2 3 0,Wigglytuff,1,Relaxed,Silk Scarf,Sing,Disable,Wish,Secret Power,3,Illuminate / Swarm,0 / 0 / 0 /255/ 0 /255,45,255
+Normal,5 2 0 0,Wigglytuff,2,Docile,Sitrus Berry,Fake Tears,Sing,Dream Eater,Brick Break,4,Water Veil / Oblivious,0 / 0 /255/ 0 /255/ 0,45,256
+Psychic,4 4 5 3,Wobbuffet,1,Careful,Focus Band,Counter,Mirror Coat,Charm,Safeguard,2,Torrent,255/ 0 / 0 /255/ 0 / 0,33,257
+Psychic,4 4 2 4,Wobbuffet,2,Careful,Focus Band,Counter,Mirror Coat,Encore,Destiny Bond,4,Chlorophyll,0 / 0 /255/ 0 /255/ 0,33,258
+Bug Flying,0 0 1 3,Yanma,1,Relaxed,Lax Incense,Signal Beam,Aerial Ace,Double Team,Detect,1,Cute Charm,0 / 0 /255/ 0 /255/ 0,95,259
+Normal,0 0 0 0,Zangoose,1,Hardy,Persim Berry,Slash,Double Kick,Roar,Quick Attack,3,Shadow Tag,0 / 0 /255/ 0 /255/ 0,90,260
+Normal,0 0 0 0,Zangoose,2,Adamant,Scope Lens,Crush Claw,Shadow Ball,Brick Break,Aerial Ace,4,Immunity,0 /255/ 0 / 0 / 0 /255,90,261

@@ -17,18 +17,12 @@ class SpeedQueryHandler:
 
         # Work out which sets are allowable in this round.
         allowedRoundSets = []
-        if level == 50:
-            if round < 4:
-                inputdict["outputcol1"] = "<font size=\"20\"><b>Not supported for Level 50 rounds 1-3.</b></font><br>"
-                return(inputdict)
-            elif round < 8:
-                allowedRoundSets.append(round - 3)
-            else:
-                allowedRoundSets=[1,2,3,4,5]
-        elif round < 5:
-            allowedRoundSets.append(round)
-        else:
-            allowedRoundSets = [1,2,3,4,5,6]        
+        if round == 1:
+            allowedRoundSets += [1,2]
+        elif round == 2:
+            allowedRoundSets += [2,3]
+        elif round == 3:
+            allowedRoundSets += [4]
 
         # Calculate the speeds for all other allowable sets and sort them into the relevant buckets.
         refspeed = int(inputdict["yourspeed"])

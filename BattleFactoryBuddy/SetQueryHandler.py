@@ -40,8 +40,8 @@ class SetQueryHandler:
         level = self.inputdict["Level"]  # "50","100"
 
         # Check it's a round we support, we don't handle the NFE sets (currently).
-        if level == "50" and int(round) < 4:
-            results.addError("Error: Rounds 1-3 not supported for Level 50.")
+        if not(level == "50" and int(round) < 4):
+            results.addError("Error: Only Rounds 1-3 not supported for Level 50 in this version.")
             return (False, results)
 
         # Check if Noland is being invoked incorrectly.

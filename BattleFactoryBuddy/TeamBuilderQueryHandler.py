@@ -27,23 +27,15 @@ class TeamResult():
                     self.blockedsets[oppSetId.split("-")[0] + "-" + str(i)] = 1
                     i += 1                
     
-    def generateResults(self):
-        level = self.level
+    def generateResults(self):        
         round = self.round
         teamSetList = []
-        if (level == "50" and round == "8") or (level == "100" and int(round) > 4):
-            teamSetList += ["5"]
-            if level == "100":
-                teamSetList += ["6"]
-            teamSetList += ["4", "3", "2", "1"]
-        elif (level == "50" and round == "7") or (level == "100" and round == "4"):
-            teamSetList += ["4"]
-        elif (level == "50" and round == "6") or (level == "100" and round == "3"):
-            teamSetList += ["3"]
-        elif (level == "50" and round == "5") or (level == "100" and round == "2"):
-            teamSetList += ["2"]
-        elif (level == "50" and round == "4") or (level == "100" and round == "1"):
-            teamSetList += ["1"]
+        if (round == "1"):
+            teamSetList += ["1","4"]           
+        elif (round == "2"):
+            teamSetList += ["2","4"]           
+        elif (round == "3"):
+            teamSetList += ["3"]       
         for teamSet in self.teamTuples:
             for (oppSetId, result) in StaticDataHandler.StaticDataHandler.iterGetH2HResult(*teamSet,self.oppIVs):
                 if str(StaticDataHandler.StaticDataHandler.getSetFromName(oppSetId).roundInfo) not in teamSetList:
@@ -125,9 +117,6 @@ class TeamBuilderQueryHandler():
         self.inputdict = inputdict        
 
     def handleQuery(self):
-        if self.inputdict["Level"] == "50" and self.inputdict["Round"] in ["1","2","3"]:
-            self.inputdict["output"] = "Sorry - level 50 rounds 1 - 3 aren't supported yet."
-            return(self.inputdict)
         teamSets = []
         for key in ["set1","set2","set3","set4","set5","set6"]:
             if self.inputdict[key] == "":

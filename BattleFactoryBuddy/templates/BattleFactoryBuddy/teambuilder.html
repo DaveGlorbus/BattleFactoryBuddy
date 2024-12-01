@@ -31,7 +31,6 @@
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                     
                             <select type="text" class="form-select" id="Level" name="Level" style="max-width: 256px;" placeholder='50' selected="{{Level}}">                      
-                              <option value=100>Open Level</option>
                               <option value=50>Level 50</option>                      
                             </select>                      
                           </div>
@@ -39,20 +38,13 @@
                             <select type="text" class="form-select" id="Round" name="Round" style="max-width: 256px;" placeholder="1" selected="Water">
                               <option value="1">Round 1</option>
                               <option value="2">Round 2</option>        
-                              <option value="3">Round 3</option>
-                              <option value="4">Round 4</option>        
-                              <option value="5">Round 5</option>
-                              <option value="6">Round 6</option>        
-                              <option value="7">Round 7</option>        
-                              <option value="8">Round 8+</option>                              
+                              <option value="3">Round 3</option>                            
                             </select>      
                           </div>
                           <div>Opponent IVs</div>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                             <select type="text" class="form-select" id="OppIVs" name="OppIVs" style="max-width: 256px;" selected="3 IVs">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                            
                             </select>      
                           </div>
                           <div>Set 1</div>
@@ -62,9 +54,7 @@
                                 {{pkmn |safe}}
                             </select>
                             <select type="text" class="form-select" id="set1IVs" name="set1IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                            
                             </select>
                           </div>
                           <div>Set 2</div>
@@ -74,9 +64,7 @@
                                 {{pkmn |safe}}
                             </select>
                             <select type="text" class="form-select" id="set2IVs" name="set2IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                            
                             </select>
                           </div>
                           <div>Set 3</div>
@@ -86,9 +74,7 @@
                                 {{pkmn |safe}}
                             </select>
                             <select type="text" class="form-select" id="set3IVs" name="set3IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                                                          
                             </select>
                           </div>
                           <div>Set 4</div>
@@ -98,9 +84,7 @@
                                 {{pkmn |safe}}
                             </select>
                             <select type="text" class="form-select" id="set4IVs" name="set4IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                              
                             </select>
                           </div>
                           <div>Set 5</div>
@@ -110,9 +94,7 @@
                                 {{pkmn |safe}}
                             </select>
                             <select type="text" class="form-select" id="set5IVs" name="set5IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                              
                             </select>
                           </div>
                           <div>Set 6</div>
@@ -122,9 +104,7 @@
                                 {{pkmn |safe}}
                             </select>              
                             <select type="text" class="form-select" id="set6IVs" name="set6IVs" style="max-width: 256px;">
-                              <option value="3">3 IVs</option>
-                              <option value="15">15 IVs</option>        
-                              <option value="31">31 IVs</option>                              
+                              <option value="3">3 IVs</option>                             
                             </select>
                                       </div>
                           
@@ -172,12 +152,12 @@
             }
             else 
             {
-              document.getElementById('set1IVs').value = '31';                
-              document.getElementById('set2IVs').value = '31';
-              document.getElementById('set3IVs').value = '31';
-              document.getElementById('set4IVs').value = '31';
-              document.getElementById('set5IVs').value = '31';
-              document.getElementById('set6IVs').value = '31';
+              document.getElementById('set1IVs').value = '3';                
+              document.getElementById('set2IVs').value = '3';
+              document.getElementById('set3IVs').value = '3';
+              document.getElementById('set4IVs').value = '3';
+              document.getElementById('set5IVs').value = '3';
+              document.getElementById('set6IVs').value = '3';
             }
         </script>
     </body>
