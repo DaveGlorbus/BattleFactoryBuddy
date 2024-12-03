@@ -170,7 +170,7 @@ class StaticDataHandler:
         if id not in StaticDataHandler.h2hDict:
             with open("./BattleFactoryBuddy/Data/"+id) as input:
                 for line in input:
-                    StaticDataHandler.h2hDict[id] = json.loads(line)            
+                    StaticDataHandler.h2hDict[id] = json.loads(line)                    
         for (oppSetId, result) in StaticDataHandler.h2hDict[id].items():
             yield (oppSetId, result[monIVs + "s" + oppIVs + oppAI])
     

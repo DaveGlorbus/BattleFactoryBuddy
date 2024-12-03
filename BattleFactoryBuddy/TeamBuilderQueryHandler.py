@@ -31,23 +31,23 @@ class TeamResult():
         round = self.round
         teamSetList = []
         if (round == "1"):
-            teamSetList += ["1","4"]           
+            teamSetList += ["1","2"]           
             oppAI = "n"
         elif (round == "2"):
-            teamSetList += ["2","4"]           
+            teamSetList += ["2","3"]           
             oppAI = "n"
         elif (round == "3"):
-            teamSetList += ["3"]       
+            teamSetList += ["4"]       
             if self.oppIVs == "15":
                 oppAI = "s"
             else:
                 oppAI = "c"
         for teamSet in self.teamTuples:
-            for (oppSetId, result) in StaticDataHandler.StaticDataHandler.iterGetH2HResult(*teamSet,self.oppIVs,oppAI):
-                if str(StaticDataHandler.StaticDataHandler.getSetFromName(oppSetId).roundInfo) not in teamSetList:
+            for (oppSetId, result) in StaticDataHandler.StaticDataHandler.iterGetH2HResult(*teamSet,self.oppIVs,oppAI):                
+                if str(StaticDataHandler.StaticDataHandler.getSetFromName(oppSetId).roundInfo) not in teamSetList:                                        
                     continue                
                 if oppSetId in self.blockedsets:
-                    continue                    
+                    continue                                    
                 if oppSetId not in self.winDict:
                     self.winDict[oppSetId] = 0                              
                 self.winDict[oppSetId] += result[0]
