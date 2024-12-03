@@ -172,7 +172,7 @@ class StaticDataHandler:
                 for line in input:
                     StaticDataHandler.h2hDict[id] = json.loads(line)            
         for (oppSetId, result) in StaticDataHandler.h2hDict[id].items():
-            yield (oppSetId, result[monIVs + "s" + oppIVs + "n"])
+            yield (oppSetId, result[monIVs + "s" + oppIVs + oppAI])
     
     @staticmethod
     def getMoveHTML():        

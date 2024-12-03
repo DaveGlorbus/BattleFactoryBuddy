@@ -32,12 +32,18 @@ class TeamResult():
         teamSetList = []
         if (round == "1"):
             teamSetList += ["1","4"]           
+            oppAI = "n"
         elif (round == "2"):
             teamSetList += ["2","4"]           
+            oppAI = "n"
         elif (round == "3"):
             teamSetList += ["3"]       
+            if self.oppIVs == "15":
+                oppAI = "s"
+            else:
+                oppAI = "c"
         for teamSet in self.teamTuples:
-            for (oppSetId, result) in StaticDataHandler.StaticDataHandler.iterGetH2HResult(*teamSet,self.oppIVs):
+            for (oppSetId, result) in StaticDataHandler.StaticDataHandler.iterGetH2HResult(*teamSet,self.oppIVs,oppAI):
                 if str(StaticDataHandler.StaticDataHandler.getSetFromName(oppSetId).roundInfo) not in teamSetList:
                     continue                
                 if oppSetId in self.blockedsets:
