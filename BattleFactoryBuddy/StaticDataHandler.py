@@ -164,7 +164,7 @@ class StaticDataHandler:
     
     # An iterable returning a h2h result each time for the set chosen
     @staticmethod
-    def iterGetH2HResult(id,monIVs,oppIVs):
+    def iterGetH2HResult(id,monIVs,oppIVs,oppAI):
         if id.split("-")[1] == "X":
             id = id.split("-")[0] + "-10"
         if id not in StaticDataHandler.h2hDict:
