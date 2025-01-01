@@ -693,7 +693,24 @@
         document.getElementById('targetmon').value = ''; 
         document.getElementById('ballnum').value = ''; 
         document.getElementById('magicnumber').value = '';
-      }   
+      }
+
+      function saveToggleState() {
+        const toggles = document.querySelectorAll('.form-check-input');
+        toggles.forEach(toggle => {
+            localStorage.setItem(toggle.id, toggle.checked);
+        });
+      }
+
+      function applyToggleState() {
+        const toggles = document.querySelectorAll('.form-check-input');
+        toggles.forEach(toggle => {
+        const state = localStorage.getItem(toggle.id) === 'true';
+        toggle.checked = state;
+        showhideSwitch();
+        });
+      }
+         
       document.body.style.zoom="70%"    
       
       $('select[multiple]').multiselect({
@@ -772,6 +789,7 @@
         document.getElementById('Calcbar').hidden = false;     
        });
 
+
      document.addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
         // TODO : reduce code repetition
@@ -801,6 +819,12 @@
         if (set6) {
             document.getElementById('LastOpp3').value = set6.split('-')[0];
         }
+
+        applyToggleState();
+        const toggles = document.querySelectorAll('.form-check-input');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('change', saveToggleState);
+        });
       
         });
      </script>
