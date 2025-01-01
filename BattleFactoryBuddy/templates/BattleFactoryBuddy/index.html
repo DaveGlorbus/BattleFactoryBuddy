@@ -199,7 +199,7 @@
                 <hr>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/speedcalc">Speed Calculator</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/switchincalc">Switch Calculator</a></div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/teambuilder">Team Builder</a></div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="encodeFormOptions()">Team Builder</a></div>
               </div>        
               
           </div>
@@ -710,7 +710,34 @@
         showhideSwitch();
         });
       }
-         
+
+      function encodeFormOptions() {
+        const params = new URLSearchParams();
+        const formElements = document.querySelectorAll('.form-select, .form-check-input');
+
+        formElements.forEach(element => {
+          if (element.type === 'checkbox') {
+            params.append(element.name, element.checked ? 'on' : 'off');
+          }
+          else {
+            params.append(element.name, element.value);
+          }
+        });
+
+        convertToPost("Set1")
+        convertToPost("Set2")
+        convertToPost("Set3")
+
+        params.append("Set1", document.getElementById('Set1').value)
+        params.append("Set2", document.getElementById('Set2').value)
+        params.append("Set3", document.getElementById('Set3').value)
+
+        const url = `/teambuilder?${params.toString()}`;
+        window.location.href = url;
+      }
+
+
+
       document.body.style.zoom="70%"    
       
       $('select[multiple]').multiselect({
@@ -799,7 +826,16 @@
         const set4 = urlParams.get('set4');
         const set5 = urlParams.get('set5');
         const set6 = urlParams.get('set6');
+        const level = urlParams.get('Level');
+        const round = urlParams.get('Round');
 
+        if (round){
+          document.getElementById('Round').value = parseInt(round);
+          }
+
+        if (level){
+          document.getElementById('Level').value = parseInt(level);
+        }
 
         if (set1) {
             document.getElementById('Team1').value = set1.split('-')[0];
