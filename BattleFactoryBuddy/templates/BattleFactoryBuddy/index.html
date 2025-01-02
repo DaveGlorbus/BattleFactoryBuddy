@@ -746,6 +746,8 @@
         params.append('Set2', document.getElementById('Set2').value);
         params.append('Set3', document.getElementById('Set3').value);
 
+        params.append('Calc', 1);
+
         const url = `${window.location.host}/?${params.toString()}`;
         try {
           await navigator.clipboard.writeText(url);
@@ -836,6 +838,9 @@
 
 
      document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.pathname != '/'){
+          return;
+        }
         const urlParams = new URLSearchParams(window.location.search);
         const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
 
@@ -867,6 +872,14 @@
         }
 
         showhideSwitch();
+
+        const calc = urlParams.get('Calc');
+        if (calc == 1){
+          document.getElementById('postaction').submit();
+          document.getElementById('Calcbar').hidden = false;
+        }        
+
+        
         });
      </script>
    </body>
