@@ -204,15 +204,17 @@
             const formElements = document.querySelectorAll('.form-select, .form-check-input');
 
             formElements.forEach(element => {
-            const paramValue = urlParams.get(element.name);
-            if (element.type === 'checkbox') {
-              element.checked = paramValue === 'on';
-            }
-            else if (paramValue !== null) {
-              element.value = paramValue;
-            }
+              const paramValue = urlParams.get(element.name);
+              if (paramValue) {
+                if (element.type === 'checkbox') {
+                  element.checked = paramValue === 'on';
+                }
+                else {
+                  element.value = paramValue;
+                }
+              }
             });
-        });
+          });
 
             function showhideSwitch() {
               if (document.getElementById('SwapMode').checked) {
