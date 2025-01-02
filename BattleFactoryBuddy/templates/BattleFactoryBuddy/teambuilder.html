@@ -201,6 +201,11 @@
 
           document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
+            
+            if (urlParams.size == 0){
+              return;
+            }
+            
             const formElements = document.querySelectorAll('.form-select, .form-check-input');
 
             formElements.forEach(element => {

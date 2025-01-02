@@ -864,6 +864,11 @@
           return;
         }
         const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.size == 0){
+          return;
+        }
+
         const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
 
         formElements.forEach(element => {
