@@ -738,12 +738,12 @@
         if (species3){
         params.append('set6', species3 + '-' + species3Set)
         }
-        
+
         params.append('Level', document.getElementById('Level').value);
         params.append('Round', document.getElementById('Round').value);
 
         const url = `/teambuilder?${params.toString()}`;
-        window.location.href = url;
+        window.open(url, '_blank').focus();
       }
 
       async function createAndCopyShareLink() {
