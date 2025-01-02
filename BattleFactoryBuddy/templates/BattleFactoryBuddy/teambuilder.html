@@ -140,7 +140,7 @@
                     </div>
                     <hr>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
-                      <a href="javascript:void(0);" onclick="encodeFormOptions()">Back to main Buddy</a>
+                      <a href="javascript:void(0);" onclick="sendToCalc()">Back to main Buddy</a>
                   </div>                  
                 </div>
                 </div>
@@ -162,54 +162,24 @@
        </main>  
         <script>
 
-// alternate longform for reference
-// const level = document.getElementById('Level').value;
-//     const round = document.getElementById('Round').value;
-//     const oppIVs = document.getElementById('OppIVs').value;
-//     const set1 = document.getElementById('set1').value;
-//     const set1IVs = document.getElementById('set1IVs').value;
-//     const set2 = document.getElementById('set2').value;
-//     const set2IVs = document.getElementById('set2IVs').value;
-//     const set3 = document.getElementById('set3').value;
-//     const set3IVs = document.getElementById('set3IVs').value;
-//     const set4 = document.getElementById('set4').value;
-//     const set4IVs = document.getElementById('set4IVs').value;
-//     const set5 = document.getElementById('set5').value;
-//     const set5IVs = document.getElementById('set5IVs').value;
-//     const set6 = document.getElementById('set6').value;
-//     const set6IVs = document.getElementById('set6IVs').value;
-//     const swapMode = document.getElementById('SwapMode').checked ? 'on' : 'off';
 
-//     const params = new URLSearchParams({
-//         level,
-//         round,
-//         oppIVs,
-//         set1,
-//         set1IVs,
-//         set2,
-//         set2IVs,
-//         set3,
-//         set3IVs,
-//         set4,
-//         set4IVs,
-//         set5,
-//         set5IVs,
-//         set6,
-//         set6IVs,
-//         swapMode
-//     }).toString();
-
-          function encodeFormOptions() {
+          function sendToCalc() {
             const params = new URLSearchParams();
-            const formElements = document.querySelectorAll('.form-select, .form-check-input');
+            params.append('Level', document.getElementById('Level').value);
+            params.append('Round', document.getElementById('Round').value);
 
-            formElements.forEach(element => {
-              if (element.type === 'checkbox') {
-                params.append(element.name, element.checked ? 'on' : 'off');
-              } else {
-                params.append(element.name, element.value);
-              }
-            });
+            params.append('Team1',
+              document.getElementById('set1').value.split('-')[0]);
+            params.append('Team2',
+              document.getElementById('set2').value.split('-')[0]);
+            params.append('Team3',
+              document.getElementById('set3').value.split('-')[0]);
+            params.append('LastOpp1',
+              document.getElementById('set4').value.split('-')[0]);
+            params.append('LastOpp2',
+              document.getElementById('set5').value.split('-')[0]);
+            params.append('LastOpp3',
+              document.getElementById('set6').value.split('-')[0]);
 
             const url = `/?${params.toString()}`;
             window.location.href = url;
@@ -217,59 +187,17 @@
 
           document.addEventListener("DOMContentLoaded", function() {
             const urlParams = new URLSearchParams(window.location.search);
-            // TODO : reduce code repetition
-            const level = urlParams.get('Level');
-            const round = urlParams.get('Round');
+            const formElements = document.querySelectorAll('.form-select, .form-check-input');
 
-            if (round){
-              document.getElementById('Round').value = parseInt(round);
+            formElements.forEach(element => {
+            const paramValue = urlParams.get(element.name);
+            if (element.type === 'checkbox') {
+              element.checked = paramValue === 'on';
             }
-
-            if (level){
-              document.getElementById('Level').value = parseInt(level);
+            else if (paramValue !== null) {
+              element.value = paramValue;
             }
-
-            const team1 = urlParams.get('Team1');
-            const team2 = urlParams.get('Team2');
-            const team3 = urlParams.get('Team3');
-
-            const species1 = urlParams.get('Species1');
-            const species2 = urlParams.get('Species2');
-            const species3 = urlParams.get('Species3');
-
-            let set1 = urlParams.get('Set1').split(',')[0];
-            let set2 = urlParams.get('Set2').split(',')[0];
-            let set3 = urlParams.get('Set3').split(',')[0];
-
-            if(!set1){
-              set1 = 1;
-            }
-            if(!set2){
-              set2 = 1;
-            }
-            if(!set3){
-              set3 = 1;
-            }
-
-            if (team1){
-              document.getElementById('set1').value = team1 + '-' + 1;
-            }
-            if (team2){
-              document.getElementById('set2').value = team2 + '-' + 1;
-            }
-            if (team3){
-              document.getElementById('set3').value = team3 + '-' + 1;
-            }
-
-            if (species1) {
-                document.getElementById('set4').value = species1 + '-' + set1;
-            }
-            if (species2) {
-                document.getElementById('set5').value = species2 + '-' + set2;
-            }
-            if (species3) {
-                document.getElementById('set6').value = species3 + '-' + set3;
-            }    
+            });
         });
 
             function showhideSwitch() {

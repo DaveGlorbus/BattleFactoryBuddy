@@ -199,7 +199,7 @@
                 <hr>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/speedcalc">Speed Calculator</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/switchincalc">Switch Calculator</a></div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="encodeFormOptions()">Team Builder</a></div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="sendToTeamBuilder()">Team Builder</a></div>
               </div>        
               
           </div>
@@ -696,26 +696,27 @@
       }
 
 
-      function encodeFormOptions() {
+      function sendToTeamBuilder() {
         const params = new URLSearchParams();
         const formElements = document.querySelectorAll('.form-select, .form-check-input');
-
-        formElements.forEach(element => {
-          if (element.type === 'checkbox') {
-            params.append(element.name, element.checked ? 'on' : 'off');
-          }
-          else {
-            params.append(element.name, element.value);
-          }
-        });
-
         convertToPost("Set1")
         convertToPost("Set2")
         convertToPost("Set3")
+         
+        const species1Set = document.getElementById('Set1').value.split(',')[0] || "1";
+        const species2Set = document.getElementById('Set2').value.split(',')[0] || "1";
+        const species3Set = document.getElementById('Set3').value.split(',')[0] || "1";
+        
+        params.append("set1", document.getElementById('Team1').value + "-1")
+        params.append("set2", document.getElementById('Team2').value + "-1")
+        params.append("set3", document.getElementById('Team3').value + "-1")
 
-        params.append("Set1", document.getElementById('Set1').value)
-        params.append("Set2", document.getElementById('Set2').value)
-        params.append("Set3", document.getElementById('Set3').value)
+        params.append("set4", document.getElementById('Species1').value + "-" + species1Set)
+        params.append("set5", document.getElementById('Species2').value + "-" + species2Set)
+        params.append("set6", document.getElementById('Species3').value + "-" + species3Set)
+
+        params.append('Level', document.getElementById('Level').value);
+        params.append('Round', document.getElementById('Round').value);
 
         const url = `/teambuilder?${params.toString()}`;
         window.location.href = url;
@@ -804,42 +805,18 @@
 
      document.addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
-        // TODO : reduce code repetition
-        const set1 = urlParams.get('set1');
-        const set2 = urlParams.get('set2');
-        const set3 = urlParams.get('set3');
-        const set4 = urlParams.get('set4');
-        const set5 = urlParams.get('set5');
-        const set6 = urlParams.get('set6');
-        const level = urlParams.get('Level');
-        const round = urlParams.get('Round');
+        const formElements = document.querySelectorAll('.form-select, .form-check-input');
 
-        if (round){
-          document.getElementById('Round').value = parseInt(round);
-          }
-
-        if (level){
-          document.getElementById('Level').value = parseInt(level);
+        formElements.forEach(element => {
+        const paramValue = urlParams.get(element.name);
+        if (element.type === 'checkbox') {
+          element.checked = paramValue === 'on';
         }
-
-        if (set1) {
-            document.getElementById('Team1').value = set1.split('-')[0];
+        else if (paramValue !== null) {
+          element.value = paramValue;
         }
-        if (set2) {
-            document.getElementById('Team2').value = set2.split('-')[0];
-        }
-        if (set3) {
-            document.getElementById('Team3').value = set3.split('-')[0];
-        }
-        if (set4) {
-            document.getElementById('LastOpp1').value = set4.split('-')[0];
-        }
-        if (set4) {
-            document.getElementById('LastOpp2').value = set5.split('-')[0];
-        }
-        if (set6) {
-            document.getElementById('LastOpp3').value = set6.split('-')[0];
-        }      
+        });
+      
         });
      </script>
    </body>
