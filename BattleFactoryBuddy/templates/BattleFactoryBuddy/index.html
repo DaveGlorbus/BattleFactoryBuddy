@@ -748,7 +748,7 @@
 
         params.append('Calc', 1);
 
-        const url = `${window.location.host}/?${params.toString()}`;
+        const url = `${window.location.protocol}//${window.location.host}/?${params.toString()}`;
         try {
           await navigator.clipboard.writeText(url);
         } catch (error) {
