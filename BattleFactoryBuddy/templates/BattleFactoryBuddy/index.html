@@ -695,21 +695,6 @@
         document.getElementById('magicnumber').value = '';
       }
 
-      function saveToggleState() {
-        const toggles = document.querySelectorAll('.form-check-input');
-        toggles.forEach(toggle => {
-            localStorage.setItem(toggle.id, toggle.checked);
-        });
-      }
-
-      function applyToggleState() {
-        const toggles = document.querySelectorAll('.form-check-input');
-        toggles.forEach(toggle => {
-        const state = localStorage.getItem(toggle.id) === 'true';
-        toggle.checked = state;
-        showhideSwitch();
-        });
-      }
 
       function encodeFormOptions() {
         const params = new URLSearchParams();
@@ -854,14 +839,7 @@
         }
         if (set6) {
             document.getElementById('LastOpp3').value = set6.split('-')[0];
-        }
-
-        applyToggleState();
-        const toggles = document.querySelectorAll('.form-check-input');
-        toggles.forEach(toggle => {
-            toggle.addEventListener('change', saveToggleState);
-        });
-      
+        }      
         });
      </script>
    </body>
