@@ -203,7 +203,9 @@
                 <hr>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/speedcalc">Speed Calculator</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/switchincalc">Switch Calculator</a></div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/teambuilder">Team Builder</a></div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="sendToTeamBuilder()">Team Builder</a></div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="createAndCopyShareLink()">Copy Page Link to Clipboard</a></div>
+
               </div>        
               
           </div>
@@ -697,7 +699,91 @@
         document.getElementById('targetmon').value = ''; 
         document.getElementById('ballnum').value = ''; 
         document.getElementById('magicnumber').value = '';
-      }   
+      }
+
+
+      function sendToTeamBuilder() {
+        const params = new URLSearchParams();
+        const formElements = document.querySelectorAll('.form-select, .form-check-input');
+        convertToPost('Set1')
+        convertToPost('Set2')
+        convertToPost('Set3')
+
+        const team1 = document.getElementById('Team1').value;
+        const team2 = document.getElementById('Team2').value;
+        const team3 = document.getElementById('Team3').value;
+
+        const species1 = document.getElementById('Species1').value
+        const species2 = document.getElementById('Species2').value
+        const species3 = document.getElementById('Species3').value
+
+        const species1Set = document.getElementById('Set1').value.split(',')[0] || '1';
+        const species2Set = document.getElementById('Set2').value.split(',')[0] || '1';
+        const species3Set = document.getElementById('Set3').value.split(',')[0] || '1';
+
+
+
+        if (team1) {
+          params.append('set1', team1 + '-1')
+        }
+        if (team2) {
+          params.append('set2', team2 + '-1')
+        }
+        if (team3) {
+          params.append('set3', team3 + '-1')
+        }
+
+        if (species1) {
+        params.append('set4', species1 + '-' + species1Set)
+        }
+        if (species2) {
+        params.append('set5', species2 + '-' + species2Set)
+        }
+        if (species3){
+        params.append('set6', species3 + '-' + species3Set)
+        }
+
+        params.append('Level', document.getElementById('Level').value);
+        params.append('Round', document.getElementById('Round').value);
+
+        const url = `/teambuilder?${params.toString()}`;
+        window.open(url, '_blank').focus();
+      }
+
+      async function createAndCopyShareLink() {
+        const params = new URLSearchParams();
+        const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
+
+
+        formElements.forEach(element => {
+          if (element.type === 'checkbox') {
+            params.append(element.name, element.checked ? 'on' : 'off');
+          }
+          else {
+            params.append(element.name, element.value);
+          }
+        });
+
+        convertToPost('Set1')
+        convertToPost('Set2')
+        convertToPost('Set3')
+
+        params.append('Set1', document.getElementById('Set1').value);
+        params.append('Set2', document.getElementById('Set2').value);
+        params.append('Set3', document.getElementById('Set3').value);
+
+        params.append('Calc', 1);
+
+        const url = `${window.location.protocol}//${window.location.host}/?${params.toString()}`;
+        try {
+          await navigator.clipboard.writeText(url);
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
+
+
+
       document.body.style.zoom="70%"    
       
       $('select[multiple]').multiselect({
@@ -776,6 +862,59 @@
         convertToPost("Set3")
         document.getElementById('Calcbar').hidden = false;     
        });
+
+
+     document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.pathname != '/'){
+          return;
+        }
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.size == 0){
+          return;
+        }
+
+        const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
+
+        formElements.forEach(element => {
+          const paramValue = urlParams.get(element.name);
+          if (paramValue) {
+            if (element.type === 'checkbox') {
+              element.checked = paramValue === 'on';
+            }
+            else {
+              element.value = paramValue;
+            }
+          }
+        });
+
+        const set1 = urlParams.get('Set1');
+        const set2 = urlParams.get('Set2');
+        const set3 = urlParams.get('Set3');
+
+        if (set1) {
+          document.getElementById('Set1').value = set1;
+          convertFromGet('Set1');
+        }
+        if (set2) {
+          document.getElementById('Set2').value = set2;
+          convertFromGet('Set2');
+        }
+        if (set3) {
+          document.getElementById('Set3').value = set3;
+          convertFromGet('Set3');
+        }
+
+        showhideSwitch();
+
+        const calc = urlParams.get('Calc');
+        if (calc == 1){
+          document.getElementById('postaction').submit();
+          document.getElementById('Calcbar').hidden = false;
+        }        
+
+        
+        });
      </script>
    </body>
 </html>
