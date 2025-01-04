@@ -32,14 +32,16 @@ def calcAllOccurences():
                 setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(k))
                 if setA.compatibilitycheck(setC) and setB.compatibilitycheck(setC):
                     validOptionsThird += 1
-                    thirdmonlist.append(setB)
+                    thirdmonlist.append(setC)
                 k += 1
             for setC in thirdmonlist:
                 resultArray[setC.id][2] += 1/setCount/validOptionsSecond/validOptionsThird
         i += 1
         print("Done all " + setA.id + " teams")
-    for a in resultArray:
-        print (",".join([a,str(resultArray[a][0]*100),str(resultArray[a][1]*100),str(resultArray[a][2]*100)]))
+    with open ("./BattleFactoryBuddy/Data/AllProbabilities.csv","w") as o:
+        o.write("Set,Position 1,Position 2, Position 3,Total\n")
+        for a in resultArray:
+            o.write(",".join([a,str(resultArray[a][0]*100),str(resultArray[a][1]*100),str(resultArray[a][2]*100),str(resultArray[a][0]*100+resultArray[a][1]*100+resultArray[a][2]*100)])+ "\n")
 
 if __name__ == "__main__":
     calcAllOccurences()
