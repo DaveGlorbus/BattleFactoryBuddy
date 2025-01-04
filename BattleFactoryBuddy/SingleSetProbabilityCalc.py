@@ -12,12 +12,12 @@ def calcSetOccurences(setName):
     # Calc slot 2 odds for vaporeon-4
     runningProbability = float(0)
     i = 1 
-    while i < setCount:
+    while i < setCount +1:
         setA = StaticDataHandler.StaticDataHandler.getSetFromId(str(i))
         if ourSet.compatibilitycheck(setA):
             j = 1
             validOptions = 0
-            while j < setCount:
+            while j < setCount + 1:
                 if setA.compatibilitycheck(StaticDataHandler.StaticDataHandler.getSetFromId(str(j))):
                     validOptions += 1
                 j += 1
