@@ -3,9 +3,9 @@ import BattleFactoryBuddy.Team as Team
 import random
 from time import perf_counter
 
-def calcAllOccurences():
+def calcAllOccurences(lockspecies = None):
     setCount = len(StaticDataHandler.StaticDataHandler.getSetList())    
-    resultArray = {}
+    resultArray = {}    
     for set in StaticDataHandler.StaticDataHandler.getSetList():
         for settype in set.types:
             if settype not in resultArray:                
@@ -42,8 +42,7 @@ def calcAllOccurences():
                 validOptionsSecond += 1
                 secondmonlist.append(setB)
             j += 1
-        for setB in secondmonlist:   
-            #print("Considering all " + setA.id + " and " + setB.id + " teams")         
+        for setB in secondmonlist:               
             k = 1
             thirdmonlist = []
             validOptionsThird = 0
@@ -54,6 +53,8 @@ def calcAllOccurences():
                     thirdmonlist.append(setC)
                 k += 1
             for setC in thirdmonlist:
+                if lockspecies == None or setA.speciesName != lockspecies:
+                    continue
                 team = Team.Team(setA,setB,setC) 
                 resultArray[team.type][team.style]["total"] += 1/setCount/validOptionsSecond/validOptionsThird                  
                 resultArray[team.type][team.style][setA.id][0] += 1/setCount/validOptionsSecond/validOptionsThird
@@ -63,7 +64,11 @@ def calcAllOccurences():
         print("Done all " + setA.id + " teams")
     for type in resultArray:
         for style in resultArray[type]:
-            with open ("./BattleFactoryBuddy/Data/ProceduralProbs/"+type+"-"+str(style)+".csv","w") as o:
+            if lockspecies == None:
+                filename = "./BattleFactoryBuddy/Data/ProceduralAll/"+type+"-"+str(style)+".csv"
+            else:
+                filename = "./BattleFactoryBuddy/Data/Procedural" + lockspecies +"/"+type+"-"+str(style)+".csv"
+            with open (filename,"w") as o:
                 o.write("Set,Position 1,Position 2, Position 3,Total\n")
                 for setId in resultArray[type][style]:
                     if setId == "total" or resultArray[type][style]["total"] == 0:
@@ -75,6 +80,6 @@ def calcAllOccurences():
                     o.write(",".join([setId,str(pos1odds)+"%",str(pos2odds)+"%",str(pos3odds)+"%",str(totalodds)+"%"])+ "\n")
 
 if __name__ == "__main__":
-    calcAllOccurences()
+    calcAllOccurences("Manectric")
     
 
