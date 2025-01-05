@@ -21,13 +21,13 @@ def generateTeamList():
             results[set.id][1] = 0
             results[set.id][2] = 0
     t1_start = perf_counter() 
-    while q < 2000000000:        
+    while q < 100000000:        
         setA = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         setB = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         while not setA.compatibilitycheck(setB):
             setB = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
-        while not setA.compatibilitycheck(setC) and setB.compatibilitycheck(setC):
+        while not (setA.compatibilitycheck(setC) and setB.compatibilitycheck(setC)):
             setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(random.randint(1,masterSetListLen)))
         results[setA.id][0] = results[setA.id][0] + 1
         results[setB.id][1] = results[setB.id][1] + 1
