@@ -1,5 +1,6 @@
 import BattleFactoryBuddy.StaticDataHandler as StaticDataHandler
 import BattleFactoryBuddy.Team as Team
+import BattleFactoryBuddy.StaticTeamUtils as StaticTeamUtils
 import random
 from time import perf_counter
 from pathlib import Path
@@ -8,85 +9,107 @@ from pathlib import Path
 # Alter the fixed mons by changing the lockspecies
 # Create a directory called 
 
-def calcAllOccurences(lockspecies = None, lockspecies2 = None, lockspecies3 = None):    
-    setCount = len(StaticDataHandler.StaticDataHandler.getSetList())    
+def calcAllOccurences(inputdict):    
+    validOptionsFirst = len(StaticDataHandler.StaticDataHandler.getSetList())    
+    # CREATE RESULTS ARRAY
     resultArray = {}    
+    resultArray["total"] = 0
     for set in StaticDataHandler.StaticDataHandler.getSetList():
-        for settype in set.types:
-            if settype not in resultArray:                
-                resultArray[settype] = {}
-                i = 0
-                while i < 9:
-                    resultArray[settype][i] = {}
-                    resultArray[settype][i]["total"] = 0
-                    i+=1
-    resultArray["None"] = {}
-    i = 0
-    while i < 9:
-        resultArray["None"][i] = {}
-        resultArray["None"][i]["total"] = 0
-        i+=1
-        
+        resultArray[set.id] = {}
+        resultArray[set.id][0] = 0
+        resultArray[set.id][1] = 0
+        resultArray[set.id][2] = 0
+
+    # SET UP LIST OF MONS VALID FOR THESE TEAMS
+    blockedSpecies = [inputdict["Team1"],inputdict["Team2"],inputdict["Team3"],inputdict["LastOpp1"],inputdict["LastOpp2"],inputdict["LastOpp3"]]
+    while "" in blockedSpecies:
+        blockedSpecies.remove("")
+    setList = []
+    firstSetList = []
     for set in StaticDataHandler.StaticDataHandler.getSetList():
-        for t in resultArray:
-            for s in resultArray[t]:                
-                resultArray[t][s][set.id] = {}
-                resultArray[t][s][set.id][0] = 0
-                resultArray[t][s][set.id][1] = 0
-                resultArray[t][s][set.id][2] = 0
-    print("Set up result dictionaries")
-    i = 1 
-    while i < setCount +1:
-        setA = StaticDataHandler.StaticDataHandler.getSetFromId(str(i))
-        secondmonlist = []        
-        j = 1
+        # !TODO - Add round / level logic
+        if (not True):
+            continue        
+        if set.speciesName in blockedSpecies:
+            continue
+        resultArray[set.id] = {}
+        resultArray[set.id][0] = 0
+        resultArray[set.id][1] = 0
+        resultArray[set.id][2] = 0
+        if inputdict["Species1"] != "":
+            if inputdict["Species1"] == set.speciesName:
+                firstSetList.append(set)
+            else:
+                setList.append(set)
+        else:
+            setList.append(set)
+    if firstSetList == []:
+        firstSetList = setList
+    validOptionsFirst = len(firstSetList)    
+
+    for setA in firstSetList:        
+        secondmonlist = []                
         validOptionsSecond = 0
-        while j < setCount + 1:
-            setB = StaticDataHandler.StaticDataHandler.getSetFromId(str(j))
+        for setB in setList:            
             if setA.compatibilitycheck(setB):
                 validOptionsSecond += 1
-                secondmonlist.append(setB)
-            j += 1
-        for setB in secondmonlist:               
-            k = 1
+                secondmonlist.append(setB)            
+        for setB in secondmonlist:                           
             thirdmonlist = []
             validOptionsThird = 0
-            while k < setCount + 1:
-                setC = StaticDataHandler.StaticDataHandler.getSetFromId(str(k))
+            for setC in setList:
                 if setA.compatibilitycheck(setC) and setB.compatibilitycheck(setC):
                     validOptionsThird += 1
-                    thirdmonlist.append(setC)
-                k += 1
+                    thirdmonlist.append(setC)                
             for setC in thirdmonlist:
-                if lockspecies == None or setA.speciesName != lockspecies or (lockspecies2 != None and setB.speciesName != lockspecies2 and setC.speciesName != lockspecies2) or (lockspecies3 != None and setB.speciesName != lockspecies3 and setC.speciesName != lockspecies3):
+                # TEAM VALIDATION - cover species 2 and species 3 if they're here.
+                if inputdict["Species2"] != "" and setB.speciesName != inputdict["Species2"] and setC.speciesName != inputdict["Species2"]:
                     continue
-                team = Team.Team(setA,setB,setC) 
-                resultArray[team.type][team.style]["total"] += 1/setCount/validOptionsSecond/validOptionsThird                  
-                resultArray[team.type][team.style][setA.id][0] += 1/setCount/validOptionsSecond/validOptionsThird
-                resultArray[team.type][team.style][setB.id][1] += 1/setCount/validOptionsSecond/validOptionsThird
-                resultArray[team.type][team.style][setC.id][2] += 1/setCount/validOptionsSecond/validOptionsThird
-        i += 1
+                if inputdict["Species3"] != "" and setB.speciesName != inputdict["Species3"] and setC.speciesName != inputdict["Species3"]:
+                    continue
+                (teamType, teamStyle) = StaticTeamUtils.StaticTeamUtils.getTeamInfo(setA,setB,setC)                 
+                if teamType != inputdict["Type"] or str(teamStyle) != inputdict["Phrase"]:
+                    continue
+                
+                # TEAM RECORDING
+                resultArray["total"] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird                  
+                resultArray[setA.id][0] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                resultArray[setB.id][1] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                resultArray[setC.id][2] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
         print("Done all " + setA.id + " teams")
-    for type in resultArray:
-        for style in resultArray[type]:             
-            if lockspecies == None:
-                foldername = "./BattleFactoryBuddy/Data/ProceduralAll"
-            else:
-                foldername = "./BattleFactoryBuddy/Data/Procedural" + lockspecies
-            Path(foldername).mkdir(parents=True, exist_ok=True)
-            filename = foldername + "/" + type+"-"+str(style)+".csv"
-            with open (filename,"w") as o:
-                o.write("Set,Position 1,Position 2, Position 3,Total\n")
-                for setId in resultArray[type][style]:
-                    if setId == "total" or resultArray[type][style]["total"] == 0:
-                        continue
-                    pos1odds = 100*resultArray[type][style][setId][0]/resultArray[type][style]["total"]
-                    pos2odds = 100*resultArray[type][style][setId][1]/resultArray[type][style]["total"]
-                    pos3odds = 100*resultArray[type][style][setId][2]/resultArray[type][style]["total"]
-                    totalodds = pos1odds + pos2odds + pos3odds
-                    o.write(",".join([setId,str(pos1odds)+"%",str(pos2odds)+"%",str(pos3odds)+"%",str(totalodds)+"%"])+ "\n")
+        foldername = "./BattleFactoryBuddy/Data/ProtoGen"
+        Path(foldername).mkdir(parents=True, exist_ok=True)
+        filename = foldername + "/Result.csv"
+        with open (filename,"w") as o:
+            o.write("Set,Position 1,Position 2, Position 3,Total\n")
+            for setId in resultArray:
+                if setId == "total" or resultArray["total"] == 0:
+                    continue
+                pos1odds = 100*resultArray[setId][0]/resultArray["total"]
+                pos2odds = 100*resultArray[setId][1]/resultArray["total"]
+                pos3odds = 100*resultArray[setId][2]/resultArray["total"]
+                totalodds = pos1odds + pos2odds + pos3odds
+                o.write(",".join([setId,str(pos1odds)+"%",str(pos2odds)+"%",str(pos3odds)+"%",str(totalodds)+"%"])+ "\n")
 
 if __name__ == "__main__":
-    calcAllOccurences("Steelix","Feraligatr")
+    inputdict = {}
+    inputdict["Battle"] = "3"
+    inputdict["Round"] = 8
+    inputdict["Level"] = 100
+    inputdict["Species1"] = "Latias"
+    inputdict["Species2"] = ""
+    inputdict["Species3"] = ""
+    inputdict["Type"] = "None"
+    inputdict["Phrase"] = "0"
+    inputdict["Team1"] = ""
+    inputdict["Team2"] = ""
+    inputdict["Team3"] = ""
+    inputdict["LastOpp1"] = ""
+    inputdict["LastOpp2"] = ""
+    inputdict["LastOpp3"] = ""
+    t1_start = perf_counter() 
+    calcAllOccurences(inputdict)
+    t1_stop = perf_counter() 
+    print("Elapsed time: ", t1_stop - t1_start)
     
 
