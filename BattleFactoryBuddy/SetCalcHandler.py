@@ -1,5 +1,6 @@
 import BattleFactoryBuddy.StaticDataHandler as StaticDataHandler
 import BattleFactoryBuddy.SwitchLogicCalculator as SwitchLogicCalculator
+import BattleFactoryBuddy.SingleSetProbabilityCalc as SingleSetProbabilityCalc
 
 class SetCalcHandler:
     def __init__(self):
@@ -8,6 +9,8 @@ class SetCalcHandler:
     def calculate(self, inputdict, results):
         if inputdict["Battle"] == "15":
             return self.calculateNolandBattle(inputdict, results)
+        elif "HiRes" in inputdict and inputdict["Species1"] != None:
+            return SingleSetProbabilityCalc.calcAllOccurences(inputdict,results)
         else:
             return self.calculateStandardBattle(inputdict, results)
 

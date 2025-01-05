@@ -190,6 +190,10 @@
                   <input class="form-check-input" type="checkbox" id="setleveldetail" name="setleveldetail" style="margin-left:10px" onclick="showhideSwitch()">
                   <label class="form-check-label" for="flexSwitchCheckDefault" style = "margin-left:5px"> Show sets in back</label>
                 </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="HiRes" name="HiRes" style="margin-left:10px">
+                  <label class="form-check-label" for="flexSwitchCheckDefault" style = "margin-left:5px"> Hi res</label>
+                </div>
                 <hr>
                 <div class="d-grid gap-2">
                   <button type="button" class="btn btn-tertiary" data-bs-toggle="modal" data-bs-target="#HelpModal">
@@ -755,6 +759,7 @@
         if ('{{NoOdds}}' == "on"){document.getElementById('NoOdds').checked = true}
         if ('{{switchin}}' == "on"){document.getElementById('switchin').checked = true}
         if ('{{setleveldetail}}' == "on"){document.getElementById('setleveldetail').checked = true}
+        if ('{{HiRes}}' == "on"){document.getElementById('HiRes').checked = true}
         showhideSwitch();        
 
       }

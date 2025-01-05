@@ -174,9 +174,12 @@ class SetQueryHTMLHandler:
         self.level = int(inputdict["Level"])
         self.ivs = int(inputdict["Battle"])
         if self.ivs == 15 and inputdict["Round"] in ("6", "8"):
-            self.ivs = 31
+            self.ivs = 31        
         self.noOdds = "NoOdds" in self.inputdict
-        self.inputdict["outputhtml"] = self.populateTopContainer()
+        if "HiRes" in self.inputdict:
+            self.inputdict["outputhtml"] = results
+        else:
+            self.inputdict["outputhtml"] = self.populateTopContainer()
         return self.inputdict
 
     # Method to put the finishing touches on the dynamic HTML by pieceing together any notes, the top table and

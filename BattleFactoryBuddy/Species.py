@@ -19,7 +19,7 @@ class Species:
     # Return a list of Set.uids matching those filtered. Up to the calling code to handle
     # the case where there aren't any.
     # NOTE REMOVED AN ITEMOUT FIELD FROM THIS DEFINITION.
-    def filter(self, movesin=[], itemin=[], ids=[]):
+    def filter(self, movesin=[], itemin=[], ids=[],returnSets = False):
         retlist = []        
         for set in self.setList:
             satisfied = True         
@@ -40,7 +40,10 @@ class Species:
                 if item != set.item:                     
                     satisfied = False
             if satisfied:
-                retlist.append(set.uid)
+                if returnSets:
+                    retlist.append(set)                
+                else:
+                    retlist.append(set.uid)
         
         if len(retlist) == 0:
             print("Returned no sets for " + self.speciesName + ", likely error on input")        
