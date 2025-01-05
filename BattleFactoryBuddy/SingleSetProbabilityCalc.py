@@ -2,8 +2,13 @@ import BattleFactoryBuddy.StaticDataHandler as StaticDataHandler
 import BattleFactoryBuddy.Team as Team
 import random
 from time import perf_counter
+from pathlib import Path
 
-def calcAllOccurences(lockspecies = None):
+# RUN THIS USING calcSetOdds.bat
+# Alter the fixed mons by changing the lockspecies
+# Create a directory called 
+
+def calcAllOccurences(lockspecies = None, lockspecies2 = None, lockspecies3 = None):    
     setCount = len(StaticDataHandler.StaticDataHandler.getSetList())    
     resultArray = {}    
     for set in StaticDataHandler.StaticDataHandler.getSetList():
@@ -53,7 +58,7 @@ def calcAllOccurences(lockspecies = None):
                     thirdmonlist.append(setC)
                 k += 1
             for setC in thirdmonlist:
-                if lockspecies == None or setA.speciesName != lockspecies:
+                if lockspecies == None or setA.speciesName != lockspecies or (lockspecies2 != None and setB.speciesName != lockspecies2 and setC.speciesName != lockspecies2) or (lockspecies3 != None and setB.speciesName != lockspecies3 and setC.speciesName != lockspecies3):
                     continue
                 team = Team.Team(setA,setB,setC) 
                 resultArray[team.type][team.style]["total"] += 1/setCount/validOptionsSecond/validOptionsThird                  
@@ -63,11 +68,13 @@ def calcAllOccurences(lockspecies = None):
         i += 1
         print("Done all " + setA.id + " teams")
     for type in resultArray:
-        for style in resultArray[type]:
+        for style in resultArray[type]:             
             if lockspecies == None:
-                filename = "./BattleFactoryBuddy/Data/ProceduralAll/"+type+"-"+str(style)+".csv"
+                foldername = "./BattleFactoryBuddy/Data/ProceduralAll"
             else:
-                filename = "./BattleFactoryBuddy/Data/Procedural" + lockspecies +"/"+type+"-"+str(style)+".csv"
+                foldername = "./BattleFactoryBuddy/Data/Procedural" + lockspecies
+            Path(foldername).mkdir(parents=True, exist_ok=True)
+            filename = foldername + "/" + type+"-"+str(style)+".csv"
             with open (filename,"w") as o:
                 o.write("Set,Position 1,Position 2, Position 3,Total\n")
                 for setId in resultArray[type][style]:
@@ -80,6 +87,6 @@ def calcAllOccurences(lockspecies = None):
                     o.write(",".join([setId,str(pos1odds)+"%",str(pos2odds)+"%",str(pos3odds)+"%",str(totalodds)+"%"])+ "\n")
 
 if __name__ == "__main__":
-    calcAllOccurences("Manectric")
+    calcAllOccurences("Steelix","Feraligatr")
     
 
