@@ -149,13 +149,10 @@ def calcAllOccurences(inputdict,results,write=False):
                     setBScore = setB.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
                     setCScore = setC.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
                     if setB.speciesName == inputdict["Species2"]:                        
-
-                        if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):
-                            print("Blocked " + " ,".join([setA.id,setB.id,setC.id]) + " on switchin")
+                        if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):                            
                             continue
                     elif setC.speciesName == inputdict["Species2"]:
-                        if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):
-                            print("Blocked " + " ,".join([setA.id,setB.id,setC.id]) + " on switchin")
+                        if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):                            
                             continue
                     else:
                         print("WHERE IS SPECIES 2?")
@@ -176,16 +173,15 @@ def calcAllOccurences(inputdict,results,write=False):
                 if setId == "total" or resultArray["total"] == 0:
                     continue
                 totalodds = 100*resultArray[setId]/resultArray["total"]                
-                o.write(",  ".join([setId,"{:.2f}%".format(totalodds)+"%"])+ "\n")
+                o.write(",  ".join([setId,"{:.2f}%".format(totalodds)])+ "\n")
     else:        
-        results = ""
+        resultList = []        
         for setId in resultArray:
             if setId == "total" or resultArray["total"] == 0 or resultArray[setId] == 0:
                     continue
             totalodds = 100*resultArray[setId]/resultArray["total"]                
-            results += ",".join([setId,"{:.2f}%".format(totalodds)])+ "<br>"    
-            t1_stop = perf_counter() 
-        results = "Elapsed time: " + str(t1_stop - t1_start) + "<br>" + results
+            resultList.append([StaticDataHandler.StaticDataHandler.getSetFromName(setId),totalodds])                    
+        results.loadHiResResults(resultList)        
         return(results)
 
 if __name__ == "__main__":

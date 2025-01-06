@@ -28,6 +28,9 @@ class SetQueryHandler:
             print(traceback.format_exc())
             results.addError("Battle Factory Buddy hit an error :(\n Please try again and / or report the issue.")
             self.inputdict = htmlHandler.buildHTML(self.inputdict, results)
+        if "CarryHiRes" in self.inputdict:
+            self.inputdict["HiRes"] = "on"
+            del self.inputdict["CarryHiRes"]
         return self.inputdict
 
     # Handles checking whether the query we've been given is valid. This mostly covers users inputting
@@ -105,6 +108,14 @@ class SetQueryHandler:
         
         if "setleveldetail" in self.inputdict and "DetailMode" not in self.inputdict:
             self.inputdict["DetailMode"] = "on"
+        
+        if "HiRes" in self.inputdict and "DetailMode" not in self.inputdict:
+            self.inputdict["DetailMode"] = "on"
+        
+        if "HiRes" in self.inputdict and self.inputdict["Species1"] == "":
+            results.addNote("Hi-Res mode only available once first mon is revealed, showing normal mode")
+            del self.inputdict["HiRes"]
+            self.inputdict["CarryHiRes"] = True
 
         # If we've got here then we've not found anything wrong. Return true and the (unedited) Results Object.
         return (True, results)
