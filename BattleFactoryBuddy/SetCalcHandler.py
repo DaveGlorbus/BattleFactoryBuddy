@@ -1,5 +1,6 @@
 import BattleFactoryBuddy.StaticDataHandler as StaticDataHandler
 import BattleFactoryBuddy.SwitchLogicCalculator as SwitchLogicCalculator
+import BattleFactoryBuddy.StaticTeamUtils as StaticTeamUtils
 from pathlib import Path
 
 class SetCalcHandler:
@@ -294,7 +295,7 @@ class SetCalcHandler:
                                     results.addTeam((s1Id, s2Id, s3set.uid))
         return results
     
-    def calcProcedural(inputdict,results,write=False):        
+    def calcProcedural(self,inputdict,results,write=False):        
         validOptionsFirst = len(StaticDataHandler.StaticDataHandler.getSetList())    
         # CREATE RESULTS ARRAY
         resultArray = {}    
