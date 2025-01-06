@@ -295,7 +295,7 @@ class SetCalcHandler:
                                     results.addTeam((s1Id, s2Id, s3set.uid))
         return results
     
-    def calcProcedural(self,inputdict,results,write=False):        
+    def calcProcedural(self,inputdict,results):        
         validOptionsFirst = len(StaticDataHandler.StaticDataHandler.getSetList())    
         # CREATE RESULTS ARRAY
         resultArray = {}    
@@ -445,25 +445,12 @@ class SetCalcHandler:
                     resultArray["total"] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird                  
                     resultArray[setA.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
                     resultArray[setB.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
-                    resultArray[setC.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
-            print("Done all " + setA.id + " teams")
-        if (write):
-            foldername = "./BattleFactoryBuddy/Data/ProtoGen"
-            Path(foldername).mkdir(parents=True, exist_ok=True)
-            filename = foldername + "/Result.csv"
-            with open (filename,"w") as o:
-                o.write("Set,Total\n")
-                for setId in resultArray:
-                    if setId == "total" or resultArray["total"] == 0:
-                        continue
-                    totalodds = 100*resultArray[setId]/resultArray["total"]                
-                    o.write(",  ".join([setId,"{:.2f}%".format(totalodds)])+ "\n")
-        else:        
-            resultList = []        
-            for setId in resultArray:
-                if setId == "total" or resultArray["total"] == 0 or resultArray[setId] == 0:
-                        continue
-                totalodds = 100*resultArray[setId]/resultArray["total"]                
-                resultList.append([StaticDataHandler.StaticDataHandler.getSetFromName(setId),totalodds])                    
-            results.loadHiResResults(resultList)        
-            return(results)
+                    resultArray[setC.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird              
+        resultList = []        
+        for setId in resultArray:
+            if setId == "total" or resultArray["total"] == 0 or resultArray[setId] == 0:
+                    continue
+            totalodds = 100*resultArray[setId]/resultArray["total"]                
+            resultList.append([StaticDataHandler.StaticDataHandler.getSetFromName(setId),totalodds])                    
+        results.loadHiResResults(resultList)        
+        return(results)
