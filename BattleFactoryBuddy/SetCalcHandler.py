@@ -344,26 +344,26 @@ class SetCalcHandler:
                 ids = inputdict["Set" + str(idx)].split(",")
                 while "" in ids:
                     ids.remove("")            
-                for set in StaticDataHandler.StaticDataHandler.getSpeciesFromName(
+                for consideredSet in StaticDataHandler.StaticDataHandler.getSpeciesFromName(
                         inputdict["Species" + str(idx)]
                     ).filter(moves, items, ids, True):
-                    if not checkround or set.roundInfo in markers:
-                        resultArray[set.id] = 0        
+                    if not checkround or consideredSet.roundInfo in markers:
+                        resultArray[consideredSet.id] = 0        
                         if idx == 1:
-                            firstSetList.append(set)
+                            firstSetList.append(consideredSet)
                         else:
-                            setList.append(set)            
+                            setList.append(consideredSet)            
             idx += 1
 
         # Prep the setList for any mon not defined
-        for set in StaticDataHandler.StaticDataHandler.getSetList():        
+        for consideredSet in StaticDataHandler.StaticDataHandler.getSetList():        
             if (checkround):            
-                if set.roundInfo not in markers:                
+                if consideredSet.roundInfo not in markers:                
                     continue                
-            if set.speciesName in blockedSpecies:
+            if consideredSet.speciesName in blockedSpecies:
                 continue
-            resultArray[set.id] = 0        
-            setList.append(set)
+            resultArray[consideredSet.id] = 0        
+            setList.append(consideredSet)
         if firstSetList == []:
             firstSetList = setList
         validOptionsFirst = len(firstSetList)    
@@ -405,6 +405,7 @@ class SetCalcHandler:
             
 
         # DO THE THING
+        noteAdded = False
         for setA in firstSetList:        
             secondmonlist = []                
             validOptionsSecond = 0
