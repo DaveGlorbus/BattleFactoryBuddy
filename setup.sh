@@ -18,5 +18,7 @@ export PYTHONPATH="${PYTHONPATH}:./"
 # Perform initial django migration (https://docs.djangoproject.com/en/5.1/topics/migrations/)
 .venv/bin/python manage.py migrate
 
-# Collect static files (useful if running with DEBUG=False) (https://docs.djangoproject.com/en/5.1/ref/contrib/staticfiles/)
-.venv/bin/python manage.py collectstatic
+# Collect static files (https://docs.djangoproject.com/en/5.1/ref/contrib/staticfiles/)
+# Uncommenting this will prepare the static files, as set in quickstartproject/settings.py
+# this is required as part of preparation for use in production
+#.venv/bin/python manage.py collectstatic
