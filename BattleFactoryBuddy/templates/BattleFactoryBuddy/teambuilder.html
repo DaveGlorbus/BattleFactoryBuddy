@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jQuery-MultiSelect-master/jquery.multiselect.js' %}"></script>
-    <script src="{% static 'js/teambuilder.js' %}"></script>
     <script src="{% static 'js/shared.js' %}"></script>
+    <script src="{% static 'js/teambuilder.js' %}"></script>
 
     
 </head>
@@ -142,6 +142,9 @@
                     </div>
                     <hr>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                      <a href="javascript:void(0);" onclick="createAndCopyShareLink(null, true)">Copy Query Link to Clipboard</a>
+                    </div>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                       <a href="javascript:void(0);" onclick="sendToCalc()">Back to main Buddy</a>
                   </div>                  
                 </div>
@@ -171,7 +174,13 @@
           if (urlParams.size == 0){
             return;
           }
-          setFormFromParams(urlParams);          
+          setFormFromParams(urlParams);
+
+          const calc = urlParams.get('Calc');
+          if (calc == 1) {
+              document.getElementById('postaction').submit();
+          }
+
 
           });
 
