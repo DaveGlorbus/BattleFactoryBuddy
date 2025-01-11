@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jQuery-MultiSelect-master/jquery.multiselect.js' %}"></script>
-    <script src="{% static 'js/index.js' %}"></script>
     <script src="{% static 'js/shared.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 
 </head>
 <html>  
@@ -203,7 +203,7 @@
                   </button>
                 </div>  
                 <hr>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="createAndCopyShareLink()">Copy Query Link to Clipboard</a></div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="createAndCopyShareLinkIndex()">Copy Query Link to Clipboard</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/speedcalc">Speed Calculator</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="/switchincalc">Switch Calculator</a></div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1"><a href="javascript:void(0);" onclick="sendToTeamBuilder()">Team Builder</a></div>               
@@ -621,8 +621,8 @@
 
 
      <script>
-      
-      document.body.style.zoom="70%"    
+
+      document.body.style.zoom="70%"
       
       $('select[multiple]').multiselect({
         columns: 1,
