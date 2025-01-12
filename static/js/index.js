@@ -30,14 +30,6 @@ function resetCheckboxes(valstring) {
     }
     $('select[multiple]').multiselect('reload');
 }
-function showhideSwitch() {
-    if (document.getElementById('switchin').checked) {
-        document.getElementById('switchcard').hidden = false;
-    } else {
-        document.getElementById('switchcard').hidden = true;
-    }
-}
-
 
 function nextRound() {
     document.getElementById('LastOpp1').value = document.getElementById('Species1').value;
@@ -74,7 +66,7 @@ function nextRound() {
     resetCheckboxes("Set3");
     document.getElementById('targetmon').value = '';
     document.getElementById('ballnum').value = '';
-    document.getElementById('magicnumber').value = '';
+    document.getElementById('magicnumber').value = "Not Entered";
 }
 
 
@@ -96,8 +88,6 @@ function sendToTeamBuilder() {
     const species1Set = document.getElementById('Set1').value.split(',')[0] || '1';
     const species2Set = document.getElementById('Set2').value.split(',')[0] || '1';
     const species3Set = document.getElementById('Set3').value.split(',')[0] || '1';
-
-
 
     if (team1) {
         params.append('set1', team1 + '-1')
