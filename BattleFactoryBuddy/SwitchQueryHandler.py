@@ -14,14 +14,6 @@ class SwitchQueryHandler:
         faintedSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(self.inputdict["faintedmon"])
         targetSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(self.inputdict["targetmon"])
         
-        # Normalise the magic number field, assuming the user hasn't put it in.
-        if (
-                "magicnumber" not in self.inputdict
-                or self.inputdict["magicnumber"] == ""
-            ):
-                self.inputdict["magicnumber"] = 40
-        magicNumber = self.inputdict["magicnumber"]
-        
         results = SwitchResults(species1Name, species2Name)        
         # Get the results for each set from species 1
         for species1setId in StaticDataHandler.StaticDataHandler.getSpeciesFromName(species1Name).filter():

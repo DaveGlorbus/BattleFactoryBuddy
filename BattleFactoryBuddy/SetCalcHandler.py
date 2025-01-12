@@ -81,16 +81,16 @@ class SetCalcHandler:
         # we've got a simple bool to check in the big loop.
         switchlogic = False
         if (
-            "switchin" in inputdict
-            and "targetmon" in inputdict
+           "targetmon" in inputdict
             and inputdict["targetmon"] != ""
             and inputdict["Species2"] != ""
             and inputdict["Species1"] != ""
         ):
             switchlogic = True
-            if "magicnumber" not in inputdict or inputdict["magicnumber"] == "":
-                inputdict["magicnumber"] = 40
-            magicNumber = inputdict["magicnumber"]
+            if(inputdict["magicnumber"] == ""):
+                magicNumber = "40"
+            else:
+                magicNumber = inputdict["magicnumber"]
             faintedSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(
                 inputdict["Species1"]
             )
@@ -194,16 +194,16 @@ class SetCalcHandler:
     def calculateNolandBattle(self, inputdict, results):
         switchin = False
         if (
-            "switchin" in inputdict
-            and "targetmon" in inputdict
+            "targetmon" in inputdict
             and inputdict["targetmon"] != ""
             and inputdict["Species2"] != ""
             and inputdict["Species1"] != ""
         ):
             switchin = True
-            if "magicnumber" not in inputdict or inputdict["magicnumber"] == "":
-                inputdict["magicnumber"] = 40
-            magicNumber = inputdict["magicnumber"]
+            if(inputdict["magicnumber"] == ""):
+                magicNumber = "40"
+            else:
+                magicNumber = inputdict["magicnumber"]
             faintedSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(
                 inputdict["Species1"]
             )
@@ -371,16 +371,16 @@ class SetCalcHandler:
         # Prep switch logic
         switchlogic = False
         if (
-            "switchin" in inputdict
-            and "targetmon" in inputdict
+            "targetmon" in inputdict
             and inputdict["targetmon"] != ""
             and inputdict["Species2"] != ""
             and inputdict["Species1"] != ""
         ):
             switchlogic = True
-            if "magicnumber" not in inputdict or inputdict["magicnumber"] == "":
-                inputdict["magicnumber"] = 40
-            magicNumber = inputdict["magicnumber"]
+            if(inputdict["magicnumber"] == ""):
+                magicNumber = "40"
+            else:
+                magicNumber = inputdict["magicnumber"]
             faintedSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(
                 inputdict["Species1"]
             )
@@ -395,6 +395,14 @@ class SetCalcHandler:
                     inputdict["Species2"], inputdict["ballnum"]
                 )
             results.addNote(resultNote)
+                    # Precalc switchins
+            switchScoreDict = {}        
+            for set in setList:
+                switchScoreDict[set.id] = {}
+                switchScoreDict[set.id][magicNumber] = set.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
+
+
+            
 
         # DO THE THING
         for setA in firstSetList:        
@@ -432,8 +440,8 @@ class SetCalcHandler:
                             if setB.speciesName != inputdict["Species3"]:
                                 continue
 
-                        setBScore = setB.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
-                        setCScore = setC.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
+                        setBScore = switchScoreDict[setB.id][magicNumber]
+                        setCScore = switchScoreDict[setB.id][magicNumber]                        
                         if setB.speciesName == inputdict["Species2"]:                        
                             if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):                            
                                 continue

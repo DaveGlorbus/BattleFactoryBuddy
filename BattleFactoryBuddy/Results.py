@@ -7,12 +7,7 @@ class Results:
         self.confirmedOpponentSetsDict = {}
         self.confirmedOpponentSpeciesNameList = []
         self.freeAgentSetsDict = {}
-        self.inputdict = inputdict
-        self.detailMode = "DetailMode" in inputdict
-        self.probabilitySort = ("NoOdds" in inputdict) or (
-            "ProbabilitySort" in inputdict
-        )
-        self.noOdds = "NoOdds" in inputdict
+        self.inputdict = inputdict        
         self.validTeamAdded = False
         self.notes = []
         self.errorNotes = []
@@ -69,10 +64,7 @@ class Results:
         for speciesName, speciesResult in self.freeAgentSetsDict.items():
             freeAgentList.append((speciesName, speciesResult))
         # Sort
-        if self.noOdds:
-            freeAgentList.sort(key=lambda tuple: tuple[0])
-        else:
-            freeAgentList.sort(key=lambda tuple: tuple[1].getSortKey(), reverse=True)
+        freeAgentList.sort(key=lambda tuple: tuple[1].getSortKey(), reverse=True)
 
         # Yield one SpeciesResult on the list at a time
         for speciesName, speciesResult in freeAgentList:

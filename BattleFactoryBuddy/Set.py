@@ -88,14 +88,12 @@ class Set:
         return self.uid
 
     # Returns a tuple used to display this set in the "found sets" table.
-    def getTableRow(self, level, ivs, providePhrase, probability=0):
-        if providePhrase:
-            col2entry = self.moves
-        else:
-            col2entry = "{:.2f}%".format(probability)
+    def getTableRow(self, level, ivs, probability=0):
+        col2entry = "{:.2f}%".format(probability)
         return (self.abilities,
             self.id,
-            col2entry,
+            self.moves,
+            col2entry,            
             self.item,
             self.moveList[0],
             self.moveList[1],

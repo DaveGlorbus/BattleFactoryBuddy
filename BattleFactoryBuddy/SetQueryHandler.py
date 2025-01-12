@@ -84,34 +84,6 @@ class SetQueryHandler:
                             )
                             return (False, results)
 
-        # Add in the magic number if the user hasn't entered one and switch-in logic is on.
-        if (
-            "switchin" in self.inputdict
-            and "targetmon" in self.inputdict
-            and self.inputdict["targetmon"] != ""
-            and self.inputdict["Species2"] != ""
-            and self.inputdict["Species1"] != ""
-        ):
-            if (
-                "magicnumber" not in self.inputdict
-                or self.inputdict["magicnumber"] == ""
-            ):
-                self.inputdict["magicnumber"] = 40
-
-        # If we've got Probability sort and NoOdds selected, deselect probability sort.
-        if "NoOdds" in self.inputdict and "ProbabilitySort" in self.inputdict:
-            self.inputdict.pop("ProbabilitySort")
-
-        # If we've got Detail Mode and NoOdds selected, deselect NoOdds.
-        if "NoOdds" in self.inputdict and "DetailMode" in self.inputdict:
-            self.inputdict.pop("DetailMode")
-        
-        if "setleveldetail" in self.inputdict and "DetailMode" not in self.inputdict:
-            self.inputdict["DetailMode"] = "on"
-        
-        if "HiRes" in self.inputdict and "DetailMode" not in self.inputdict:
-            self.inputdict["DetailMode"] = "on"
-        
         if "HiRes" in self.inputdict and self.inputdict["Species1"] == "":
             results.addNote("Hi-Res mode only available once first mon is revealed, showing normal mode")
             del self.inputdict["HiRes"]

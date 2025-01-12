@@ -9,14 +9,11 @@ class SpeciesResult():
         # This field covers whether we're tracking the distribution of different sets or just the chance
         # of the species being shown. This is True for mons that have been seen on the opponent's team and
         # for everything if the "Sets on upcoming mons" is set.
-        self.setCollation = confirmedOpponent or ("DetailMode" in inputdict) or ("NoOdds" in inputdict)
-        self.sortOnProbability = not ("NoOdds" in inputdict) and ("ProbabilitySort" in inputdict)
-        self.noOdds = ("NoOdds" in inputdict)
         self.speciesPercentage = 0
     
     def addCount(self, setid=None):
         self.totalcount += 1
-        if ((setid != None) and (self.setCollation)):
+        if (setid != None):
             if setid not in self.setDict:
                 self.setDict[setid] = 0
             self.setDict[setid] += 1
@@ -38,9 +35,7 @@ class SpeciesResult():
 
     # Return the sets under this SpeciesResult. This should only be called if setCollation is true (otherwise, why would we care?) and
     # sorts the sets under it based on configuration (e.g. no odds mode etc.)
-    def iterGetSets(self):
-        if not self.setCollation:
-            raise "Trying to pull out a set when we're not configured to."
+    def iterGetSets(self):        
         
         if self.hiResResultList != []:
             for setAndResult in self.hiResResultList:
@@ -56,14 +51,10 @@ class SpeciesResult():
             
             # Sort alphabetically first, then sort by incidences. This is max 10 entries so the perf hit of sorting twice is fine and saves
             # us having to create an object for a key method as above or creating an awful lambda expression.
-            setList.sort(key=lambda tuple: tuple[0])
-            if self.sortOnProbability:            
-                setList.sort(key=lambda tuple: tuple[1], reverse=True)
+            setList.sort(key=lambda tuple: tuple[0])       
+            setList.sort(key=lambda tuple: tuple[1], reverse=True)
             for (setId,setResult) in setList:            
-                if self.noOdds:
-                    tuple = ("",StaticDataHandler.StaticDataHandler.getSetFromId(setId))
-                else:
-                    tuple = (float(setResult*100)/self.totalcount, StaticDataHandler.StaticDataHandler.getSetFromId(setId))                
+                tuple = (float(setResult*100)/self.totalcount, StaticDataHandler.StaticDataHandler.getSetFromId(setId))                
 
                 yield(tuple)
             return
