@@ -53,3 +53,48 @@ function showhideSwitch() {
         }
     }
 }
+
+function highlightMatchingTeamMembers() {
+    // Build the checklist array from the selected items
+    let checklist = [];
+    if ($('#set1Check').is(":checked")) checklist.push($('#set1').val());
+    if ($('#set2Check').is(":checked")) checklist.push($('#set2').val());
+    if ($('#set3Check').is(":checked")) checklist.push($('#set3').val());
+    if ($('#set4Check').is(":checked")) checklist.push($('#set4').val());
+    if ($('#set5Check').is(":checked")) checklist.push($('#set5').val());
+    if ($('#set6Check').is(":checked")) checklist.push($('#set6').val());
+
+    // Highlight matching items in the accordion headers
+    $('.accordion-header').each(function() {
+        let headerText = $(this).text();
+
+        // Can do === 3 for all only
+        let containsAll = checklist.length >= 1 && checklist.every(function(item) {
+            return headerText.includes(item);
+        });
+        if (containsAll) {
+            $(this).addClass('highlight');
+        } else {
+            $(this).removeClass('highlight');
+        }
+    });
+}
+
+$(document).ready(function() {
+    $("input.team-checkbox").change(function () {
+        if ($(this).is(":checked")) {
+            teamChecked.push(this.id);
+            if (teamChecked.length > 3) {
+                teamChecked.splice(0, 1);
+            }
+            $("input.team-checkbox").prop("checked", false);
+            for (let i = 0; i < teamChecked.length; i++) {
+                $("#" + teamChecked[i]).prop("checked", true);
+            }
+        } else {
+            let index = teamChecked.indexOf(this.id);
+            teamChecked.splice(index, 1);
+        }
+        highlightMatchingTeamMembers();
+    });
+});
