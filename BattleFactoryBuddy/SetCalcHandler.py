@@ -448,20 +448,21 @@ class SetCalcHandler:
                         multi = 0
                         if not useMagicNumber:
                             if setB.speciesName == inputdict["Species2"]:                        
-                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["37"] ,switchScoreDict[setC.id]["37"]):
-                                    multi += 0.5
-                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):
-                                    multi += 0.5                                
-                            elif setC.speciesName == inputdict["Species2"]:
                                 if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["37"] ,switchScoreDict[setC.id]["37"]):
                                     multi += 0.5
-                                if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):                            
+                                if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):
+                                    multi += 0.5                                
+                            elif setC.speciesName == inputdict["Species2"]:
+                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["37"] ,switchScoreDict[setC.id]["37"]):
+                                    multi += 0.5
+                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):                            
                                     multi += 0.5                                                   
                             if multi == 0:
                                 continue
                             elif not noteAdded:
                                 if multi == 0.5:
-                                    results.addNote("MAGIC NUMBER MATTERS")
+                                    results.addNote("WARNING!! Switch-in logic has detected that the switch-in result can be different based on whether the result of a bizarre damage roll is odd or even. This is rare, and the buddy may be wrong with how it implements this logic! Take a look at the `Magic Number` section in the left hand bar and ideally send Dave Glorbus a recording of your battle in Discord. Thanks!")
+                                    noteAdded = True
                             compoundProbability = multi*(1/validOptionsFirst/validOptionsSecond/validOptionsThird)
                         else:
                             if setB.speciesName == inputdict["Species2"]:                        
