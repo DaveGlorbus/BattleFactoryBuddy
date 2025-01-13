@@ -476,8 +476,7 @@ class SetCalcHandler:
                     else: 
                         compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
 
-                    # TEAM RECORDING
-                    compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                    # TEAM RECORDING                    
                     resultArray["total"] += compoundProbability                  
                     resultArray[setA.id] += compoundProbability
                     resultArray[setB.id] += compoundProbability
