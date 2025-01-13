@@ -377,10 +377,7 @@ class SetCalcHandler:
             and inputdict["Species1"] != ""
         ):
             switchlogic = True
-            if(inputdict["magicnumber"] == ""):
-                magicNumber = "40"
-            else:
-                magicNumber = inputdict["magicnumber"]
+            switchScoreDict = {}
             faintedSpecies = StaticDataHandler.StaticDataHandler.getSpeciesFromName(
                 inputdict["Species1"]
             )
@@ -394,15 +391,22 @@ class SetCalcHandler:
                 resultNote += ", and that {} was in ball {}".format(
                     inputdict["Species2"], inputdict["ballnum"]
                 )
-            results.addNote(resultNote)
-                    # Precalc switchins
-            switchScoreDict = {}        
-            for set in setList:
-                switchScoreDict[set.id] = {}
-                switchScoreDict[set.id][magicNumber] = set.getSwitchScores(faintedSpecies,targetSpecies,magicNumber)
-
-
             
+            if "magicnumber" not in inputdict or inputdict["magicnumber"] == "":
+                useMagicNumber = False
+                for switchScoreSet in setList:
+                    switchScoreDict[switchScoreSet.id] = {}
+                    switchScoreDict[switchScoreSet.id]["37"] = switchScoreSet.getSwitchScores(faintedSpecies,targetSpecies,"37")
+                    switchScoreDict[switchScoreSet.id]["40"] = switchScoreSet.getSwitchScores(faintedSpecies,targetSpecies,"40")
+            else:                
+                useMagicNumber = True                
+                for switchScoreSet in setList:
+                    switchScoreDict[switchScoreSet.id] = {}
+                    switchScoreDict[switchScoreSet.id] = switchScoreSet.getSwitchScores(faintedSpecies,targetSpecies,inputdict["magicnumber"])                    
+
+            results.addNote(resultNote)
+            
+
 
         # DO THE THING
         noteAdded = False
@@ -432,7 +436,7 @@ class SetCalcHandler:
                             continue
 
                     # Do switch logic. Note that it's way easier here. We'll get to the other order
-                    # later so just think about what's in front of us.
+                    # later so just think about what's in front of us.                    
                     if switchlogic:
                         if inputdict["ballnum"] == "2":
                             if setB.speciesName != inputdict["Species2"]:
@@ -441,22 +445,42 @@ class SetCalcHandler:
                             if setB.speciesName != inputdict["Species3"]:
                                 continue
 
-                        setBScore = switchScoreDict[setB.id][magicNumber]
-                        setCScore = switchScoreDict[setB.id][magicNumber]                        
-                        if setB.speciesName == inputdict["Species2"]:                        
-                            if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):                            
+                        multi = 0
+                        if not useMagicNumber:
+                            if setB.speciesName == inputdict["Species2"]:                        
+                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["37"] ,switchScoreDict[setC.id]["37"]):
+                                    multi += 0.5
+                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):
+                                    multi += 0.5                                
+                            elif setC.speciesName == inputdict["Species2"]:
+                                if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["37"] ,switchScoreDict[setC.id]["37"]):
+                                    multi += 0.5
+                                if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id]["40"] ,switchScoreDict[setC.id]["40"]):                            
+                                    multi += 0.5                                                   
+                            if multi == 0:
                                 continue
-                        elif setC.speciesName == inputdict["Species2"]:
-                            if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(setBScore, setCScore):                            
-                                continue
+                            elif not noteAdded:
+                                if multi == 0.5:
+                                    results.addNote("MAGIC NUMBER MATTERS")
+                            compoundProbability = multi*(1/validOptionsFirst/validOptionsSecond/validOptionsThird)
                         else:
-                            print("WHERE IS SPECIES 2?")
+                            if setB.speciesName == inputdict["Species2"]:                        
+                                if not SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id],switchScoreDict[setC.id]):
+                                    continue
+                            elif setC.speciesName == inputdict["Species2"]:    
+                                if SwitchLogicCalculator.SwitchLogicCalculator.doesAcomeInOverB(switchScoreDict[setB.id],switchScoreDict[setC.id]):
+                                    continue
+                            compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                            
+                    else: 
+                        compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
 
                     # TEAM RECORDING
-                    resultArray["total"] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird                  
-                    resultArray[setA.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
-                    resultArray[setB.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird
-                    resultArray[setC.id] += 1/validOptionsFirst/validOptionsSecond/validOptionsThird              
+                    compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                    resultArray["total"] += compoundProbability                  
+                    resultArray[setA.id] += compoundProbability
+                    resultArray[setB.id] += compoundProbability
+                    resultArray[setC.id] += compoundProbability
         resultList = []        
         for setId in resultArray:
             if setId == "total" or resultArray["total"] == 0 or resultArray[setId] == 0:
