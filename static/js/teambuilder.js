@@ -97,19 +97,14 @@ function highlightMatchingTeamMembers() {
 
 $(document).ready(function() {
     $("input.team-checkbox").change(function () {
-        if ($(this).is(":checked")) {
-            teamChecked.push(this.id);
-            if (teamChecked.length > 3) {
-                teamChecked.splice(0, 1);
-            }
-            $("input.team-checkbox").prop("checked", false);
-            for (let i = 0; i < teamChecked.length; i++) {
-                $("#" + teamChecked[i]).prop("checked", true);
-            }
-        } else {
-            let index = teamChecked.indexOf(this.id);
-            teamChecked.splice(index, 1);
+        let maxChecked = 3;
+        let checkedChecks = document.querySelectorAll(".team-checkbox:checked");
+        if(checkedChecks.length >= maxChecked + 1)
+        {
+            this.checked = false;
+            return;
         }
+
         highlightMatchingTeamMembers();
     });
 });

@@ -191,9 +191,6 @@
         <script>
           document.body.style.zoom="70%"
 
-          // Variable to store state of checkboxes
-          let teamChecked = [];
-
           document.addEventListener('DOMContentLoaded', function() {
           const urlParams = new URLSearchParams(window.location.search);
             
@@ -229,16 +226,6 @@
                 document.getElementById('Level').value = '{{Level}}';
                 document.getElementById('Round').value = '{{Round}}';
                 if ('{{SwapMode}}' == "on"){document.getElementById('SwapMode').checked = true;}
-                {% if set1Check %} teamChecked.push("set1Check"); {% endif %}
-                {% if set2Check %} teamChecked.push("set2Check"); {% endif %}
-                {% if set3Check %} teamChecked.push("set3Check"); {% endif %}
-                {% if set4Check %} teamChecked.push("set4Check"); {% endif %}
-                {% if set5Check %} teamChecked.push("set5Check"); {% endif %}
-                {% if set6Check %} teamChecked.push("set6Check"); {% endif %}
-
-                for (var i = 0; i < teamChecked.length; i++) {
-                    $("#" + teamChecked[i]).prop("checked", true);
-                }
 
                 highlightMatchingTeamMembers();
 
