@@ -15,22 +15,22 @@ function sendToCalc() {
     const team = [];
     const lastOpp = [];
 
-    // Add our checked team
+    // Add the checked team members
     sets.forEach((set, index) => {
-        const mon = document.getElementById(set.id).value.split('-')[0];
+        const species = document.getElementById(set.id).value.split('-')[0];
         if (set.check) {
-            team.push(mon);
+            team.push(species);
         }
     });
 
     // Add the remaining sets in order
     sets.forEach((set, index) => {
-        const mon = document.getElementById(set.id).value.split('-')[0];
+        const species = document.getElementById(set.id).value.split('-')[0];
         if (!set.check) {
             if (team.length < 3) {
-                team.push(mon);
+                team.push(species);
             } else {
-                lastOpp.push(mon);
+                lastOpp.push(species);
             }
         }
     });
@@ -70,7 +70,7 @@ function showhideSwitch() {
 }
 
 function highlightMatchingTeamMembers() {
-    // Build the checklist array from the selected items
+    // Build the array of checked sets
     let checklist = [];
     if ($('#set1Check').is(":checked")) checklist.push($('#set1').val());
     if ($('#set2Check').is(":checked")) checklist.push($('#set2').val());
@@ -84,6 +84,8 @@ function highlightMatchingTeamMembers() {
         let headerText = $(this).text();
 
         // Can do === 3 for all only
+        // Highlight any team headers which contain all of the checked members
+        // i.e 1 team if all checked, or 4 if two checked...
         let containsAll = checklist.length >= 1 && checklist.every(function(item) {
             return headerText.includes(item);
         });
@@ -96,6 +98,7 @@ function highlightMatchingTeamMembers() {
 }
 
 $(document).ready(function() {
+    // Only allow 3 checkboxes (the team) to be checked
     $("input.team-checkbox").change(function () {
         let maxChecked = 3;
         let checkedChecks = document.querySelectorAll(".team-checkbox:checked");
