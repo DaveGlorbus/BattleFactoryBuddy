@@ -45,10 +45,13 @@ async function createAndCopyShareLink(initialParams = null, includePathName = fa
 
   const copyElement = document.getElementById('createAndCopyShareLink');
   const priorText = copyElement.textContent;
+  const copiedSuccText = "Copied";
 
   try {
     await navigator.clipboard.writeText(url);
-    copyElement.textContent = "Copied";
+    // Cover clicked while Copied is shown case
+    if(copyElement.textContent == copiedSuccText) return;
+    copyElement.textContent = copiedSuccText;
     setTimeout(() => {
       copyElement.textContent = priorText;
     }, 1500);
