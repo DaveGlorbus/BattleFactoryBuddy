@@ -42,8 +42,16 @@ async function createAndCopyShareLink(initialParams = null, includePathName = fa
     }
 
     const url = `${window.location.protocol}//${window.location.host}${pathname}?${params.toString()}`;
+
+  const copyElement = document.getElementById('createAndCopyShareLink');
+  const priorText = copyElement.textContent;
+
     try {
         await navigator.clipboard.writeText(url);
+    copyElement.textContent = "Copied";
+    setTimeout(() => {
+      copyElement.textContent = priorText;
+    }, 1500);
     } catch (error) {
         console.error(error.message);
     }
