@@ -459,7 +459,7 @@ class SetCalcHandler:
                                     multi += 0.5                                                   
                             if multi == 0:
                                 continue
-                            elif not noteAdded:
+                            elif not noteAdded and inputdict["Species3"] != "":
                                 if multi == 0.5:
                                     results.addNote("WARNING!! Switch-in logic has detected that the switch-in result can be different based on whether the result of a bizarre damage roll is odd or even. This is rare, and the buddy may be wrong with how it implements this logic! Take a look at the `Magic Number` section in the left hand bar and ideally send Dave Glorbus a recording of your battle in Discord. Thanks!")
                                     noteAdded = True
@@ -473,11 +473,10 @@ class SetCalcHandler:
                                     continue
                             compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
                             
-                    else: 
+                    else:
                         compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
 
-                    # TEAM RECORDING
-                    compoundProbability = 1/validOptionsFirst/validOptionsSecond/validOptionsThird
+                    # TEAM RECORDING                    
                     resultArray["total"] += compoundProbability                  
                     resultArray[setA.id] += compoundProbability
                     resultArray[setB.id] += compoundProbability
