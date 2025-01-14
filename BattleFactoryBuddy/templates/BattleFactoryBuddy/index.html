@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jQuery-MultiSelect-master/jquery.multiselect.js' %}"></script>
-    <script src="{% static 'js/index.js' %}"></script>
     <script src="{% static 'js/shared.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 
 </head>
 <html>  
@@ -146,14 +146,14 @@
                     </div>                    
                     <div class="card-body" id="switchcard" style="margin: 0px; padding-bottom: 0%; padding-top: 2%">
                       <h5 class="card-title">Switch Logic (optional)</h5>                      
-                      <h6 class="card-title">Your mon on first KO</h5>                      
+                      <h6 class="card-title">Your mon on first KO</h6>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                           <select type="text" class="form-select" id="targetmon" name="targetmon" style="max-width: 256px;" placeholder="Your Mon" value="{{targetmon}}">                                
                             <option value="" selected>No Mon Provided</option>
                             {{pkmn |safe}}
                           </select>
                         </div>
-                      <h6 class="card-title">Second mon ball</h5>                      
+                      <h6 class="card-title">Second mon ball</h6>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                           <select type="text" class="form-select" id="ballnum" name="ballnum" style="max-width: 256px;" placeholder="" value="{{ballnum}}">                                
                             <option value="" selected>No Ball Info Provided</option>
@@ -164,7 +164,7 @@
                         <button type="button" class="btn btn-tertiary" data-bs-toggle="modal" data-bs-target="#BallModal">
                           What's this ball business?
                         </button>
-                      <h6 class="card-title">Magic Number</h5>
+                      <h6 class="card-title">Magic Number</h6>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">                                    
                           <input type="number" class="form-control" id="magicnumber" name="magicnumber" placeholder="Not entered" style="max-width: 256px;">
                         </div>
@@ -606,162 +606,7 @@
 
 
      <script>
-      function convertToPost(valstring) {
-        var checkboxes = document.getElementsByName(valstring.concat("check"))[0];
-        var selected = [];
-        for (var i=0; i<checkboxes.options.length; i++) {
-          if (checkboxes.options[i].selected) {          
-            selected.push(checkboxes[i].value);
-            }
-        } 
-        selectedstr = ""
-        selectedstr = selectedstr.concat(selected)        
-        document.getElementById(valstring).value = selectedstr             
-      }
-
-      function convertFromGet(valstring) {
-        var checkboxes = document.getElementsByName(valstring.concat("check"))[0];
-        var selectedFromGet = Array.from(document.getElementById(valstring).value)        
-        for (var j=0; j<selectedFromGet.length; j++)
-          for (var i=0; i<checkboxes.options.length; i++) {                      
-            if (selectedFromGet[j] == checkboxes.options[i].label){              
-              checkboxes.options[i].selected = true;            
-            }
-          }    
-        $('select[multiple]').multiselect( 'reload' );
-      }
-
-      function resetCheckboxes(valstring) {
-        var checkboxes = document.getElementsByName(valstring.concat("check"))[0];
-        for (var i=0; i<checkboxes.options.length; i++) {          
-          checkboxes.options[i].selected = false;            
-        }                 
-        $('select[multiple]').multiselect( 'reload' );
-      }
-    
-
-      function nextRound() {
-        document.getElementById('LastOpp1').value = document.getElementById('Species1').value;
-        document.getElementById('LastOpp2').value = document.getElementById('Species2').value;
-        document.getElementById('LastOpp3').value = document.getElementById('Species3').value;
-
-        document.getElementById('Species1').value = '';
-        document.getElementById('Species2').value = '';
-        document.getElementById('Species3').value = '';
-        document.getElementById('Move11').value = '';
-        document.getElementById('Move21').value = '';
-        document.getElementById('Move31').value = '';
-        document.getElementById('Move41').value = '';
-
-        document.getElementById('Move12').value = '';
-        document.getElementById('Move22').value = '';
-        document.getElementById('Move32').value = '';
-        document.getElementById('Move42').value = '';
-
-        document.getElementById('Move13').value = '';        
-        document.getElementById('Move23').value = '';
-        document.getElementById('Move33').value = '';
-        document.getElementById('Move43').value = '';
-
-        document.getElementById('Item1').value = '';
-        document.getElementById('Item2').value = '';
-        document.getElementById('Item3').value = '';     
-
-        document.getElementById('Set1').value = '';      
-        resetCheckboxes("Set1");
-        document.getElementById('Set2').value = '';
-        resetCheckboxes("Set2");
-        document.getElementById('Set3').value = '';   
-        resetCheckboxes("Set3");  
-        document.getElementById('targetmon').value = ''; 
-        document.getElementById('ballnum').value = ''; 
-        document.getElementById('magicnumber').value = "Not Entered";
-      }
-
-
-      function sendToTeamBuilder() {
-        const params = new URLSearchParams();
-        const formElements = document.querySelectorAll('.form-select, .form-check-input');
-        convertToPost('Set1')
-        convertToPost('Set2')
-        convertToPost('Set3')
-
-        const team1 = document.getElementById('Team1').value;
-        const team2 = document.getElementById('Team2').value;
-        const team3 = document.getElementById('Team3').value;
-
-        const species1 = document.getElementById('Species1').value
-        const species2 = document.getElementById('Species2').value
-        const species3 = document.getElementById('Species3').value
-
-        const species1Set = document.getElementById('Set1').value.split(',')[0] || '1';
-        const species2Set = document.getElementById('Set2').value.split(',')[0] || '1';
-        const species3Set = document.getElementById('Set3').value.split(',')[0] || '1';
-
-
-
-        if (team1) {
-          params.append('set1', team1 + '-1')
-        }
-        if (team2) {
-          params.append('set2', team2 + '-1')
-        }
-        if (team3) {
-          params.append('set3', team3 + '-1')
-        }
-
-        if (species1) {
-        params.append('set4', species1 + '-' + species1Set)
-        }
-        if (species2) {
-        params.append('set5', species2 + '-' + species2Set)
-        }
-        if (species3){
-        params.append('set6', species3 + '-' + species3Set)
-        }
-
-        params.append('Level', document.getElementById('Level').value);
-        params.append('Round', document.getElementById('Round').value);
-
-        const url = `/teambuilder?${params.toString()}`;
-        window.open(url, '_blank').focus();
-      }
-
-      async function createAndCopyShareLink() {
-        const params = new URLSearchParams();
-        const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
-
-
-        formElements.forEach(element => {
-          if (element.type === 'checkbox') {
-            params.append(element.name, element.checked ? 'on' : 'off');
-          }
-          else {
-            params.append(element.name, element.value);
-          }
-        });
-
-        convertToPost('Set1')
-        convertToPost('Set2')
-        convertToPost('Set3')
-
-        params.append('Set1', document.getElementById('Set1').value);
-        params.append('Set2', document.getElementById('Set2').value);
-        params.append('Set3', document.getElementById('Set3').value);
-
-        params.append('Calc', 1);
-
-        const url = `${window.location.protocol}//${window.location.host}/?${params.toString()}`;
-        try {
-          await navigator.clipboard.writeText(url);
-        } catch (error) {
-          console.error(error.message);
-        }
-      }
-
-
-
-      document.body.style.zoom="70%"    
+      document.body.style.zoom="70%"
       
       $('select[multiple]').multiselect({
         columns: 1,
@@ -820,9 +665,6 @@
         if ('{{setleveldetail}}' == "on"){document.getElementById('setleveldetail').checked = true}
         if ('{{HiRes}}' == "on"){document.getElementById('HiRes').checked = true}
 
-      }
-      else{
-        document.getElementById('ProbabilitySort').checked = true;                
       }
 
      let loginForm = document.getElementById("postaction");

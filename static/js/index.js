@@ -168,8 +168,6 @@ function updateIndexFromParams(urlParams) {
         convertFromGet('Set3');
     }
 
-    showhideSwitch();
-
     const calc = urlParams.get('Calc');
     if (calc == 1) {
         document.getElementById('postaction').submit();
