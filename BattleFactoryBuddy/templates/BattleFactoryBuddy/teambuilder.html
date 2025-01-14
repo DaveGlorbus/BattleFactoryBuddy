@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'jQuery-MultiSelect-master/jquery.multiselect.js' %}"></script>
-    <script src="{% static 'js/teambuilder.js' %}"></script>
     <script src="{% static 'js/shared.js' %}"></script>
-
+    <script src="{% static 'js/teambuilder.js' %}"></script>
+    <style>
+        .accordion-header.highlight .accordion-button {
+            background-color: rgba(13, 204, 242, 0.2);
+            color: black;
+        }
+    </style>
     
 </head>
 <html>  
@@ -69,6 +74,9 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 1 Team Member Check" type="checkbox" name="set1Check" id="set1Check" {% if set1Check %}checked{% endif %}>
+                              </div>
                           </div>
                           <div class="set-title">Set 2</div>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
@@ -81,6 +89,9 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 2 Team Member Check" type="checkbox" id="set2Check" name="set2Check" {% if set2Check %}checked{% endif %}>
+                              </div>
                           </div>
                           <div class="set-title">Set 3</div>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
@@ -93,6 +104,9 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 3 Team Member Check" type="checkbox" name="set3Check" id="set3Check" {% if set3Check %}checked{% endif %}>
+                              </div>
                           </div>
                           <h5 class="card-title" id="OpponentsHeader">Last Opponents</h5>
                           <div class="set-title">Set 4</div>
@@ -106,6 +120,9 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 4 Team Member Check" type="checkbox" id="set4Check" name="set4Check" {% if set4Check %}checked{% endif %}>
+                              </div>
                           </div>
                           <div class="set-title">Set 5</div>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
@@ -118,6 +135,9 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 5 Team Member Check" type="checkbox" name="set5Check" id="set5Check" {% if set5Check %}checked{% endif %}>
+                              </div>
                           </div>
                           <div class="set-title">Set 6</div>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
@@ -130,7 +150,10 @@
                               <option value="15">15 IVs</option>        
                               <option value="31">31 IVs</option>                              
                             </select>
-                                      </div>
+                              <div class="form-check">
+                                  <input class="form-check-input team-checkbox" aria-label="Set 6 Team Member Check" type="checkbox" name="set6Check" id="set6Check" {% if set6Check %}checked{% endif %}>
+                              </div>
+                          </div>
                           
                         </div>
                     </div>
@@ -141,6 +164,9 @@
                       <label class="form-check-label" for="flexSwitchCheckDefault" style="margin-left:5px">Swap Mode</label>
                     </div>
                     <hr>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                      <a id="createAndCopyShareLink" href="javascript:void(0);" onclick="createAndCopyShareLink(null, true)">Copy Query Link to Clipboard</a>
+                    </div>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                       <a href="javascript:void(0);" onclick="sendToCalc()">Back to main Buddy</a>
                   </div>                  
@@ -163,7 +189,7 @@
         
        </main>  
         <script>
-          document.body.style.zoom="70%"    
+          document.body.style.zoom="70%"
 
           document.addEventListener('DOMContentLoaded', function() {
           const urlParams = new URLSearchParams(window.location.search);
@@ -171,7 +197,13 @@
           if (urlParams.size == 0){
             return;
           }
-          setFormFromParams(urlParams);          
+          setFormFromParams(urlParams);
+
+          const calc = urlParams.get('Calc');
+          if (calc == 1) {
+              document.getElementById('postaction').submit();
+          }
+
 
           });
 
@@ -193,7 +225,11 @@
                 document.getElementById('set6IVs').value = '{{set6IVs}}';
                 document.getElementById('Level').value = '{{Level}}';
                 document.getElementById('Round').value = '{{Round}}';
-                if ('{{SwapMode}}' == "on"){document.getElementById('SwapMode').checked = true;}    
+                if ('{{SwapMode}}' == "on"){document.getElementById('SwapMode').checked = true;}
+
+                highlightMatchingTeamMembers();
+
+
             }
             else 
             {

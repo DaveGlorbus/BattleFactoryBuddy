@@ -116,37 +116,21 @@ function sendToTeamBuilder() {
     window.open(url, '_blank').focus();
 }
 
-async function createAndCopyShareLink() {
-    const params = new URLSearchParams();
-    const formElements = document.querySelectorAll('.form-select, .form-check-input, .form-control');
-
-
-    formElements.forEach(element => {
-        if (element.type === 'checkbox') {
-            params.append(element.name, element.checked ? 'on' : 'off');
-        }
-        else {
-            params.append(element.name, element.value);
-        }
-    });
-
+function getSetsParams(){
+    const setsParams = new URLSearchParams();
     convertToPost('Set1')
     convertToPost('Set2')
     convertToPost('Set3')
 
-    params.append('Set1', document.getElementById('Set1').value);
-    params.append('Set2', document.getElementById('Set2').value);
-    params.append('Set3', document.getElementById('Set3').value);
+    setsParams.append('Set1', document.getElementById('Set1').value);
+    setsParams.append('Set2', document.getElementById('Set2').value);
+    setsParams.append('Set3', document.getElementById('Set3').value);
 
-    params.append('Calc', 1);
+    return setsParams;
 
-    const url = `${window.location.protocol}//${window.location.host}/?${params.toString()}`;
-    try {
-        await navigator.clipboard.writeText(url);
-    } catch (error) {
-        console.error(error.message);
-    }
 }
+
+
 
 function updateIndexFromParams(urlParams) {
 
@@ -173,4 +157,9 @@ function updateIndexFromParams(urlParams) {
         document.getElementById('postaction').submit();
         document.getElementById('Calcbar').hidden = false;
     }
+}
+
+async function createAndCopyShareLinkIndex(){
+    const setsParams = getSetsParams();
+    await createAndCopyShareLink(setsParams);
 }
