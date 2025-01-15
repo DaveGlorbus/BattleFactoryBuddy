@@ -78,13 +78,13 @@ function highlightMatchingTeamMembers() {
     if ($('#set6Check').is(":checked")) checklist.push($('#set6').val());
 
     // Highlight matching items in the accordion headers
-    $('.accordion-header').each(function() {
+    $('.accordion-header').each(function () {
         let headerText = $(this).text();
 
         // Can do === 3 for all only
         // Highlight any team headers which contain all of the checked members
         // i.e 1 team if all checked, or 4 if two checked...
-        let containsAll = checklist.length >= 1 && checklist.every(function(item) {
+        let containsAll = checklist.length >= 1 && checklist.every(function (item) {
             return headerText.includes(item);
         });
         if (containsAll) {
@@ -95,13 +95,12 @@ function highlightMatchingTeamMembers() {
     });
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Only allow 3 checkboxes (the team) to be checked
     $("input.team-checkbox").change(function () {
         let maxChecked = 3;
         let checkedChecks = document.querySelectorAll(".team-checkbox:checked");
-        if(checkedChecks.length >= maxChecked + 1)
-        {
+        if (checkedChecks.length >= maxChecked + 1) {
             this.checked = false;
             return;
         }
