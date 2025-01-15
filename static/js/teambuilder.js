@@ -23,17 +23,15 @@ function sendToCalc() {
         }
     });
 
-    // Add the remaining sets in order
-    sets.forEach((set, index) => {
-        const species = document.getElementById(set.id).value.split('-')[0];
-        if (!set.check) {
-            if (team.length < 3) {
-                team.push(species);
-            } else {
+    // Add the remaining sets in order, if a full team has been selected
+    if (team.length == 3) {
+        sets.forEach((set, index) => {
+            const species = document.getElementById(set.id).value.split('-')[0];
+            if (!set.check) {
                 lastOpp.push(species);
             }
-        }
-    });
+        });
+    }
 
     // Add the team members to the URL parameters
     if (team[0]) params.append('Team1', team[0]);
