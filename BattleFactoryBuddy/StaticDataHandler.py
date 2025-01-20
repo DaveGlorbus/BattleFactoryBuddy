@@ -138,29 +138,11 @@ class StaticDataHandler:
     def iterGetTeamList(type, phrase):
         # If we're caching team lists and have already read this list then pull
         # it out of our dictionaries and yield one team at a time and drop out.        
-        if type in StaticDataHandler.teamLists:
-            if phrase in StaticDataHandler.teamLists[type]:                
-                for team in StaticDataHandler.teamLists[type][phrase]:
-                    yield team
-                return
-            
-        # Otherwise work out whether we want to set up caching and get things ready
-        # if we do.
-        cacheReady = False
-        if StaticDataHandler.cacheTeams:
-            if not type in StaticDataHandler.teamLists:
-                StaticDataHandler.teamLists[type] = {}
-            if not phrase in StaticDataHandler.teamLists[type]:
-                StaticDataHandler.teamLists[type][phrase] = []
-            cacheReady = True
-
         # Now, read it in and yield one at a time, caching if setup.
         with open("./BattleFactoryBuddy/Data/" + type + "-" + phrase + ".csv") as r:            
             for line in r:
                 team = line.strip().split(",")
-                yield (team)
-                if cacheReady:
-                    StaticDataHandler.teamLists[type][phrase].append(team)
+                yield (team)                
     
     # An iterable returning a h2h result each time for the set chosen
     @staticmethod
