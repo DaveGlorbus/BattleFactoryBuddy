@@ -27,7 +27,7 @@ class Species:
             if ids != []:                                
                 localvalid = False
                 for id in ids:                       
-                    if str(id) in set.id:
+                    if str(id) in set.id.split("-")[-1]:
                         localvalid = True
                 if not localvalid:                            
                     satisfied = False
