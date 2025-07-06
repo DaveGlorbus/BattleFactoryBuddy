@@ -29,6 +29,9 @@ class SetQueryHTMLHandler:
     # - The text that is hover overable
     tooltip = """<a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{}">{}</a>"""
 
+    aiURL = """https://will-jj.github.io/gen4to3MowAITesting/index.html?move="""
+    aiUrlTabParams = """target="_blank" rel="noopener noreferrer\""""
+
     # HTML for the top Table on a successful result. Takes 2 inputs:
     # - Header for the column that is chance or phrase info.
     # - IV value for the Speed header
@@ -55,17 +58,17 @@ class SetQueryHTMLHandler:
 """
 
     # HTML for the table rows in the top table. Takes a tuple output by Set.GetTableRow.
-    detailTableRow = """<tr>     
-      <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{}">{}</a></b></td>
-      <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{}">{}</a></b></td>      
-      <td>{}</a></td>
-      <td style="border-left: 1px solid LightGrey">{}</td>
-      <td>{}</td>
-      <td>{}</td>
-      <td>{}</td>
-      <td style="border-left: 1px solid LightGrey">{}</td>
-      <td>{}</td>     
-      <td>{} </td>
+    detailTableRow = f"""<tr>     
+      <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{{0}}">{{1}}</a></b></td>
+      <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{{2}}">{{3}}</a></b></td>      
+      <td>{{4}}</a></td>
+      <td style="border-left: 1px solid LightGrey"><a href="{aiURL}{{5}}" {aiUrlTabParams}>{{5}}</a></td>
+      <td><a href="{aiURL}{{6}}" {aiUrlTabParams}>{{6}}</a></td>
+      <td><a href="{aiURL}{{7}}" {aiUrlTabParams}>{{7}}</a></td>
+      <td><a href="{aiURL}{{8}}" {aiUrlTabParams}>{{8}}</a></td>
+      <td style="border-left: 1px solid LightGrey">{{9}}</td>
+      <td>{{10}}</td>     
+      <td>{{11}} </td>
     </tr>"""
 
     # HTML for the 3 collapsible concertinas, including values in the headers and contents. Inputs here are a little complex:
