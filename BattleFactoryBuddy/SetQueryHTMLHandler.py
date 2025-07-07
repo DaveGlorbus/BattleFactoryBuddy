@@ -30,7 +30,8 @@ class SetQueryHTMLHandler:
     tooltip = """<a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{}">{}</a>"""
 
     aiURL = """https://will-jj.github.io/gen4to3MowAITesting/index.html#"""
-    aiUrlTabParams = """target="_blank" rel="noopener noreferrer\""""
+    aiUrlParams = """target="_blank" rel="noopener noreferrer" title="AI Lookup\""""
+    aiUrlStyle = """class="simple\""""
 
     # HTML for the top Table on a successful result. Takes 2 inputs:
     # - Header for the column that is chance or phrase info.
@@ -62,10 +63,10 @@ class SetQueryHTMLHandler:
       <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{{0}}">{{1}}</a></b></td>
       <td><b><a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{{2}}">{{3}}</a></b></td>      
       <td>{{4}}</a></td>
-      <td style="border-left: 1px solid LightGrey"><a href="{aiURL}{{5}}" {aiUrlTabParams}>{{5}}</a></td>
-      <td><a href="{aiURL}{{6}}" {aiUrlTabParams}>{{6}}</a></td>
-      <td><a href="{aiURL}{{7}}" {aiUrlTabParams}>{{7}}</a></td>
-      <td><a href="{aiURL}{{8}}" {aiUrlTabParams}>{{8}}</a></td>
+      <td style="border-left: 1px solid LightGrey"><a {aiUrlStyle} href="{aiURL}{{5}}" {aiUrlParams}>{{5}}</a></td>
+      <td><a {aiUrlStyle} href="{aiURL}{{6}}" {aiUrlParams}>{{6}}</a></td>
+      <td><a {aiUrlStyle} href="{aiURL}{{7}}" {aiUrlParams}>{{7}}</a></td>
+      <td><a {aiUrlStyle} href="{aiURL}{{8}}" {aiUrlParams}>{{8}}</a></td>
       <td style="border-left: 1px solid LightGrey">{{9}}</td>
       <td>{{10}}</td>     
       <td>{{11}} </td>
