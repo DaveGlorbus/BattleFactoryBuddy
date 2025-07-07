@@ -29,7 +29,7 @@ class SetQueryHTMLHandler:
     # - The text that is hover overable
     tooltip = """<a data-container="body" data-toggle="popover" html="true" width="500px" data-html="true" title="{}">{}</a>"""
 
-    aiURL = """https://will-jj.github.io/gen4to3MowAITesting/index.html?move="""
+    aiURL = """https://will-jj.github.io/gen4to3MowAITesting/index.html#"""
     aiUrlTabParams = """target="_blank" rel="noopener noreferrer\""""
 
     # HTML for the top Table on a successful result. Takes 2 inputs:
