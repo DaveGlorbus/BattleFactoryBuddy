@@ -1,0 +1,9 @@
+a.simple
+{
+    color: inherit;
+    text-decoration: none;
+}
+a.simple:hover
+{
+    text-decoration: underline;
+}
