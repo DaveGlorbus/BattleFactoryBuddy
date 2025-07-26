@@ -725,10 +725,107 @@
         if (calc == 1){
           document.getElementById('postaction').submit();
           document.getElementById('Calcbar').hidden = false;
-        }        
+        }
+    });
 
-        
+    // Adds column ordering functionality. Pretty much added this js script that checks queries the DOM for the currPokemonDetailTable id which I added in SetQueryHTMLHandler.py
+    // On the very first buddy calculation it will order the Chance column from high to low (i.e., the way it is right now).
+    // On every subsequent calculation or page load, it will sort based on the last sorted column and sorting order (i.e. ascending or descending).
+    // This last point is cookie-based, so even if the browser is fully closed or the pc/smartphone has restarted, it will remember it. 
+    document.addEventListener('DOMContentLoaded', () => {
+      const table = document.getElementById('currPokemonDetailTable');
+      const tbody = table.querySelector('tbody');
+
+      const chanceIdx = 1;
+
+      const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+      const comparer = (idx, asc) => (a, b) => {
+        const v1 = getCellValue(a, idx);
+        const v2 = getCellValue(b, idx);
+        const n1 = parseFloat(v1);
+        const n2 = parseFloat(v2);
+        if (!isNaN(n1) && !isNaN(n2)) {
+          return asc ? n1 - n2 : n2 - n1;
+        }
+        return asc ? v1.localeCompare(v2) : v2.localeCompare(v1);
+      };
+
+      const clearSortIndicators = () => {
+        table.querySelectorAll('th').forEach(th => {
+          th.textContent = th.textContent.replace(/[\u25B2\u25BC]$/, '').trim();
         });
+      };
+
+      const sortStates = Array.from(table.querySelectorAll('th')).map(() => 0);
+
+      // Restore saved sorting state or default to Chance descending
+      let savedSort = localStorage.getItem('pokemonTableSort');
+      let currentSortedIndex = chanceIdx;
+      let currentSortDir = 2; // descending
+
+      if (savedSort) {
+        try {
+          const parsed = JSON.parse(savedSort);
+          if (parsed && typeof parsed.idx === 'number' && (parsed.dir === 1 || parsed.dir === 2)) {
+            currentSortedIndex = parsed.idx;
+            currentSortDir = parsed.dir;
+          }
+        } catch {
+          // ignore parse errors, fallback to default
+        }
+      }
+
+      // Apply initial sort indicator and sorting on page load
+      sortStates[currentSortedIndex] = currentSortDir;
+      clearSortIndicators();
+      const initialTh = table.querySelectorAll('th')[currentSortedIndex];
+      initialTh.textContent = initialTh.textContent.trim() + (currentSortDir === 1 ? ' \u25B2' : ' \u25BC');
+
+      // Sort the tbody rows based on saved state if different from Chance descending default
+      if (!(currentSortedIndex === chanceIdx && currentSortDir === 2)) {
+        Array.from(tbody.querySelectorAll('tr'))
+          .sort(comparer(currentSortedIndex, currentSortDir === 1))
+          .forEach(row => tbody.appendChild(row));
+      }
+      // Otherwise, assume table is already sorted descending by Chance
+
+      table.querySelectorAll('th').forEach((th, i) => {
+        th.style.cursor = 'pointer';
+        th.addEventListener('click', () => {
+          // Toggle sort direction between Asc (1) and Desc (2)
+          sortStates[i] = sortStates[i] === 1 ? 2 : 1;
+
+          // Reset other columns
+          sortStates.forEach((state, idx) => {
+            if (idx !== i) sortStates[idx] = 0;
+          });
+
+          clearSortIndicators();
+
+          if (sortStates[i] === 1) {
+            // Ascending
+            Array.from(tbody.querySelectorAll('tr'))
+              .sort(comparer(i, true))
+              .forEach(row => tbody.appendChild(row));
+            th.textContent = th.textContent.trim() + ' \u25B2';
+          } else {
+            // Descending
+            Array.from(tbody.querySelectorAll('tr'))
+              .sort(comparer(i, false))
+              .forEach(row => tbody.appendChild(row));
+            th.textContent = th.textContent.trim() + ' \u25BC';
+          }
+
+          // Save current sorted column and direction to localStorage
+          localStorage.setItem('pokemonTableSort', JSON.stringify({
+            idx: i,
+            dir: sortStates[i]
+          }));
+        });
+      });
+    });
+
      </script>
    </body>
 </html>
