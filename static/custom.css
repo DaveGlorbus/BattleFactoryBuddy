@@ -7,3 +7,18 @@ a.simple:hover
 {
     text-decoration: underline;
 }
+
+/* Class used for adding white cells (forming white spacing row between species) */
+.spacer td.spacer-cell {
+  height: 18px;  /* Not clean but it works bug-free */
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  border-bottom: 1px solid LightGrey;
+  background-color: transparent;
+}
+
+/* Ensures the vertical grey lines go trough white space between species as well */
+.spacer td.left-border {
+  border-left: 1px solid LightGrey; 
+}

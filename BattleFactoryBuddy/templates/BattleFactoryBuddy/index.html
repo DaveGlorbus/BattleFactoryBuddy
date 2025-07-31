@@ -736,8 +736,6 @@
       const table = document.getElementById('currPokemonDetailTable');
       const tbody = table.querySelector('tbody');
 
-      const chanceIdx = 1;
-
       const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
       const comparer = (idx, asc) => (a, b) => {
@@ -757,67 +755,126 @@
         });
       };
 
-      const sortStates = Array.from(table.querySelectorAll('th')).map(() => 0);
+      const headers = Array.from(table.querySelectorAll('th'));
+      const sortStates = headers.map(() => 0);
 
-      // Restore saved sorting state or default to Chance descending
+      const nameIdx = headers.findIndex(th => th.textContent.trim() === 'Name');
+      const chanceIdx = headers.findIndex(th => th.textContent.trim() === 'Chance');
+      const sortableIndices = [nameIdx, chanceIdx];
+
+      // Get current selected species
+      const selectedSpecies = [
+        document.getElementById('Species1')?.value || '',
+        document.getElementById('Species2')?.value || '',
+        document.getElementById('Species3')?.value || ''
+      ].filter(Boolean); // Remove empty strings
+
       let savedSort = localStorage.getItem('pokemonTableSort');
       let currentSortedIndex = chanceIdx;
-      let currentSortDir = 2; // descending
+      let currentSortDir = 2;
 
       if (savedSort) {
         try {
           const parsed = JSON.parse(savedSort);
-          if (parsed && typeof parsed.idx === 'number' && (parsed.dir === 1 || parsed.dir === 2)) {
+          if (
+            parsed &&
+            typeof parsed.idx === 'number' &&
+            (parsed.dir === 1 || parsed.dir === 2) &&
+            sortableIndices.includes(parsed.idx)
+          ) {
             currentSortedIndex = parsed.idx;
             currentSortDir = parsed.dir;
           }
         } catch {
-          // ignore parse errors, fallback to default
+          // ignore
         }
       }
 
-      // Apply initial sort indicator and sorting on page load
       sortStates[currentSortedIndex] = currentSortDir;
       clearSortIndicators();
-      const initialTh = table.querySelectorAll('th')[currentSortedIndex];
+      const initialTh = headers[currentSortedIndex];
       initialTh.textContent = initialTh.textContent.trim() + (currentSortDir === 1 ? ' \u25B2' : ' \u25BC');
 
-      // Sort the tbody rows based on saved state if different from Chance descending default
-      if (!(currentSortedIndex === chanceIdx && currentSortDir === 2)) {
-        Array.from(tbody.querySelectorAll('tr'))
-          .sort(comparer(currentSortedIndex, currentSortDir === 1))
-          .forEach(row => tbody.appendChild(row));
-      }
-      // Otherwise, assume table is already sorted descending by Chance
+      const sortGroupedRows = (columnIndex, ascending) => {
+        const groupedRows = {};
 
-      table.querySelectorAll('th').forEach((th, i) => {
+        // Initialize group arrays for selected species
+        selectedSpecies.forEach(species => {
+          groupedRows[species] = [];
+        });
+
+        // Assign rows to appropriate species group
+        tbody.querySelectorAll('tr').forEach(row => {
+          const name = getCellValue(row, nameIdx);
+          const speciesName = name.split('-')[0];
+          if (groupedRows[speciesName]) {
+            groupedRows[speciesName].push(row);
+          }
+        });
+
+        // Sort each group
+        for (const species of selectedSpecies) {
+          groupedRows[species].sort(comparer(columnIndex, ascending));
+        }
+
+        // Determine how many columns the table has (for colspan)
+        const colCount = headers.length;
+
+        // Clear table
+        tbody.innerHTML = '';
+
+        // Remove any empty <tr> rows (e.g., blank lines or whitespace-only cells)
+        tbody.querySelectorAll('tr').forEach(row => {
+          const isEmpty = Array.from(row.cells).every(cell => !cell.textContent.trim());
+          if (isEmpty) row.remove();
+        });
+
+        selectedSpecies.forEach((species, index) => {
+          const rows = groupedRows[species];
+          rows.forEach(row => tbody.appendChild(row));
+
+          // Add a spacer row after each group
+          if (index < selectedSpecies.length - 1) {
+            const spacerRow = document.createElement('tr');
+            spacerRow.classList.add('spacer');
+
+            for (let col = 0; col < colCount; col++) {
+              const spacerCell = document.createElement('td');
+              spacerCell.innerHTML = ''; 
+              spacerCell.classList.add('spacer-cell');
+
+              // Add a left border after a specific column --> the grey lines through white space between species
+              if (col === 3 | col === 7) { // column index starts at 0, so col 3 = after column 2.
+                spacerCell.classList.add('left-border');
+              }
+
+              spacerRow.appendChild(spacerCell);
+            }
+
+            tbody.appendChild(spacerRow);
+          }
+        });
+      };
+
+      if (!(currentSortedIndex === chanceIdx && currentSortDir === 2)) {
+        sortGroupedRows(currentSortedIndex, currentSortDir === 1);
+      }
+
+      sortableIndices.forEach(i => {
+        const th = headers[i];
         th.style.cursor = 'pointer';
         th.addEventListener('click', () => {
-          // Toggle sort direction between Asc (1) and Desc (2)
           sortStates[i] = sortStates[i] === 1 ? 2 : 1;
 
-          // Reset other columns
-          sortStates.forEach((state, idx) => {
+          sortStates.forEach((_, idx) => {
             if (idx !== i) sortStates[idx] = 0;
           });
 
           clearSortIndicators();
+          sortGroupedRows(i, sortStates[i] === 1);
 
-          if (sortStates[i] === 1) {
-            // Ascending
-            Array.from(tbody.querySelectorAll('tr'))
-              .sort(comparer(i, true))
-              .forEach(row => tbody.appendChild(row));
-            th.textContent = th.textContent.trim() + ' \u25B2';
-          } else {
-            // Descending
-            Array.from(tbody.querySelectorAll('tr'))
-              .sort(comparer(i, false))
-              .forEach(row => tbody.appendChild(row));
-            th.textContent = th.textContent.trim() + ' \u25BC';
-          }
+          th.textContent = th.textContent.trim() + (sortStates[i] === 1 ? ' \u25B2' : ' \u25BC');
 
-          // Save current sorted column and direction to localStorage
           localStorage.setItem('pokemonTableSort', JSON.stringify({
             idx: i,
             dir: sortStates[i]
