@@ -37,7 +37,7 @@ class SetQueryHTMLHandler:
     # - Header for the column that is chance or phrase info.
     # - IV value for the Speed header
     # - An arbitrary number of rows to go in the table.
-    detailTable = """<table class="table w-auto" style="margin-left:10px;">
+    detailTable = """<table id="currPokemonDetailTable" class="table w-auto" style="margin-left:10px;">
   <thead>
     <tr>
       <th scope="col" style="left-margin:10px;">Name</th>
